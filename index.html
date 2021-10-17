@@ -6,23 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2" />
     <link rel="stylesheet" href="public/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/svg" href="img/Logo2.svg">
+    <title>Dylan Smith Web Dev</title>
 </head>
-<!-- Use these as insperation and reference -->
-<!-- https://mattfarley.ca/ -->
-<!-- https://material.io/ -->
 
 <body>
-    <!-- Header Starts Here -->
-    
-    <!-- Nav Ends Here -->
+    <!-- Header/Nav Ends Here -->
+    <div id="navWrapper">
+        <nav class="clearFix">
+            <div class="visible-nav">
+                <div class="logo">
+                    <img src="img/Logo2.svg" alt="Logo" class="svg-logo">
+                </div>
+                <button id="btn" class="ac">&#9776;</button>
+            </div>
+            <div class="nav-list">
+                <ul class="hide" id="ul-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <!-- Main Starts Here -->
+    <div id="mainWrapper">
+        <main class="clearFix">
+            <div id="landing-section">
+                <h1>Dylan Smith</h1>
+                <h2>Front-end Web Developer</h2>
+                <button id="about-btn">About me</button>
+                
+            </div>
 
-    <!-- Main ends here -->
+            <div id="about-section">
+
+            </div>
+
+            <div id="recent-work">
+
+            </div>
+
+            <div id="contact">
+
+            </div>
+        </main>
+    </div>
 
     <!-- Footer Starts here -->
-    <!-- Footer ends here -->
+    <div id="footerWrapper">
+        <footer class="clearFix">
+            <div class="links">
+                <a href="https://www.dylnsworks.com/">Portfolio <i class="fas fa-portrait"></i></a>
+                <a href="https://github.com/ayodyln">github <i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy Dylan Smith</p>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
