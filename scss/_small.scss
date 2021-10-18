@@ -24,6 +24,10 @@ body {
 div#navWrapper {
   // scroll-behavior: auto;
   nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
     div.visible-nav {
       display: flex;
       justify-content: space-between;

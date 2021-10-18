@@ -456,6 +456,13 @@ body {
   overflow-x: hidden;
 }
 
+div#navWrapper nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
 div#navWrapper nav div.visible-nav {
   display: -webkit-box;
   display: -ms-flexbox;
