@@ -568,8 +568,17 @@ div#mainWrapper main div#landing-section div.landing-text button i {
 }
 
 div#mainWrapper main div#about-section {
-  padding: 2% 2%;
-  background-color: #696e79;
+  padding: 2%;
+  background-color: #2c3549;
+}
+
+div#mainWrapper main div#about-section p {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+div#mainWrapper main div#recent-work div.cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -578,10 +587,14 @@ div#mainWrapper main div#about-section {
       grid-template-rows: auto;
 }
 
-div#mainWrapper main div#about-section div.img-block {
+div#mainWrapper main div#recent-work div.cards div.card {
+  padding: 2%;
+}
+
+div#mainWrapper main div#recent-work div.cards div.card .green {
+  background-color: green;
   width: 100%;
-  background-color: yellow;
-  height: 150px;
+  height: 200px;
 }
 
 div#footerWrapper footer {

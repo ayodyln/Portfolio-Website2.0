@@ -43,14 +43,13 @@ div#navWrapper {
         font-size: 1.6rem;
         color: #555;
         margin: 0;
-        
       }
     }
     div.nav-list {
       text-align: end;
       padding: 0 2%;
       background-color: $secondaryDark;
-     
+
       ul {
         list-style-type: none;
         padding: 0;
@@ -63,7 +62,6 @@ div#navWrapper {
             text-decoration: none;
             color: white;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
-            
           }
 
           a:hover {
@@ -128,16 +126,31 @@ div#mainWrapper {
 
     // about-section
     div#about-section {
-      padding: 2% 2%;
-      background-color: $SecondaryLight;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
+      padding: 2%;
+      background-color: lighten($primaryDark, 10%);
+      p {
+        color: white;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+    }
 
-      div.img-block {
-        width: 100%;
-        background-color: yellow;
-        height: 150px;
+    div#recent-work {
+      h2 {
+      }
+      div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        div.card {
+          padding: 2%;
+          .green {
+            background-color: green;
+            width: 100%;
+            height: 200px;
+          }
+        }
       }
     }
   }
