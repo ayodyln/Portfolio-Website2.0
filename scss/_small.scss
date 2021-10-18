@@ -22,6 +22,7 @@ body {
 
 //Nav/Header
 div#navWrapper {
+  // scroll-behavior: auto;
   nav {
     div.visible-nav {
       display: flex;
@@ -38,13 +39,14 @@ div#navWrapper {
         font-size: 1.6rem;
         color: #555;
         margin: 0;
+        
       }
     }
     div.nav-list {
       text-align: end;
       padding: 0 2%;
       background-color: $secondaryDark;
-
+     
       ul {
         list-style-type: none;
         padding: 0;
@@ -57,6 +59,7 @@ div#navWrapper {
             text-decoration: none;
             color: white;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
+            
           }
 
           a:hover {
@@ -80,11 +83,15 @@ div#navWrapper {
 //Main
 div#mainWrapper {
   main {
+    // Landing-section
     div#landing-section {
       background-image: url(../img/logo-background-320x700.svg);
       background-repeat: no-repeat;
-      background-size: cover;
-      height: 50vh;
+      background-size: fit;
+      background-position: center;
+      background-color: $primaryDark;
+      height: 75vh;
+
       div.landing-text {
         display: flex;
         flex-direction: column;
@@ -98,7 +105,8 @@ div#mainWrapper {
         }
         button {
           text-align: left;
-          width: 35%;
+          width: 45%;
+          height: 44px;
           margin: 2% 2%;
           border-style: none;
           background-color: $primaryColor;
@@ -113,6 +121,21 @@ div#mainWrapper {
         }
       }
     }
+
+    // about-section
+    div#about-section {
+      padding: 2% 2%;
+      background-color: $SecondaryLight;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+
+      div.img-block {
+        width: 100%;
+        background-color: yellow;
+        height: 150px;
+      }
+    }
   }
 }
 
@@ -125,7 +148,7 @@ div#footerWrapper {
       padding-top: 5%;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      
+
       a {
         display: flex;
         justify-content: center;
