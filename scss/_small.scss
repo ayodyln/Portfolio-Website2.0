@@ -43,6 +43,7 @@ div#navWrapper {
         font-size: 1.6rem;
         color: #555;
         margin: 0;
+        cursor: pointer;
       }
       div.largeNav-list {
         display: none;
@@ -77,6 +78,10 @@ div#navWrapper {
           background-color: rgba(0, 0, 0, 0.6);
           color: white;
         }
+      }
+
+      ul.hide {
+        display: none;
       }
     }
   }

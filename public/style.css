@@ -484,6 +484,7 @@ div#navWrapper nav div.visible-nav button {
   font-size: 1.6rem;
   color: #555;
   margin: 0;
+  cursor: pointer;
 }
 
 div#navWrapper nav div.visible-nav div.largeNav-list {
@@ -518,6 +519,10 @@ div#navWrapper nav div.nav-list ul li a:hover {
 div#navWrapper nav div.nav-list ul li.active a {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
+}
+
+div#navWrapper nav div.nav-list ul.hide {
+  display: none;
 }
 
 div#mainWrapper main div#landingSectionWrapper div#landing-section {
