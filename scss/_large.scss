@@ -1,0 +1,89 @@
+header,
+nav,
+footer {
+  max-width: 70rem;
+  margin: auto;
+}
+
+//Nav/Header
+div#navWrapper {
+  // scroll-behavior: auto;
+  nav {
+    position: relative;
+    background-color: white;
+    div.visible-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1% 2%;
+
+      div.logo {
+        width: 44px;
+      }
+      button {
+        display: none;
+      }
+      div.largeNav-list {
+        display: initial;
+
+        ul {
+          list-style-type: none;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 0 1vw;
+          text-align: center;
+          width: 100%;
+
+          li {
+            margin: 0 2%;
+            width: 5.5rem;
+            a {
+              width: 100%;
+              color: $primaryDark;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    div.nav-list {
+      display: none;
+    }
+  }
+}
+
+div#mainWrapper {
+  width: 100%;
+  main {
+    div#landingSectionWrapper {
+      width: 100%;
+      background-color: $primaryDark;
+      div#landing-section {
+        margin: auto;
+        max-width: 70rem;
+      }
+    }
+
+    div#aboutSectionWrapper {
+      width: 100%;
+      background-color: lighten($primaryDark, 10%);
+      div#about-section {
+        max-width: 70rem;
+        margin: auto;
+      }
+    }
+
+    div#recent-work {
+      div.cards {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1%;
+        div.card {
+          margin: 2%;
+          div.green {
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+}

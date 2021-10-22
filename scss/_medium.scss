@@ -1,0 +1,14 @@
+div#mainWrapper main {
+    div#recent-work {
+        div.cards {
+            grid-template-columns: 1fr 1fr;
+            padding: 0;
+            div.card {
+                margin: 2%;
+                div.green {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

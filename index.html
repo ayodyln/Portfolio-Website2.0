@@ -21,6 +21,15 @@
                     <img src="img/Logo2.svg" alt="Logo" class="svg-logo">
                 </div>
                 <button id="btn" class="ac">&#9776;</button>
+                <div class="largeNav-list">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="nav-list">
                 <ul class="hide" id="ul-nav">
@@ -37,22 +46,27 @@
 
     <div id="mainWrapper">
         <main class="clearFix">
-            <div id="landing-section">
-                <div class="landing-text">
-                    <h1>Dylan Smith</h1>
-                    <h2>Front-end Web Developer</h2>
-                    <h3>Student</h3>
-                    <button id="about-btn" data-panel="aboutBtn">See my work <i
-                            class="fas fa-angle-double-right"></i></button>
+            <div id="landingSectionWrapper">
+                <div id="landing-section">
+                    <div class="landing-text">
+                        <h1>Dylan Smith</h1>
+                        <h2>Front-end Web Developer</h2>
+                        <h3>Student of Utah Valley University</h3>
+                        <button id="about-btn" data-panel="aboutBtn">See my work <i
+                                class="fas fa-angle-double-right"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <div id="about-section">
-                <p>
-                    I'm a front-end web developer that loves to develop the ideas of others.
-                    Utalizing my skills of web-languages and design skills as well, enables me to help bring those ideas
-                    to life and usable by everyone.
-                </p>
+            <div id="aboutSectionWrapper">
+                <div id="about-section">
+                    <p>
+                        I'm a front-end web developer that loves to develop the ideas of others.
+                        Utalizing my skills of web-languages and design skills as well, enables me to help bring those
+                        ideas
+                        to life and usable by everyone.
+                    </p>
+                </div>
             </div>
 
             <div id="recent-work" data-panel="recentWork">
@@ -87,7 +101,26 @@
             </div>
 
             <div id="contact">
-                Placeholder
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Your Role: <select name="role[]" multiple>
+                                <option value="leader">Leader</option>
+                                <option value="follower">Follower</option>
+                            </select></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
             </div>
         </main>
     </div>

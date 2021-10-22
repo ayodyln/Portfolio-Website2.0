@@ -486,6 +486,10 @@ div#navWrapper nav div.visible-nav button {
   margin: 0;
 }
 
+div#navWrapper nav div.visible-nav div.largeNav-list {
+  display: none;
+}
+
 div#navWrapper nav div.nav-list {
   text-align: end;
   padding: 0 2%;
@@ -516,11 +520,7 @@ div#navWrapper nav div.nav-list ul li.active a {
   color: white;
 }
 
-div#navWrapper nav div.nav-list ul.hide {
-  display: none;
-}
-
-div#mainWrapper main div#landing-section {
+div#mainWrapper main div#landingSectionWrapper div#landing-section {
   background-image: url(../img/logo-background-320x700.svg);
   background-repeat: no-repeat;
   background-size: fit;
@@ -529,7 +529,7 @@ div#mainWrapper main div#landing-section {
   height: 75vh;
 }
 
-div#mainWrapper main div#landing-section div.landing-text {
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,14 +543,14 @@ div#mainWrapper main div#landing-section div.landing-text {
   height: 100%;
 }
 
-div#mainWrapper main div#landing-section div.landing-text h1,
-div#mainWrapper main div#landing-section div.landing-text h2,
-div#mainWrapper main div#landing-section div.landing-text h3 {
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text h1,
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text h2,
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text h3 {
   margin: 1% 2%;
   color: white;
 }
 
-div#mainWrapper main div#landing-section div.landing-text button {
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text button {
   text-align: left;
   width: 45%;
   height: 44px;
@@ -564,7 +564,7 @@ div#mainWrapper main div#landing-section div.landing-text button {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-div#mainWrapper main div#landing-section div.landing-text button i {
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text button i {
   margin-left: 0.5rem;
 }
 
@@ -579,6 +579,11 @@ div#mainWrapper main div#about-section p {
   letter-spacing: 1px;
 }
 
+div#mainWrapper main div#recent-work {
+  max-width: 70rem;
+  margin: auto;
+}
+
 div#mainWrapper main div#recent-work h2 {
   padding: 0 2%;
 }
@@ -586,68 +591,173 @@ div#mainWrapper main div#recent-work h2 {
 div#mainWrapper main div#recent-work div.cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   padding: 0 2%;
 }
 
 div#mainWrapper main div#recent-work div.cards div.card {
-  padding: 2%;
-}
-
-div#mainWrapper main div#recent-work div.cards div.card .green {
-  background-color: green;
-  width: 100%;
-  height: 200px;
-}
-
-div#mainWrapper main div#contact {
-  background-color: green;
-  margin: 2%;
-  width: 100%;
-  height: 150px;
-}
-
-div#footerWrapper footer {
   margin: 2% 0;
   background-color: #191e29;
-}
-
-div#footerWrapper footer div.links {
-  padding-top: 5%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-div#footerWrapper footer div.links a {
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  text-decoration: none;
 }
 
-div#footerWrapper footer p {
-  color: white;
+div#mainWrapper main div#recent-work div.cards div.card h1 {
   text-align: center;
+  color: white;
+}
+
+div#mainWrapper main div#recent-work div.cards div.card .green {
+  background-color: green;
+  width: 100%;
+  height: 100px;
+}
+
+div#mainWrapper main div#recent-work div.cards div.card button.cardBtn {
+  width: 75%;
+  border-radius: 5px;
+  border-style: none;
+  margin: 3%;
+}
+
+div#mainWrapper main div#contact {
+  background-color: #132d46;
+  width: 100%;
+  margin: 5% 0;
+}
+
+div#footerWrapper footer {
+  text-align: center;
+  background-color: #191e29;
+  padding: 2%;
+  color: white;
+}
+
+div#footerWrapper footer div.links {
+  margin: 1%;
+}
+
+div#footerWrapper footer div.links a {
+  color: white;
 }
 
 .clearFix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 560px) {
+  div#mainWrapper main div#recent-work div.cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  div#mainWrapper main div#recent-work div.cards div.card {
+    margin: 2%;
+  }
+  div#mainWrapper main div#recent-work div.cards div.card div.green {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  header,
+  nav,
+  footer {
+    max-width: 70rem;
+    margin: auto;
+  }
+  div#navWrapper nav {
+    position: relative;
+    background-color: white;
+  }
+  div#navWrapper nav div.visible-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1% 2%;
+  }
+  div#navWrapper nav div.visible-nav div.logo {
+    width: 44px;
+  }
+  div#navWrapper nav div.visible-nav button {
+    display: none;
+  }
+  div#navWrapper nav div.visible-nav div.largeNav-list {
+    display: initial;
+  }
+  div#navWrapper nav div.visible-nav div.largeNav-list ul {
+    list-style-type: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    gap: 0 1vw;
+    text-align: center;
+    width: 100%;
+  }
+  div#navWrapper nav div.visible-nav div.largeNav-list ul li {
+    margin: 0 2%;
+    width: 5.5rem;
+  }
+  div#navWrapper nav div.visible-nav div.largeNav-list ul li a {
+    width: 100%;
+    color: #191e29;
+    text-decoration: none;
+  }
+  div#navWrapper nav div.nav-list {
+    display: none;
+  }
+  div#mainWrapper {
+    width: 100%;
+  }
+  div#mainWrapper main div#landingSectionWrapper {
+    width: 100%;
+    background-color: #191e29;
+  }
+  div#mainWrapper main div#landingSectionWrapper div#landing-section {
+    margin: auto;
+    max-width: 70rem;
+  }
+  div#mainWrapper main div#aboutSectionWrapper {
+    width: 100%;
+    background-color: #2c3549;
+  }
+  div#mainWrapper main div#aboutSectionWrapper div#about-section {
+    max-width: 70rem;
+    margin: auto;
+  }
+  div#mainWrapper main div#recent-work div.cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 0 1%;
+  }
+  div#mainWrapper main div#recent-work div.cards div.card {
+    margin: 2%;
+  }
+  div#mainWrapper main div#recent-work div.cards div.card div.green {
+    height: 150px;
+  }
 }
