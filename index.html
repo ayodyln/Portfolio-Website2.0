@@ -39,6 +39,11 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Resume</a></li>
                 </ul>
+                <div class="links hide" id="nav-social-links">
+                    <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ayodyln/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </nav>
     </div>
@@ -100,27 +105,30 @@
                 </div>
             </div>
 
-            <div id="contact">
-                <h2>Contact Me! <i class="fas fa-paper-plane"></i></h2>
-                <form name="contact" method="POST" data-netlify="true" id="myForm" data-netlify-recaptcha="true"
-                    action="pages/thanks.html">
-                    <p>
-                        <label>Your Name</label>
-                        <input type="text" name="name" placeholder="Jon Doe" required/>
-                    </p>
-                    <p>
-                        <label>Your Email</label>
-                        <input type="email" name="email" placeholder="your@email.com" required/>
-                    </p>
-                    <p>
-                        <label>Message</label>
-                        <textarea name="message" placeholder="lets work together!" class="text-area" required></textarea>
-                    </p>
-                    <div data-netlify-recaptcha="true"></div>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </form>
+            <div id="contactWrapper">
+                <div id="contact">
+                    <h2>Contact Me! <i class="fas fa-paper-plane"></i></h2>
+                    <form name="contact" method="POST" data-netlify="true" id="myForm" data-netlify-recaptcha="true"
+                        action="pages/thanks.html">
+                        <p class="nameArea">
+                            <label>Your Name</label>
+                            <input type="text" name="name" placeholder="Jon Doe" required />
+                        </p>
+                        <p class="emailArea">
+                            <label>Your Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required />
+                        </p>
+                        <p class="textarea">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="lets work together!" class="text-area"
+                                required></textarea>
+                        </p>
+                        <div data-netlify-recaptcha="true"></div>
+                        <p class="btn">
+                            <button type="submit">SUBMIT</button>
+                        </p>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
@@ -129,13 +137,25 @@
     <div id="footerWrapper">
         <footer class="clearFix">
             <div class="links">
-                <a href="https://www.dylnsworks.com/"><i class="fas fa-portrait"></i> Old Portfolio</i></a>
-                <a href="https://github.com/ayodyln"><i class="fab fa-github"></i> github</a>
+                <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ayodyln/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.dylnsworks.com/"><i class="fas fa-portrait"></i></i></a>
             </div>
-            <p>&copy Dylan Smith</p>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <p>&copy Dylan Smith 2021</p>
         </footer>
     </div>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/index.js" type="module"></script>

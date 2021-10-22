@@ -1,16 +1,18 @@
 header,
 nav,
-footer {
+footer,
+div#contact {
   max-width: 70rem;
   margin: auto;
 }
 
 //Nav/Header
 div#navWrapper {
-  // scroll-behavior: auto;
+  width: 100%;
   nav {
     position: relative;
     background-color: white;
+    box-shadow: none;
     div.visible-nav {
       display: flex;
       justify-content: space-between;
@@ -61,6 +63,25 @@ div#mainWrapper {
       div#landing-section {
         margin: auto;
         max-width: 70rem;
+
+        div.landing-text {
+          h1 {
+            font-size: 4rem;
+          }
+          h2 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+          button {
+            width: 30%;
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+          }
+        }
       }
     }
 
@@ -85,5 +106,55 @@ div#mainWrapper {
         }
       }
     }
+
+    div#contactWrapper {
+      width: 100%;
+      background-color: lighten($primaryDark, 10%);
+      div#contact {
+        width: 100%;
+        padding: 2% 0;
+        h2 {
+          margin-bottom: 2%;
+        }
+        form#myForm {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "yourName email"
+            "msg msg"
+            "submit .";
+          gap: 1%;
+          p.nameArea {
+            margin: 0;
+            grid-area: yourName;
+          }
+          p.emailArea {
+            margin: 0;
+            grid-area: email;
+          }
+          p.textarea {
+            margin: 0;
+            grid-area: msg;
+            padding: 2% 0;
+          }
+          p.btn {
+            margin: 0;
+            grid-area: submit;
+            padding: 2% 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Footer
+div#footerWrapper {
+  margin-top: 2%;
+  width: 100%;
+  background-color: $primaryDark;
+  footer {
+    max-width: 40%;
   }
 }

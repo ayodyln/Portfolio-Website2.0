@@ -6,6 +6,7 @@ const hamburgerBtn = document.getElementById("btn");
 hamburgerBtn.addEventListener("click", () => {
   console.log("✔️");
   document.getElementById("ul-nav").classList.toggle("hide");
+  document.getElementById("nav-social-links").classList.toggle("hide");
 });
 
 // poplulatingDOM
@@ -27,5 +28,3 @@ $(document).ready(function () {
     console.log(cardId);
   });
 });
-
-

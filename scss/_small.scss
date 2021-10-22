@@ -23,6 +23,7 @@ body {
 //Nav/Header
 div#navWrapper {
   // scroll-behavior: auto;
+  width: 100%;
   nav {
     position: fixed;
     top: 0;
@@ -66,7 +67,7 @@ div#navWrapper {
             padding: 0.8rem 2%;
             text-decoration: none;
             color: white;
-            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
           }
 
           a:hover {
@@ -81,9 +82,21 @@ div#navWrapper {
         }
       }
 
-      ul.hide {
+      div.links {
+        padding: 5%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        a {
+          color: white;
+          font-size: 2rem;
+        }
+      }
+
+      ul.hide, div.hide {
         display: none;
       }
+
     }
   }
 }
@@ -92,6 +105,7 @@ div#navWrapper {
 div#mainWrapper {
   main {
     // Landing-section
+    padding-bottom: 0;
     div#landingSectionWrapper {
       div#landing-section {
         background-image: url(../img/logo-background-320x700.svg);
@@ -137,6 +151,10 @@ div#mainWrapper {
     div#about-section {
       padding: 2%;
       background-color: lighten($primaryDark, 10%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
       p {
         color: white;
         text-align: center;
@@ -185,7 +203,7 @@ div#mainWrapper {
     div#contact {
       background-color: lighten($primaryDark, 10%);
       width: 100%;
-      margin: 5% 0;
+      margin-top: 5%;
       padding: 5% 0;
       h2 {
         color: white;
@@ -200,10 +218,27 @@ div#mainWrapper {
           display: flex;
           flex-direction: column;
           color: white;
-
+          input {
+            margin-top: 1%;
+            border-radius: 5px;
+            padding: 2%;
+            border-style: none;
+          }
           textarea.text-area {
+            padding: 2%;
             height: 10rem;
             width: 100%;
+            margin-top: 1%;
+            border-radius: 5px;
+            border-style: none;
+          }
+
+          button {
+            width: 50%;
+            padding: 2%;
+            border-radius: 5px;
+            border-style: none;
+            cursor: pointer;
           }
         }
       }
@@ -213,16 +248,53 @@ div#mainWrapper {
 
 //Footer
 div#footerWrapper {
+  margin-top: 2%;
   footer {
-    text-align: center;
     background-color: $primaryDark;
     padding: 2%;
     color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    
     div.links {
       margin: 1%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
       a {
         color: white;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        
+        i {
+          margin: 3%;
+          font-size: 2rem;
+        }
       }
+    }
+
+    div.footerNav {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        li {
+          list-style-type: none;
+          margin: 0 3.5%;
+          
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+
+    p {
+      text-align: center;
     }
   }
 }
