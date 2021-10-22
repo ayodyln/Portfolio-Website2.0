@@ -101,17 +101,18 @@
             </div>
 
             <div id="contact">
-                <form name="contact" method="POST" data-netlify="true" id="myForm">
+                <form name="contact" method="POST" data-netlify="true" id="myForm" data-netlify-recaptcha="true"
+                    action="pages/thanks.html">
                     <p>
                         <label>Your Name: <input type="text" name="name" /></label>
                     </p>
                     <p>
-                        <label>Your Email: <input type="email" name="email"/></label>
+                        <label>Your Email: <input type="email" name="email" /></label>
                     </p>
-                    
                     <p>
                         <label>Message: <textarea name="message"></textarea></label>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <button type="submit">Send</button>
                     </p>
