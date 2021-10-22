@@ -646,6 +646,26 @@ div#mainWrapper main div#contact {
   margin: 5% 0;
 }
 
+div#mainWrapper main div#contact form#myForm {
+  padding: 2%;
+}
+
+div#mainWrapper main div#contact form#myForm p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+div#mainWrapper main div#contact form#myForm p textarea.text-area {
+  height: 10rem;
+  width: 100%;
+}
+
 div#footerWrapper footer {
   text-align: center;
   background-color: #191e29;

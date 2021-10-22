@@ -184,9 +184,21 @@ div#mainWrapper {
     div#contact {
       background-color: $secondaryDark;
       width: 100%;
-      
       margin: 5% 0;
 
+      form#myForm {
+        padding: 2%;
+        p {
+          display: flex;
+          flex-direction: column;
+          color: white;
+
+          textarea.text-area {
+            height: 10rem;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
