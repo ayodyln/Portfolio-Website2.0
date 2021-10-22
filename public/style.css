@@ -461,6 +461,8 @@ div#navWrapper nav {
   top: 0;
   width: 100%;
   background-color: white;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 div#navWrapper nav div.visible-nav {
@@ -641,13 +643,22 @@ div#mainWrapper main div#recent-work div.cards div.card button.cardBtn {
 }
 
 div#mainWrapper main div#contact {
-  background-color: #132d46;
+  background-color: #2c3549;
   width: 100%;
   margin: 5% 0;
+  padding: 5% 0;
+}
+
+div#mainWrapper main div#contact h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 2%;
 }
 
 div#mainWrapper main div#contact form#myForm {
-  padding: 2%;
+  padding: 0 2%;
+  margin: 0;
 }
 
 div#mainWrapper main div#contact form#myForm p {

@@ -101,19 +101,20 @@
             </div>
 
             <div id="contact">
+                <h2>Contact Me! <i class="fas fa-paper-plane"></i></h2>
                 <form name="contact" method="POST" data-netlify="true" id="myForm" data-netlify-recaptcha="true"
                     action="pages/thanks.html">
                     <p>
                         <label>Your Name</label>
-                        <input type="text" name="name" placeholder="Jon Doe"/>
+                        <input type="text" name="name" placeholder="Jon Doe" required/>
                     </p>
                     <p>
-                        <label>Your Email:</label>
-                        <input type="email" name="email" placeholder="your@email.com"/>
+                        <label>Your Email</label>
+                        <input type="email" name="email" placeholder="your@email.com" required/>
                     </p>
                     <p>
-                        <label>Message:</label>
-                        <textarea name="message" placeholder="lets work together!" class="text-area"></textarea>
+                        <label>Message</label>
+                        <textarea name="message" placeholder="lets work together!" class="text-area" required></textarea>
                     </p>
                     <div data-netlify-recaptcha="true"></div>
                     <p>
