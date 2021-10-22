@@ -41,49 +41,53 @@
                 <div class="landing-text">
                     <h1>Dylan Smith</h1>
                     <h2>Front-end Web Developer</h2>
-                    <button id="about-btn">See my work <i class="fas fa-angle-double-right"></i></button>
+                    <h3>Student</h3>
+                    <button id="about-btn" data-panel="aboutBtn">See my work <i
+                            class="fas fa-angle-double-right"></i></button>
                 </div>
             </div>
 
             <div id="about-section">
-                <p>I'm a front-end web developer that loves to develop the ideas of others.
-                    Utalizing my skills of web-languages and some design as well, enables me to help bring those ideas
-                    to life and usable by everyone.</p>
+                <p>
+                    I'm a front-end web developer that loves to develop the ideas of others.
+                    Utalizing my skills of web-languages and design skills as well, enables me to help bring those ideas
+                    to life and usable by everyone.
+                </p>
             </div>
 
-            <div id="recent-work">
+            <div id="recent-work" data-panel="recentWork">
                 <h2>My work</h2>
                 <div class="cards">
                     <div class="card">
                         <h1>Title</h1>
                         <div class="green"></div>
-                        <button>Learn more</button>
+                        <button class="cardBtn" data-panel="card1">Learn more</button>
+                    </div>
+                    <div class="card parent">
+                        <h1>Title</h1>
+                        <div class="green"></div>
+                        <button class="cardBtn" data-panel="card2">Learn more</button>
                     </div>
                     <div class="card">
                         <h1>Title</h1>
                         <div class="green"></div>
-                        <button>Learn more</button>
+                        <button class="cardBtn special" data-panel="card3">Learn more</button>
                     </div>
                     <div class="card">
                         <h1>Title</h1>
                         <div class="green"></div>
-                        <button>Learn more</button>
+                        <button class="cardBtn" data-panel="card4">Learn more</button>
                     </div>
                     <div class="card">
                         <h1>Title</h1>
                         <div class="green"></div>
-                        <button>Learn more</button>
-                    </div>
-                    <div class="card">
-                        <h1>Title</h1>
-                        <div class="green"></div>
-                        <button>Learn more</button>
+                        <button class="cardBtn" data-panel="card5">Learn more</button>
                     </div>
                 </div>
             </div>
 
             <div id="contact">
-                
+                Placeholder
             </div>
         </main>
     </div>
@@ -98,7 +102,10 @@
             <p>&copy Dylan Smith</p>
         </footer>
     </div>
-    <script src="js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/index.js" type="module"></script>
 </body>
 
 </html>
