@@ -17,9 +17,9 @@ $(document).ready(function () {
 
   $("#btn").on("click", function () {
     console.log("✅");
-    $("#ul-nav").slideToggle("slow", function () {});
+    $("#ul-nav").slideToggle();
+    
   });
-
   
 
   //   example of DRY coding in jquery
