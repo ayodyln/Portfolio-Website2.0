@@ -27,4 +27,9 @@ $(document).ready(function () {
     }
     console.log(cardId);
   });
+
+  $(".cards").slick({
+    dots: true,
+    arrows: false
+  });
 });
