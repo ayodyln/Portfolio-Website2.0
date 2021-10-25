@@ -169,6 +169,7 @@ div#mainWrapper {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         padding: 5% 0;
+
         div.card {
           background-color: white;
           margin: 1%;
@@ -178,73 +179,74 @@ div#mainWrapper {
           display: flex;
           flex-direction: column;
 
-          div.card-header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+          div.wrapper {
             background-color: white;
-            margin: 0;
-            border-radius: 10px 10px 0 0;
-            padding: 2% 2%;
-            div {
+            border-radius: 10px;
+            div.card-header {
               display: flex;
               flex-direction: column;
-              align-items: center;
-              i {
-                font-size: 3rem;
+              justify-content: center;
+              margin: 0;
+              padding: 2% 2%;
+              div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                i {
+                  font-size: 3rem;
+                  color: $primaryDark;
+                }
+              }
+              h2 {
+                text-align: center;
+                margin: 3% 0;
                 color: $primaryDark;
               }
+              p {
+                text-align: center;
+                margin: 0;
+              }
             }
-            h2 {
+            div.secondary-header {
               text-align: center;
-              margin: 3% 0;
-              color: $primaryDark;
+
+              margin: 0;
+              h3 {
+                color: $primaryDark;
+              }
+              p i {
+                font-size: 2rem;
+                margin: 0 2%;
+              }
+              p {
+                i.fa-html5 {
+                  color: #e34417;
+                }
+                i.fa-css3-alt {
+                  color: #264de4;
+                }
+                i.fa-sass {
+                  color: #c76494;
+                }
+                i.fa-js {
+                  color: darken(#efd81d, 2%);
+                }
+              }
             }
-            p {
+            div.card-footer {
               text-align: center;
               margin: 0;
-            }
-          }
-          div.secondary-header {
-            text-align: center;
-            background-color: white;
-            margin: 0;
-            h3 {
-              color: $primaryDark;
-            }
-            p i {
-              font-size: 2rem;
-              margin: 0 2%;
-            }
-            p {
-              i.fa-html5 {
-                color: #e34417;
-              }
-              i.fa-css3-alt {
-                color: #264de4;
-              }
-              i.fa-sass {
-                color: #c76494;
-              }
-              i.fa-js {
-                color: darken(#efd81d, 2%);
-              }
-            }
-          }
-          div.card-footer {
-            text-align: center;
-            background-color: white;
-            margin: 0;
-            border-radius: 0 0 10px 10px;
-            h3 {
-              color: $primaryDark;
-            }
-            ul {
-              list-style-type: none;
-              padding: 0;
 
-              li {
-                margin: 0.5rem 0;
+              h3 {
+                color: $primaryDark;
+              }
+              ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                  margin: 0.5rem 0;
+                }
               }
             }
           }

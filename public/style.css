@@ -649,7 +649,12 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card {
           flex-direction: column;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper {
+  background-color: white;
+  border-radius: 10px;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,13 +665,11 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-h
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
   margin: 0;
-  border-radius: 10px 10px 0 0;
   padding: 2% 2%;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header div {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,70 +682,67 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-h
           align-items: center;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header div i {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header div i {
   font-size: 3rem;
   color: #191e29;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header h2 {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header h2 {
   text-align: center;
   margin: 3% 0;
   color: #191e29;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header p {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header p {
   text-align: center;
   margin: 0;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header {
   text-align: center;
-  background-color: white;
   margin: 0;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header h3 {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header h3 {
   color: #191e29;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i {
   font-size: 2rem;
   margin: 0 2%;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-html5 {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i.fa-html5 {
   color: #e34417;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-css3-alt {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i.fa-css3-alt {
   color: #264de4;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-sass {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i.fa-sass {
   color: #c76494;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-js {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i.fa-js {
   color: #eed613;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer {
   text-align: center;
-  background-color: white;
   margin: 0;
-  border-radius: 0 0 10px 10px;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer h3 {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer h3 {
   color: #191e29;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer ul {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer ul li {
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul li {
   margin: 0.5rem 0;
 }
 
