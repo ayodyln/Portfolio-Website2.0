@@ -15,8 +15,6 @@ import { classProjects } from "./projects/class-work.js";
 $(document).ready(function () {
   console.log("🙃");
 
-  $("#ul-nav").is(":hidden");
-
   $("#btn").on("click", function () {
     console.log("✅");
     $("#ul-nav").slideToggle();
@@ -38,7 +36,6 @@ $(document).ready(function () {
   $(".cards").slick({
     dots: true,
     arrows: false,
-    infinite: true,
     autoplay: true,
     autoplaySpeed: 30000,
     cssEase: "ease",
@@ -53,16 +50,16 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 560,
+        breakpoint: 559,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 1028,
+        breakpoint: 1027,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },

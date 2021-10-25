@@ -930,20 +930,6 @@ div#footerWrapper footer p a {
   clear: both;
 }
 
-@media only screen and (min-width: 560px) {
-  div#mainWrapper main div#recent-work div.cards {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    padding: 0;
-  }
-  div#mainWrapper main div#recent-work div.cards div.card {
-    margin: 2%;
-  }
-  div#mainWrapper main div#recent-work div.cards div.card div.green {
-    height: 150px;
-  }
-}
-
 @media only screen and (min-width: 1028px) {
   header,
   nav,
@@ -1045,16 +1031,8 @@ div#footerWrapper footer p a {
     max-width: 70rem;
     margin: auto;
   }
-  div#mainWrapper main div#recent-work div.cards {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    padding: 0 1%;
-  }
   div#mainWrapper main div#recent-work div.cards div.card {
-    margin: 2%;
-  }
-  div#mainWrapper main div#recent-work div.cards div.card div.green {
-    height: 150px;
+    margin: 0 5px;
   }
   div#mainWrapper main div#contactWrapper {
     width: 100%;

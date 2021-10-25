@@ -96,12 +96,12 @@ div#mainWrapper {
 
     div#recent-work {
       div.cards {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0 1%;
+        
+        
         div.card {
-          margin: 2%;
+          margin: 0 5px;
           div.green {
-            height: 150px;
+            
           }
         }
       }
