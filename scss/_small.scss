@@ -114,13 +114,14 @@ div#mainWrapper {
         background-size: fit;
         background-position: center;
         background-color: $primaryDark;
-        height: 75vh;
+        height: 95vh;
 
         div.landing-text {
           display: flex;
           flex-direction: column;
           justify-content: center;
           height: 100%;
+          padding: 0 2%;
 
           h1,
           h3,
@@ -156,17 +157,96 @@ div#mainWrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        color: white;
         p {
-          color: white;
           text-align: center;
           letter-spacing: 1px;
         }
       }
 
       div.skills-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        padding: 5% 0;
         div.card {
+          background-color: white;
+          margin: 1%;
+          padding: 3%;
+          border-radius: 10px;
+          background-color: $primaryDark;
+          display: flex;
+          flex-direction: column;
+
           div.card-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            margin: 0;
+            border-radius: 10px 10px 0 0;
+            padding: 2% 2%;
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              i {
+                font-size: 3rem;
+                color: $primaryDark;
+              }
+            }
+            h2 {
+              text-align: center;
+              margin: 3% 0;
+              color: $primaryDark;
+            }
+            p {
+              text-align: center;
+              margin: 0;
+            }
+          }
+          div.secondary-header {
+            text-align: center;
+            background-color: white;
+            margin: 0;
+            h3 {
+              color: $primaryDark;
+            }
+            p i {
+              font-size: 2rem;
+              margin: 0 2%;
+            }
+            p {
+              i.fa-html5 {
+                color: #e34417;
+              }
+              i.fa-css3-alt {
+                color: #264de4;
+              }
+              i.fa-sass {
+                color: #c76494;
+              }
+              i.fa-js {
+                color: darken(#efd81d, 2%);
+              }
+            }
+          }
+          div.card-footer {
+            text-align: center;
+            background-color: white;
+            margin: 0;
+            border-radius: 0 0 10px 10px;
+            h3 {
+              color: $primaryDark;
+            }
+            ul {
+              list-style-type: none;
+              padding: 0;
+
+              li {
+                margin: 0.5rem 0;
+              }
+            }
           }
         }
       }
@@ -177,20 +257,20 @@ div#mainWrapper {
       margin: auto;
       h2 {
         padding: 0 2%;
+        color: $primaryDark;
       }
       div.cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
         padding: 0 2%;
+
         div.card {
-          margin: 2% 0;
+          margin: 0 1px;
           background-color: $primaryDark;
           border-radius: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+
           h1 {
             text-align: center;
             color: white;
@@ -258,7 +338,6 @@ div#mainWrapper {
 
 //Footer
 div#footerWrapper {
-  margin-top: 2%;
   footer {
     background-color: $primaryDark;
     padding: 2%;
@@ -305,6 +384,9 @@ div#footerWrapper {
 
     p {
       text-align: center;
+      a {
+        color: white;
+      }
     }
   }
 }

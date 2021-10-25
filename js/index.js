@@ -30,6 +30,35 @@ $(document).ready(function () {
 
   $(".cards").slick({
     dots: true,
-    arrows: false
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 30000,
+    cssEase: "ease",
+    lazyLoad: "ondemand",
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1028,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });

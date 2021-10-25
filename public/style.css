@@ -557,7 +557,7 @@ div#mainWrapper main div#landingSectionWrapper div#landing-section {
   background-size: fit;
   background-position: center;
   background-color: #191e29;
-  height: 75vh;
+  height: 95vh;
 }
 
 div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text {
@@ -572,6 +572,7 @@ div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-t
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  padding: 0 2%;
 }
 
 div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text h1,
@@ -615,12 +616,134 @@ div#mainWrapper main div#aboutSectionWrapper div#about-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div#about-section p {
-  color: white;
   text-align: center;
   letter-spacing: 1px;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 5% 0;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card {
+  background-color: white;
+  margin: 1%;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: #191e29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 2% 2%;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header div i {
+  font-size: 3rem;
+  color: #191e29;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header h2 {
+  text-align: center;
+  margin: 3% 0;
+  color: #191e29;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-header p {
+  text-align: center;
+  margin: 0;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header {
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header h3 {
+  color: #191e29;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i {
+  font-size: 2rem;
+  margin: 0 2%;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-html5 {
+  color: #e34417;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-css3-alt {
+  color: #264de4;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-sass {
+  color: #c76494;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.secondary-header p i.fa-js {
+  color: #eed613;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer {
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer h3 {
+  color: #191e29;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.card-footer ul li {
+  margin: 0.5rem 0;
 }
 
 div#mainWrapper main div#recent-work {
@@ -630,20 +753,15 @@ div#mainWrapper main div#recent-work {
 
 div#mainWrapper main div#recent-work h2 {
   padding: 0 2%;
+  color: #191e29;
 }
 
 div#mainWrapper main div#recent-work div.cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
   padding: 0 2%;
 }
 
 div#mainWrapper main div#recent-work div.cards div.card {
-  margin: 2% 0;
+  margin: 0 1px;
   background-color: #191e29;
   border-radius: 10px;
   display: -webkit-box;
@@ -733,10 +851,6 @@ div#mainWrapper main div#contact form#myForm p button {
   cursor: pointer;
 }
 
-div#footerWrapper {
-  margin-top: 2%;
-}
-
 div#footerWrapper footer {
   background-color: #191e29;
   padding: 2%;
@@ -800,6 +914,10 @@ div#footerWrapper footer div.footerNav ul li a {
 
 div#footerWrapper footer p {
   text-align: center;
+}
+
+div#footerWrapper footer p a {
+  color: white;
 }
 
 .clearFix:after {
