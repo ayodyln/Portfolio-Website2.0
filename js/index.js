@@ -15,13 +15,13 @@ import { classProjects } from "./projects/class-work.js";
 $(document).ready(function () {
   console.log("🙃");
 
+  $("#ul-nav").is(":hidden");
+
   $("#btn").on("click", function () {
     console.log("✅");
     $("#ul-nav").slideToggle();
-    
   });
   
-
   //   example of DRY coding in jquery
   $(".cardBtn").on("click", function () {
     var cardId = $(this).attr("data-panel");
