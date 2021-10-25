@@ -99,10 +99,13 @@ div#navWrapper {
       div.hide {
         display: none;
       }
+      
     }
   }
 }
-
+.hide {
+  display: none;
+}
 //Main
 div#mainWrapper {
   main {

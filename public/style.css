@@ -547,6 +547,10 @@ div#navWrapper nav div.nav-list div.hide {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 div#mainWrapper main {
   padding-bottom: 0;
 }

@@ -1,19 +1,26 @@
 import { classProjects } from "./projects/class-work.js";
 
 // Declaring DOM elements
-const hamburgerBtn = document.getElementById("btn");
+// const hamburgerBtn = document.getElementById("btn");
 
-hamburgerBtn.addEventListener("click", () => {
-  console.log("✔️");
-  document.getElementById("ul-nav").classList.toggle("hide");
-  document.getElementById("nav-social-links").classList.toggle("hide");
-});
+// hamburgerBtn.addEventListener("click", () => {
+//   console.log("✔️");
+//   document.getElementById("ul-nav").classList.toggle("hide");
+//   document.getElementById("nav-social-links").classList.toggle("hide");
+// });
 
 // poplulatingDOM
 
 // Jquery
 $(document).ready(function () {
   console.log("🙃");
+
+  $("#btn").on("click", function () {
+    console.log("✅");
+    $('#ul-nav').toggle("slow", function() {
+
+    })
+  });
 
   //   example of DRY coding in jquery
   $(".cardBtn").on("click", function () {
