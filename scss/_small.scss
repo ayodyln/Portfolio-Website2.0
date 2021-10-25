@@ -26,6 +26,7 @@ div#navWrapper {
   width: 100%;
   nav {
     position: fixed;
+    z-index: 3;
     top: 0;
     width: 100%;
     background-color: white;
@@ -165,9 +166,7 @@ div#mainWrapper {
 
       div.skills-card {
         div.card {
-          
           div.card-header {
-
           }
         }
       }
