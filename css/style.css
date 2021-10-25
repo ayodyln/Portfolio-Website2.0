@@ -711,6 +711,7 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i {
   font-size: 2rem;
   margin: 0 2%;
+  scroll-behavior: none;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i.fa-html5 {
