@@ -92,16 +92,23 @@ div#mainWrapper {
         max-width: 70rem;
         margin: auto;
       }
+
+      div.skills-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        div.wrapper {
+          height: 100%;
+        }
+      }
     }
 
     div#recent-work {
       div.cards {
-        
-        
         div.card {
           margin: 0 5px;
           div.green {
-            
           }
         }
       }
