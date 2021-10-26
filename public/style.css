@@ -442,6 +442,7 @@ template {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 /* Apply a natural box layout model to all elements */
