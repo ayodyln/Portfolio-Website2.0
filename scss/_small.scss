@@ -245,11 +245,7 @@ div#mainWrapper {
                 padding: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: auto;
-                width: 100%;
-                li {
-                  margin: 0.5rem 0;
-                }
+                gap: 3px;
               }
             }
           }
@@ -350,12 +346,13 @@ div#footerWrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-
+    
     div.links {
       margin: 1%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
+      
       a {
         color: white;
         display: flex;
@@ -370,11 +367,13 @@ div#footerWrapper {
     }
 
     div.footerNav {
+      width: 100%;
       ul {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
+        
         li {
           list-style-type: none;
           margin: 0 3.5%;

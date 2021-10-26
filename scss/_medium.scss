@@ -1,0 +1,100 @@
+div#mainWrapper {
+  main {
+    // Landing-section
+
+    div#landingSectionWrapper {
+      div#landing-section {
+        div.landing-text {
+          h1,
+          h3,
+          p {
+          }
+          button {
+            i {
+            }
+          }
+        }
+      }
+    }
+
+    div#aboutSectionWrapper {
+      // about-section
+
+      div#about-section {
+      }
+
+      div.skills-card {
+        div.card {
+          div.wrapper {
+            div.card-header {
+            }
+            div.secondary-header {
+            }
+            div.card-footer {
+              ul {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3.5px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div#recent-work {
+      h2 {
+      }
+      div.cards {
+        div.card {
+          h1 {
+          }
+          .green {
+          }
+          button.cardBtn {
+          }
+        }
+      }
+    }
+
+    div#contact {
+      h2 {
+      }
+      form#myForm {
+        p {
+          input {
+          }
+          textarea.text-area {
+          }
+
+          button {
+          }
+        }
+      }
+    }
+  }
+}
+
+//Footer
+div#footerWrapper {
+  footer {
+    place-items: center;
+    div.links {
+      width: 50%;
+    }
+
+    div.footerNav {
+      ul {
+        li {
+          a {
+          }
+        }
+      }
+    }
+
+    p {
+      a {
+      }
+    }
+  }
+}

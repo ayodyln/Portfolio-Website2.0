@@ -738,13 +738,7 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  width: 100%;
-}
-
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul li {
-  margin: 0.5rem 0;
+  gap: 3px;
 }
 
 div#mainWrapper main div#recent-work {
@@ -890,6 +884,10 @@ div#footerWrapper footer div.links a i {
   font-size: 2rem;
 }
 
+div#footerWrapper footer div.footerNav {
+  width: 100%;
+}
+
 div#footerWrapper footer div.footerNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -925,6 +923,21 @@ div#footerWrapper footer p a {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 560px) {
+  div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 3.5px;
+    text-align: center;
+  }
+  div#footerWrapper footer {
+    place-items: center;
+  }
+  div#footerWrapper footer div.links {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1028px) {
