@@ -618,14 +618,10 @@ div#mainWrapper main div#aboutSectionWrapper div#about-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div#about-section p {
-  text-align: center;
   letter-spacing: 1px;
 }
 
@@ -657,6 +653,7 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card {
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper {
   background-color: white;
   border-radius: 10px;
+  padding: 2% 2%;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header {
@@ -671,45 +668,41 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 2% 2%;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header div i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #191e29;
-}
-
-div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header h2 {
-  text-align: center;
-  margin: 3% 0;
-  color: #191e29;
+  margin-right: 5px;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header p {
-  text-align: center;
-  margin: 0;
+  margin: 1% 0;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header {
-  text-align: center;
   margin: 0;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header h3 {
   color: #191e29;
+}
+
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p {
+  text-align: center;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.secondary-header p i {
@@ -734,7 +727,6 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer {
-  text-align: center;
   margin: 0;
 }
 
@@ -745,6 +737,10 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
   list-style-type: none;
   padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul li {
