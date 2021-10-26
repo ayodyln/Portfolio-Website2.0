@@ -62,7 +62,7 @@ div#mainWrapper {
       background-color: $primaryDark;
       div#landing-section {
         margin: auto;
-        max-width: 70rem;
+        height: 80vh;
 
         div.landing-text {
           h1 {
@@ -97,9 +97,23 @@ div#mainWrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        div.card {
 
-        div.wrapper {
-          height: 100%;
+          div.wrapper {
+            height: 100%;
+            div.card-header {
+              height: 10.75rem;
+              justify-content: unset;
+              align-items: unset;
+            }
+            div.card-footer {
+              ul {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+              }
+            }
+          }
+          
         }
       }
     }
@@ -158,10 +172,35 @@ div#mainWrapper {
 
 //Footer
 div#footerWrapper {
-  margin-top: 2%;
   width: 100%;
   background-color: $primaryDark;
   footer {
-    max-width: 40%;
+    max-width: 70%;
+
+    div.links {
+      width: 50%;
+    }
+
+    div.footerNav {
+      max-width: 60%;
+      margin: 1% 0;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+        margin: 0;
+        li {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          a {
+          }
+        }
+      }
+    }
+
+    p {
+      a {
+      }
+    }
   }
 }
