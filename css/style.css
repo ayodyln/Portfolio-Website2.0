@@ -677,16 +677,13 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header div i {
   font-size: 2.5rem;
   color: #191e29;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-header p {
