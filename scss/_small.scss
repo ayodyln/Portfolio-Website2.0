@@ -245,8 +245,9 @@ div#mainWrapper {
                 padding: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
                 li {
-                  
                   margin: 0.5rem 0;
                 }
               }
