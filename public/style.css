@@ -502,7 +502,7 @@ div#navWrapper nav div.visible-nav div.largeNav-list {
 div#navWrapper nav div.nav-list {
   text-align: end;
   padding: 0 2%;
-  background-color: #132d46;
+  background-color: white;
 }
 
 div#navWrapper nav div.nav-list ul {
@@ -515,18 +515,18 @@ div#navWrapper nav div.nav-list ul li a {
   display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
-  color: white;
+  color: #191e29;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 div#navWrapper nav div.nav-list ul li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  color: #191e29;
 }
 
 div#navWrapper nav div.nav-list ul li.active a {
   background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: #191e29;
 }
 
 div#navWrapper nav div.nav-list div.links {
@@ -539,7 +539,7 @@ div#navWrapper nav div.nav-list div.links {
 }
 
 div#navWrapper nav div.nav-list div.links a {
-  color: white;
+  color: #191e29;
   font-size: 2rem;
 }
 
