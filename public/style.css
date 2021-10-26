@@ -948,7 +948,9 @@ div#footerWrapper footer p a {
   header,
   nav,
   footer,
-  div#contact {
+  div#contact,
+  div#landing-section,
+  div.skills-card {
     max-width: 70rem;
     margin: auto;
   }

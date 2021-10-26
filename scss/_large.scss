@@ -1,7 +1,9 @@
 header,
 nav,
 footer,
-div#contact {
+div#contact,
+div#landing-section,
+div.skills-card {
   max-width: 70rem;
   margin: auto;
 }
@@ -56,6 +58,7 @@ div#navWrapper {
 
 div#mainWrapper {
   width: 100%;
+  
   main {
     div#landingSectionWrapper {
       width: 100%;
@@ -97,8 +100,8 @@ div#mainWrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        
         div.card {
-
           div.wrapper {
             height: 100%;
             div.card-header {
@@ -113,12 +116,12 @@ div#mainWrapper {
               }
             }
           }
-          
         }
       }
     }
 
     div#recent-work {
+      
       div.cards {
         div.card {
           margin: 0 5px;
