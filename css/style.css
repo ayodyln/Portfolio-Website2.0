@@ -567,12 +567,15 @@ div#navWrapper nav div.ulDiv ul li {
 }
 
 div#navWrapper nav div.ulDiv ul li a {
+  text-align: right;
+}
+
+div#navWrapper nav div.ulDiv ul li a {
   color: #191e29;
   display: block;
   width: 100%;
   margin: 5px 0;
   height: 32px;
-  text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
