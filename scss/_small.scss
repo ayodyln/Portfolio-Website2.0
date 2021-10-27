@@ -118,8 +118,12 @@ div#navWrapper {
     div.header-nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      padding: 2%;
+
       div.logo {
         position: relative;
+
         img {
           width: 44px;
         }
@@ -179,13 +183,40 @@ div#navWrapper {
       margin: 0;
       padding: 0;
       z-index: 3;
-
+      padding: 0 2%;
       ul {
         list-style-type: none;
         padding: 0;
-
+        margin: 0;
+        li {
+          border-top: 1px solid lighten($primaryDark, 10%);
+        }
         li a {
           color: $primaryDark;
+          display: block;
+          width: 100%;
+          margin: 5px 0;
+          height: 32px;
+
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          text-decoration: none;
+        }
+      }
+
+      div.links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 2%;
+        a {
+          margin: 0 2rem;
+          i {
+            font-size: 2.25rem;
+            color: $primaryDark;
+          }
         }
       }
     }

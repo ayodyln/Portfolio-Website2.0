@@ -480,6 +480,10 @@ div#navWrapper nav div.header-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
 }
 
 div#navWrapper nav div.header-nav div.logo {
@@ -549,14 +553,57 @@ div#navWrapper nav div.ulDiv {
   margin: 0;
   padding: 0;
   z-index: 3;
+  padding: 0 2%;
 }
 
 div#navWrapper nav div.ulDiv ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+div#navWrapper nav div.ulDiv ul li {
+  border-top: 1px solid #2c3549;
 }
 
 div#navWrapper nav div.ulDiv ul li a {
+  color: #191e29;
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-decoration: none;
+}
+
+div#navWrapper nav div.ulDiv div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+div#navWrapper nav div.ulDiv div.links a {
+  margin: 0 2rem;
+}
+
+div#navWrapper nav div.ulDiv div.links a i {
+  font-size: 2.25rem;
   color: #191e29;
 }
 

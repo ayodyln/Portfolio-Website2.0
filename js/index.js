@@ -15,11 +15,6 @@ hamburgerBtn.addEventListener("click", () => {
 $(document).ready(function () {
   console.log("🙃");
 
-  $("#btn").on("click", function () {
-    console.log("✅");
-    $("#ul-nav").slideToggle();
-  });
-
   //   example of DRY coding in jquery
   $(".cardBtn").on("click", function () {
     var cardId = $(this).attr("data-panel");
