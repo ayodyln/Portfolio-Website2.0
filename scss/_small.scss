@@ -190,7 +190,6 @@ div#navWrapper {
         margin: 0;
         li {
           border-top: 1px solid lighten($primaryDark, 10%);
-          a {text-align: right;}
         }
         li a {
           color: $primaryDark;
@@ -200,7 +199,7 @@ div#navWrapper {
           height: 32px;
           display: flex;
           align-items: center;
-          justify-content: right;
+          justify-content: center;
           text-decoration: none;
         }
       }

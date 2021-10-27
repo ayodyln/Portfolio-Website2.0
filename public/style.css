@@ -567,10 +567,6 @@ div#navWrapper nav div.ulDiv ul li {
 }
 
 div#navWrapper nav div.ulDiv ul li a {
-  text-align: right;
-}
-
-div#navWrapper nav div.ulDiv ul li a {
   color: #191e29;
   display: block;
   width: 100%;
@@ -582,9 +578,9 @@ div#navWrapper nav div.ulDiv ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
 }
 
