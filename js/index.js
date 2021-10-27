@@ -1,13 +1,13 @@
 import { classProjects } from "./projects/class-work.js";
 
 // Declaring DOM elements
-// const hamburgerBtn = document.getElementById("btn");
+const hamburgerBtn = document.getElementById("hamburgerBtn");
 
-// hamburgerBtn.addEventListener("click", () => {
-//   console.log("✔️");
-//   document.getElementById("ul-nav").classList.toggle("hide");
-//   document.getElementById("nav-social-links").classList.toggle("hide");
-// });
+hamburgerBtn.addEventListener("click", () => {
+  console.log("✔️");
+  document.getElementById("hamburgerBtn").classList.toggle("open");
+  document.getElementById("ulDiv").classList.toggle("open");
+});
 
 // poplulatingDOM
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     console.log("✅");
     $("#ul-nav").slideToggle();
   });
-  
+
   //   example of DRY coding in jquery
   $(".cardBtn").on("click", function () {
     var cardId = $(this).attr("data-panel");
@@ -61,7 +61,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          
         },
       },
     ],

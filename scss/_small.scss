@@ -22,86 +22,180 @@ body {
 }
 
 //Nav/Header
+// div#navWrapper {
+//   // scroll-behavior: auto;
+//   width: 100%;
+//   nav {
+//     position: fixed;
+//     z-index: 3;
+//     top: 0;
+//     width: 100%;
+//     background-color: white;
+//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+//     div.visible-nav {
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 1% 2%;
+
+//       div.logo {
+//         width: 44px;
+//       }
+//       button {
+//         margin: 0.2rem 2%;
+//         background-color: transparent;
+//         border: none;
+//         font-size: 1.6rem;
+//         color: #555;
+//         margin: 0;
+//         cursor: pointer;
+//       }
+//       div.largeNav-list {
+//         display: none;
+//       }
+//     }
+//     div.nav-list {
+//       text-align: end;
+//       padding: 0 2%;
+//       background-color: white;
+
+//       ul {
+//         list-style-type: none;
+//         padding: 0;
+//         margin: 0;
+
+//         li {
+//           a {
+//             display: block;
+//             padding: 0.8rem 2%;
+//             text-decoration: none;
+//             color: $primaryDark;
+//             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+//           }
+
+//           a:hover {
+//             background-color: rgba(0, 0, 0, 0.4);
+//             color: $primaryDark;
+//           }
+//         }
+
+//         li.active a {
+//           background-color: rgba(0, 0, 0, 0.6);
+//           color: $primaryDark;
+//         }
+//       }
+
+//       div.links {
+//         padding: 5%;
+//         text-align: center;
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         a {
+//           color: $primaryDark;
+//           font-size: 2rem;
+//         }
+//       }
+
+//       ul.hide,
+//       div.hide {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
 div#navWrapper {
-  // scroll-behavior: auto;
+  background-color: white;
   width: 100%;
   nav {
     position: fixed;
     z-index: 3;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    div.visible-nav {
+
+    div.header-nav {
       display: flex;
       justify-content: space-between;
-      padding: 1% 2%;
-
       div.logo {
-        width: 44px;
+        position: relative;
+        img {
+          width: 44px;
+        }
       }
+
       button {
-        margin: 0.2rem 2%;
-        background-color: transparent;
+        position: relative;
+        background: none;
         border: none;
-        font-size: 1.6rem;
-        color: #555;
-        margin: 0;
+        display: inline-block;
+        height: 44px;
+        width: 44px;
         cursor: pointer;
-      }
-      div.largeNav-list {
-        display: none;
+
+        .line {
+          position: absolute;
+          height: 2px;
+          width: 60%;
+          background-color: $primaryDark;
+          border-radius: 2px;
+          transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
+        }
+        .top,
+        .middle,
+        .bottom {
+          left: 20%;
+        }
+        .top {
+          top: 29%;
+        }
+        .middle {
+          top: 48%;
+        }
+        .bottom {
+          top: 67%;
+        }
       }
     }
-    div.nav-list {
-      text-align: end;
-      padding: 0 2%;
+
+    #hamburgerBtn.open {
+      .top {
+        transform: rotate(45deg);
+        top: 48%;
+      }
+      .middle,
+      .bottom {
+        transform: rotate(-45deg);
+        top: 48%;
+      }
+    }
+
+    div.ulDiv {
+      height: 0;
+      overflow: hidden;
+      width: 100%;
       background-color: white;
+      margin: 0;
+      padding: 0;
+      z-index: 3;
 
       ul {
         list-style-type: none;
         padding: 0;
-        margin: 0;
 
-        li {
-          a {
-            display: block;
-            padding: 0.8rem 2%;
-            text-decoration: none;
-            color: $primaryDark;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-          }
-
-          a:hover {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: $primaryDark;
-          }
-        }
-
-        li.active a {
-          background-color: rgba(0, 0, 0, 0.6);
+        li a {
           color: $primaryDark;
         }
       }
+    }
 
-      div.links {
-        padding: 5%;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        a {
-          color: $primaryDark;
-          font-size: 2rem;
-        }
-      }
-
-      ul.hide,
-      div.hide {
-        display: none;
-      }
+    div#ulDiv.open {
+      height: auto;
     }
   }
 }
+
 .hide {
   display: none;
 }
@@ -183,21 +277,20 @@ div#mainWrapper {
           div.wrapper {
             background-color: $primaryDark;
             border-radius: 10px;
-           
 
             div.card-header {
               display: flex;
               flex-direction: column;
               margin: 0;
               color: white;
-              
+
               div {
                 display: flex;
                 align-items: flex-end;
                 width: 100%;
                 border-bottom: solid 1px lighten($primaryDark, 10%);
                 padding: 3%;
-                
+
                 h3 {
                   margin: 0;
                 }

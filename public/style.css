@@ -458,6 +458,7 @@ body {
 }
 
 div#navWrapper {
+  background-color: white;
   width: 100%;
 }
 
@@ -465,87 +466,102 @@ div#navWrapper nav {
   position: fixed;
   z-index: 3;
   top: 0;
+  left: 0;
   width: 100%;
   background-color: white;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-div#navWrapper nav div.visible-nav {
+div#navWrapper nav div.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1% 2%;
 }
 
-div#navWrapper nav div.visible-nav div.logo {
+div#navWrapper nav div.header-nav div.logo {
+  position: relative;
+}
+
+div#navWrapper nav div.header-nav div.logo img {
   width: 44px;
 }
 
-div#navWrapper nav div.visible-nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
+div#navWrapper nav div.header-nav button {
+  position: relative;
+  background: none;
   border: none;
-  font-size: 1.6rem;
-  color: #555;
-  margin: 0;
+  display: inline-block;
+  height: 44px;
+  width: 44px;
   cursor: pointer;
 }
 
-div#navWrapper nav div.visible-nav div.largeNav-list {
-  display: none;
+div#navWrapper nav div.header-nav button .line {
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  background-color: #191e29;
+  border-radius: 2px;
+  -webkit-transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
+  transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
 }
 
-div#navWrapper nav div.nav-list {
-  text-align: end;
-  padding: 0 2%;
+div#navWrapper nav div.header-nav button .top,
+div#navWrapper nav div.header-nav button .middle,
+div#navWrapper nav div.header-nav button .bottom {
+  left: 20%;
+}
+
+div#navWrapper nav div.header-nav button .top {
+  top: 29%;
+}
+
+div#navWrapper nav div.header-nav button .middle {
+  top: 48%;
+}
+
+div#navWrapper nav div.header-nav button .bottom {
+  top: 67%;
+}
+
+div#navWrapper nav #hamburgerBtn.open .top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 48%;
+}
+
+div#navWrapper nav #hamburgerBtn.open .middle,
+div#navWrapper nav #hamburgerBtn.open .bottom {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 48%;
+}
+
+div#navWrapper nav div.ulDiv {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
   background-color: white;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
 }
 
-div#navWrapper nav div.nav-list ul {
+div#navWrapper nav div.ulDiv ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-div#navWrapper nav div.nav-list ul li a {
-  display: block;
-  padding: 0.8rem 2%;
-  text-decoration: none;
-  color: #191e29;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-div#navWrapper nav div.nav-list ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+div#navWrapper nav div.ulDiv ul li a {
   color: #191e29;
 }
 
-div#navWrapper nav div.nav-list ul li.active a {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #191e29;
-}
-
-div#navWrapper nav div.nav-list div.links {
-  padding: 5%;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-div#navWrapper nav div.nav-list div.links a {
-  color: #191e29;
-  font-size: 2rem;
-}
-
-div#navWrapper nav div.nav-list ul.hide,
-div#navWrapper nav div.nav-list div.hide {
-  display: none;
+div#navWrapper nav div#ulDiv.open {
+  height: auto;
 }
 
 .hide {
