@@ -21,88 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-//Nav/Header
-// div#navWrapper {
-//   // scroll-behavior: auto;
-//   width: 100%;
-//   nav {
-//     position: fixed;
-//     z-index: 3;
-//     top: 0;
-//     width: 100%;
-//     background-color: white;
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-//     div.visible-nav {
-//       display: flex;
-//       justify-content: space-between;
-//       padding: 1% 2%;
-
-//       div.logo {
-//         width: 44px;
-//       }
-//       button {
-//         margin: 0.2rem 2%;
-//         background-color: transparent;
-//         border: none;
-//         font-size: 1.6rem;
-//         color: #555;
-//         margin: 0;
-//         cursor: pointer;
-//       }
-//       div.largeNav-list {
-//         display: none;
-//       }
-//     }
-//     div.nav-list {
-//       text-align: end;
-//       padding: 0 2%;
-//       background-color: white;
-
-//       ul {
-//         list-style-type: none;
-//         padding: 0;
-//         margin: 0;
-
-//         li {
-//           a {
-//             display: block;
-//             padding: 0.8rem 2%;
-//             text-decoration: none;
-//             color: $primaryDark;
-//             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-//           }
-
-//           a:hover {
-//             background-color: rgba(0, 0, 0, 0.4);
-//             color: $primaryDark;
-//           }
-//         }
-
-//         li.active a {
-//           background-color: rgba(0, 0, 0, 0.6);
-//           color: $primaryDark;
-//         }
-//       }
-
-//       div.links {
-//         padding: 5%;
-//         text-align: center;
-//         display: grid;
-//         grid-template-columns: repeat(3, 1fr);
-//         a {
-//           color: $primaryDark;
-//           font-size: 2rem;
-//         }
-//       }
-
-//       ul.hide,
-//       div.hide {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
 div#navWrapper {
   background-color: white;
   width: 100%;
@@ -190,6 +108,7 @@ div#navWrapper {
         margin: 0;
         li {
           border-top: 1px solid lighten($primaryDark, 10%);
+          padding: 0.2rem 0;
         }
         li a {
           color: $primaryDark;
@@ -197,6 +116,7 @@ div#navWrapper {
           width: 100%;
           margin: 5px 0;
           height: 32px;
+          font-size: 1.25rem;
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -209,7 +129,7 @@ div#navWrapper {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-bottom: 2%;
+        padding: 1rem;
         a {
           margin: 0 2rem;
           i {
@@ -257,6 +177,7 @@ div#mainWrapper {
             color: white;
           }
           button {
+            cursor: pointer;
             text-align: left;
             width: 45%;
             height: 44px;
@@ -271,6 +192,9 @@ div#mainWrapper {
             i {
               margin-left: 0.5rem;
             }
+          }
+          button:hover {
+            background-color: darken($primaryColor, 5%);
           }
         }
       }
@@ -375,6 +299,10 @@ div#mainWrapper {
             }
           }
         }
+        div.wrapper:hover {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+        }
       }
     }
 
@@ -455,12 +383,21 @@ div#mainWrapper {
             border-radius: 5px;
             border-style: none;
             cursor: pointer;
+            background-color: $primaryColor;
+            color: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+          }
+          button:hover {
+            background-color: darken($primaryColor, 5%);
           }
         }
       }
     }
   }
 }
+
+
 
 //Footer
 div#footerWrapper {
@@ -503,10 +440,11 @@ div#footerWrapper {
         text-align: center;
         li {
           list-style-type: none;
+          padding: 0.5rem 0;
           a {
             text-decoration: none;
             color: white;
-            font-size: 1.05rem;
+            font-size: 1.25rem;
           }
         }
       }

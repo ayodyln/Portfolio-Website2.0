@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2" />
     <link rel="stylesheet" href="../public/style.css">
+    <link rel="shortcut icon" href="../img/Logo2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Dylan Smith Web Dev</title>
 </head>
+
 <body>
+
     <div id="navWrapper">
         <nav class="clearFix">
-            <div class="visible-nav">
-                <div class="logo">
-                    <img src="../img/Logo2.svg" alt="Logo" class="svg-logo">
-                </div>
-                <button id="btn" class="ac">&#9776;</button>
-                <div class="largeNav-list">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Resume</a></li>
-                    </ul>
-                </div>
+            <div class="header-nav">
+                <a href="../index.html">
+                    <div class="logo">
+                        <img src="../img/Logo2.svg" alt="logo" class="svg-logo">
+                    </div>
+                </a>
+
+                <button id="hamburgerBtn">
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
             </div>
-            <div class="nav-list">
-                <ul class="hide" id="ul-nav">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
+
+            <div class="ulDiv" id="ulDiv">
+                <ul class="ul-nav">
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/work.html">Work</a></li>
+                    <li><a href="pages/case_studies.html">Case Studies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Resume</a></li>
                 </ul>
-                <div class="links hide" id="nav-social-links">
+                <div class="links" id="nav-social-links">
                     <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/ayodyln/"><i class="fab fa-instagram"></i></a>
@@ -44,10 +49,18 @@
 
     <div id="mainWrapper">
         <main class="clearFix">
-          
+            <div class="myFace">
+                <img src="" alt="">
+                <h2>Dylan Smith</h2>
+            </div>
+
+            <div class="aboutContainer">
+                <div class="bio">
+                    <p></p>
+                </div>
+            </div>
         </main>
     </div>
-
 
     <div id="footerWrapper">
         <footer class="clearFix">
@@ -55,7 +68,6 @@
                 <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/ayodyln/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.dylnsworks.com/"><i class="fas fa-portrait"></i></i></a>
             </div>
             <div class="footerNav">
                 <ul>
@@ -66,13 +78,10 @@
                     <li><a href="#">Resume</a></li>
                 </ul>
             </div>
-            <p>&copy Dylan Smith 2021</p>
+            <p>&copy Dylan Smith 2021 &bull; <a href="https://www.dylnsworks.com/">Old Portfolio</a></p>
         </footer>
     </div>
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/index.js" type="module"></script>
+    <script src="../js/index.js" type="module"></script>
 </body>
+
 </html>

@@ -564,6 +564,7 @@ div#navWrapper nav div.ulDiv ul {
 
 div#navWrapper nav div.ulDiv ul li {
   border-top: 1px solid #2c3549;
+  padding: 0.2rem 0;
 }
 
 div#navWrapper nav div.ulDiv ul li a {
@@ -572,6 +573,7 @@ div#navWrapper nav div.ulDiv ul li a {
   width: 100%;
   margin: 5px 0;
   height: 32px;
+  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +597,7 @@ div#navWrapper nav div.ulDiv div.links {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-bottom: 2%;
+  padding: 1rem;
 }
 
 div#navWrapper nav div.ulDiv div.links a {
@@ -651,6 +653,7 @@ div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-t
 }
 
 div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text button {
+  cursor: pointer;
   text-align: left;
   width: 45%;
   height: 44px;
@@ -666,6 +669,10 @@ div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-t
 
 div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text button i {
   margin-left: 0.5rem;
+}
+
+div#mainWrapper main div#landingSectionWrapper div#landing-section div.landing-text button:hover {
+  background-color: #01aa7b;
 }
 
 div#mainWrapper main div#aboutSectionWrapper {
@@ -803,6 +810,11 @@ div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrappe
   color: white;
 }
 
+div#mainWrapper main div#aboutSectionWrapper div.skills-card div.wrapper:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 div#mainWrapper main div#recent-work {
   max-width: 70rem;
   margin: auto;
@@ -906,6 +918,14 @@ div#mainWrapper main div#contact form#myForm p button {
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
+  background-color: #01c38d;
+  color: white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+div#mainWrapper main div#contact form#myForm p button:hover {
+  background-color: #01aa7b;
 }
 
 div#footerWrapper footer {
@@ -964,12 +984,13 @@ div#footerWrapper footer div.footerNav ul {
 
 div#footerWrapper footer div.footerNav ul li {
   list-style-type: none;
+  padding: 0.5rem 0;
 }
 
 div#footerWrapper footer div.footerNav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
 }
 
 div#footerWrapper footer p {
