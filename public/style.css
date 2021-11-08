@@ -928,6 +928,10 @@ div#mainWrapper main div#contact form#myForm p button:hover {
   background-color: #01aa7b;
 }
 
+div#mainWrapper main div.workWrapper {
+  margin-top: 5.5rem;
+}
+
 div#footerWrapper footer {
   background-color: #191e29;
   padding: 1% 0;

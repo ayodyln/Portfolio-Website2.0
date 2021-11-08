@@ -301,7 +301,7 @@ div#mainWrapper {
         }
         div.wrapper:hover {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-              0 3px 6px rgba(0, 0, 0, 0.23);
+            0 3px 6px rgba(0, 0, 0, 0.23);
         }
       }
     }
@@ -394,10 +394,14 @@ div#mainWrapper {
         }
       }
     }
+
+    // Work.html Style
+
+    div.workWrapper {
+      margin-top: 5.5rem;
+    }
   }
 }
-
-
 
 //Footer
 div#footerWrapper {
