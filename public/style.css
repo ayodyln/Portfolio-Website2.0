@@ -932,6 +932,47 @@ div#mainWrapper main div.workWrapper {
   margin-top: 5.5rem;
 }
 
+div#mainWrapper main.aboutMain {
+  margin-top: 62px;
+}
+
+div#mainWrapper main.aboutMain div.topSection {
+  background-color: #191e29;
+  padding: 2rem 2%;
+  width: 100%;
+  height: 60vh;
+}
+
+div#mainWrapper main.aboutMain div.topSection div.myFace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+div#mainWrapper main.aboutMain div.topSection div.myFace div.img {
+  background-color: #01c38d;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+div#mainWrapper main.aboutMain div.topSection div.aboutContainer div.bio p {
+  color: white;
+}
+
 div#footerWrapper footer {
   background-color: #191e29;
   padding: 2% 0;
