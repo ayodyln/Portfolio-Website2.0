@@ -55,43 +55,13 @@ div#navWrapper {
         height: 44px;
         width: 44px;
         cursor: pointer;
-
-        .line {
-          position: absolute;
-          height: 2px;
-          width: 60%;
-          background-color: $primaryDark;
-          border-radius: 2px;
-          transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
-        }
-        .top,
-        .middle,
-        .bottom {
-          left: 20%;
-        }
-        .top {
-          top: 29%;
-        }
-        .middle {
-          top: 48%;
-        }
-        .bottom {
-          top: 67%;
+        padding: 0;
+        i#menuIcon {
+          font-size: 44px;
         }
       }
     }
 
-    #hamburgerBtn.open {
-      .top {
-        transform: rotate(45deg);
-        top: 48%;
-      }
-      .middle,
-      .bottom {
-        transform: rotate(-45deg);
-        top: 48%;
-      }
-    }
 
     div.ulDiv {
       height: 0;
@@ -439,6 +409,7 @@ div#mainWrapper {
 
 //Footer
 div#footerWrapper {
+ 
   footer {
     background-color: $primaryDark;
     padding: 2% 0;

@@ -15,6 +15,21 @@ div#navWrapper {
     position: relative;
     background-color: white;
     box-shadow: none;
+
+    div.header-nav {
+      div.logo {
+        img {
+        }
+      }
+
+      button {
+        font-size: 0;
+        i#menuIcon {
+          font-size: 24px;
+        }
+      }
+    }
+
     div.visible-nav {
       display: flex;
       justify-content: space-between;
@@ -58,7 +73,7 @@ div#navWrapper {
 
 div#mainWrapper {
   width: 100%;
-  
+
   main {
     div#landingSectionWrapper {
       width: 100%;
@@ -100,7 +115,7 @@ div#mainWrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        
+
         div.card {
           div.wrapper {
             height: 100%;
@@ -121,7 +136,6 @@ div#mainWrapper {
     }
 
     div#recent-work {
-      
       div.cards {
         div.card {
           margin: 0 5px;

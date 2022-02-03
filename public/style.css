@@ -502,47 +502,11 @@ div#navWrapper nav div.header-nav button {
   height: 44px;
   width: 44px;
   cursor: pointer;
+  padding: 0;
 }
 
-div#navWrapper nav div.header-nav button .line {
-  position: absolute;
-  height: 2px;
-  width: 60%;
-  background-color: #191e29;
-  border-radius: 2px;
-  -webkit-transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
-  transition: all cubic-bezier(0.2, 0.1, 0.2, 1.2) 0.3%;
-}
-
-div#navWrapper nav div.header-nav button .top,
-div#navWrapper nav div.header-nav button .middle,
-div#navWrapper nav div.header-nav button .bottom {
-  left: 20%;
-}
-
-div#navWrapper nav div.header-nav button .top {
-  top: 29%;
-}
-
-div#navWrapper nav div.header-nav button .middle {
-  top: 48%;
-}
-
-div#navWrapper nav div.header-nav button .bottom {
-  top: 67%;
-}
-
-div#navWrapper nav #hamburgerBtn.open .top {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 48%;
-}
-
-div#navWrapper nav #hamburgerBtn.open .middle,
-div#navWrapper nav #hamburgerBtn.open .bottom {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 48%;
+div#navWrapper nav div.header-nav button i#menuIcon {
+  font-size: 44px;
 }
 
 div#navWrapper nav div.ulDiv {
@@ -1091,6 +1055,12 @@ div#footerWrapper footer p a {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  div#navWrapper nav div.header-nav button {
+    font-size: 0;
+  }
+  div#navWrapper nav div.header-nav button i#menuIcon {
+    font-size: 24px;
+  }
   div#navWrapper nav div.visible-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1276,5 +1246,33 @@ div#footerWrapper footer p a {
     padding: 0;
     margin: 0;
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  div#footerWrapper footer {
+    padding: 0.5rem 0;
+  }
+  div#footerWrapper footer div.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div#footerWrapper footer div.footerNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
