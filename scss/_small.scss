@@ -57,11 +57,11 @@ div#navWrapper {
         cursor: pointer;
         padding: 0;
         i#menuIcon {
-          font-size: 44px;
+          font-size: 2rem;
+          color: $primaryDark;
         }
       }
     }
-
 
     div.ulDiv {
       height: 0;
@@ -407,9 +407,46 @@ div#mainWrapper {
   }
 }
 
+//! Article Styling: Podcast Creation
+.articleMain {
+  margin-top: 4rem; // FIX FOR BIGGER SIZES
+  height: auto;
+  div#articleHeader {
+    background: url(../img/articles/Podcast/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
+    height: 9.25rem;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  div#articleNav {
+    padding: 0.5rem;
+    background-color: $SecondaryLight;
+    :nth-child(1) {
+      margin-right: 1rem;
+    }
+    button {
+      background: none;
+      border: none;
+      color: white;
+      height: 44px;
+      width: 4rem;
+      padding: 0;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+  }
+  div#article {
+    section {
+      h3 {
+        color: lighten($color: $primaryDark, $amount: 50);
+      }
+    }
+  }
+}
+
 //Footer
 div#footerWrapper {
- 
   footer {
     background-color: $primaryDark;
     padding: 2% 0;

@@ -506,7 +506,8 @@ div#navWrapper nav div.header-nav button {
 }
 
 div#navWrapper nav div.header-nav button i#menuIcon {
-  font-size: 44px;
+  font-size: 2rem;
+  color: #191e29;
 }
 
 div#navWrapper nav div.ulDiv {
@@ -937,6 +938,48 @@ div#mainWrapper main.aboutMain div.topSection div.aboutContainer div.bio p {
   color: white;
 }
 
+.articleMain {
+  margin-top: 4rem;
+  height: auto;
+}
+
+.articleMain div#articleHeader {
+  background: url(../img/articles/Podcast/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
+  height: 9.25rem;
+  color: white;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.articleMain div#articleNav {
+  padding: 0.5rem;
+  background-color: #696e79;
+}
+
+.articleMain div#articleNav :nth-child(1) {
+  margin-right: 1rem;
+}
+
+.articleMain div#articleNav button {
+  background: none;
+  border: none;
+  color: white;
+  height: 44px;
+  width: 4rem;
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.articleMain div#article section h3 {
+  color: #8a98b7;
+}
+
 div#footerWrapper footer {
   background-color: #191e29;
   padding: 2% 0;
@@ -1042,7 +1085,8 @@ div#footerWrapper footer p a {
   footer,
   div#contact,
   div#landing-section,
-  div.skills-card {
+  div.skills-card,
+  .articleMain {
     max-width: 70rem;
     margin: auto;
   }
