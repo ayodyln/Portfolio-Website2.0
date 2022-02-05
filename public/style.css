@@ -976,8 +976,21 @@ div#mainWrapper main.aboutMain div.topSection div.aboutContainer div.bio p {
   text-align: left;
 }
 
+.articleMain div#article {
+  padding: 0 0.5rem;
+}
+
 .articleMain div#article section h3 {
   color: #8a98b7;
+}
+
+.articleMain div#article .a1 div p span {
+  color: #07aa7f;
+}
+
+.articleMain div#article .a1 div img {
+  width: 100%;
+  height: auto;
 }
 
 div#footerWrapper footer {

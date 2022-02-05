@@ -437,9 +437,24 @@ div#mainWrapper {
     }
   }
   div#article {
+    padding: 0 0.5rem;
     section {
       h3 {
         color: lighten($color: $primaryDark, $amount: 50);
+      }
+    }
+
+    .a1 {
+      div {
+        p {
+          span {
+            color: rgb(7, 170, 127);
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
