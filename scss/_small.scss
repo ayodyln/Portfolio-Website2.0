@@ -442,6 +442,7 @@ div#mainWrapper {
       h3 {
         color: lighten($color: $primaryDark, $amount: 50);
       }
+      
     }
 
     .a1 {
@@ -451,11 +452,13 @@ div#mainWrapper {
             color: rgb(7, 170, 127);
           }
         }
-        img {
-          width: 100%;
-          height: auto;
-        }
+        
       }
+    }
+
+    img#podcastImg {
+      width: 100%;
+      height: auto;
     }
   }
 }

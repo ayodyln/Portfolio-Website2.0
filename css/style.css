@@ -988,7 +988,7 @@ div#mainWrapper main.aboutMain div.topSection div.aboutContainer div.bio p {
   color: #07aa7f;
 }
 
-.articleMain div#article .a1 div img {
+.articleMain div#article img#podcastImg {
   width: 100%;
   height: auto;
 }
