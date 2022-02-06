@@ -1,0 +1,46 @@
+.swiper {
+  width: 50%;
+  cursor: grab;
+}
+
+//! Article Styling: Podcast Creation
+.articleMain {
+  div#articleHeader {
+    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-large.jpg);
+    height: 400px;
+  }
+}
+
+div.swiperTwo {
+  height: 30rem;
+  @for $x from 1 to 3 {
+    div.s#{$x} {
+      grid-template-rows: 10fr 2fr;
+      div#swiperImgWrapper {
+        #sliderImg {
+          width: 60%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+section.a1 {
+  :nth-child(2) {
+    display: flex;
+  }
+}
+
+.iterationDivWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+
+  :nth-child(1) {
+    flex-basis: 40%;
+  }
+  :nth-child(2) {
+    flex-basis: 60%;
+    margin-right: 1rem;
+  }
+}

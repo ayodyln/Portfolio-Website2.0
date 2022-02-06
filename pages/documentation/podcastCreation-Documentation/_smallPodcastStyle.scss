@@ -55,6 +55,7 @@
 //! Swiper Styling
 .swiper {
   width: 100%;
+  cursor: grab;
 }
 
 div.swiperCoverArt {
@@ -155,4 +156,8 @@ div#iterationsDiv {
       margin: 0 1rem;
     }
   }
+}
+
+#anchor {
+  color: rgb(7, 170, 127);
 }
