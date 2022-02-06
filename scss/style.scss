@@ -1,20 +1,21 @@
 @import "normalize";
 @import "variables";
+@import "swiper";
 @import "small";
 
 @media only screen and (min-width: 560px) {
-    @import "medium";
+  @import "medium";
 }
 
 @media only screen and (min-width: 1028px) {
-    @import "large";
+  @import "large";
 }
 
 @media only screen and (min-width: 1536px) {
-    //* Surface Laptop Go 
-    @import "myLaptop";
+  //* Surface Laptop Go
+  @import "myLaptop";
 }
 
 @media only screen and (min-width: 1920px) {
-    @import "myDesktop";
+  @import "myDesktop";
 }

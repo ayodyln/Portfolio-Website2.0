@@ -437,6 +437,110 @@ template {
   display: none;
 }
 
+div.swiperOne {
+  height: auto;
+}
+
+div.swiperOne div.x1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperOne div.x2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo {
+  height: 40rem;
+}
+
+div.swiperTwo div.s1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo div.s2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 /* rules here will be applied to all sizes, medium and large will modify from that */
 /* Prevent adjustments of font size when orientation chagnes, iphones. */
 html {
@@ -944,7 +1048,7 @@ div#mainWrapper main.aboutMain div.topSection div.aboutContainer div.bio p {
 }
 
 .articleMain div#articleHeader {
-  background: url(../img/articles/Podcast/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
+  background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
   height: 9.25rem;
   color: white;
   padding: 0.5rem;
@@ -1070,6 +1174,176 @@ div#footerWrapper footer p a {
   content: "";
   display: table;
   clear: both;
+}
+
+.swiper {
+  width: 100%;
+}
+
+div.swiperCoverArt {
+  height: auto;
+  background-color: #183a5a;
+}
+
+div.swiperCoverArt div.a1 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperCoverArt div.a2 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperCoverArt div.a3 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a3 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne {
+  height: auto;
+}
+
+div.swiperOne div.x1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperOne div.x2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo {
+  height: 40rem;
+}
+
+div.swiperTwo div.s1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s1 div#swiperImgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.swiperTwo div.s1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo div.s2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s2 div#swiperImgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.swiperTwo div.s2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 560px) {

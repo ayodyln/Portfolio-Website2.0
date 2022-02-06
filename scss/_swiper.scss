@@ -1,0 +1,53 @@
+div.swiperOne {
+  height: auto;
+  @for $i from 1 to 3 {
+    div.x#{$i} {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr;
+      background-color: lighten($color: $secondaryDark, $amount: 5);
+      color: white;
+      div#swiperImgWrapper {
+        #sliderImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        margin: 0;
+        background-color: darken($color: $secondaryDark, $amount: 1);
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+div.swiperTwo {
+  height: 40rem;
+  @for $x from 1 to 3 {
+    div.s#{$x} {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr;
+      background-color: lighten($color: $secondaryDark, $amount: 5);
+      color: white;
+      div#swiperImgWrapper {
+        #sliderImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        margin: 0;
+        background-color: darken($color: $secondaryDark, $amount: 1);
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

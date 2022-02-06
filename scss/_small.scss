@@ -412,7 +412,7 @@ div#mainWrapper {
   margin-top: 4rem; // FIX FOR BIGGER SIZES
   height: auto;
   div#articleHeader {
-    background: url(../img/articles/Podcast/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
+    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
     height: 9.25rem;
     color: white;
     padding: 0.5rem;
@@ -442,7 +442,6 @@ div#mainWrapper {
       h3 {
         color: lighten($color: $primaryDark, $amount: 50);
       }
-      
     }
 
     .a1 {
@@ -452,7 +451,6 @@ div#mainWrapper {
             color: rgb(7, 170, 127);
           }
         }
-        
       }
     }
 
@@ -531,3 +529,85 @@ div#footerWrapper {
   display: table;
   clear: both;
 }
+
+//! Swiper Styling
+.swiper {
+  width: 100%;
+}
+
+div.swiperCoverArt {
+  height: auto;
+  background-color: lighten($color: $secondaryDark, $amount: 5);
+  @for $i from 1 to 4 {
+    div.a#{$i} {
+      padding: 0.5rem;
+      color: white;
+      margin-bottom: 2rem;
+      div#swiperImgWrapper {
+        #sliderImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  
+}
+
+div.swiperOne {
+  height: auto;
+  @for $i from 1 to 3 {
+    div.x#{$i} {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr;
+      background-color: lighten($color: $secondaryDark, $amount: 5);
+      color: white;
+      div#swiperImgWrapper {
+        #sliderImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        margin: 0;
+        background-color: darken($color: $secondaryDark, $amount: 1);
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+div.swiperTwo {
+  height: 40rem;
+  @for $x from 1 to 3 {
+    div.s#{$x} {
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr;
+      background-color: lighten($color: $secondaryDark, $amount: 5);
+      color: white;
+      div#swiperImgWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #sliderImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        margin: 0;
+        background-color: darken($color: $secondaryDark, $amount: 1);
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
