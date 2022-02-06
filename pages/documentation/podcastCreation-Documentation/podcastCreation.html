@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../public/style.css" />
-  <link rel="icon" type="image/svg" href="../img/Logo2.svg" />
+  <link rel="stylesheet" href="../../../public/style.css" />
+  <link rel="icon" type="image/svg" href="../../../img/Logo2.svg" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -17,9 +17,9 @@
   <div id="navWrapper">
     <nav class="clearFix">
       <div class="header-nav">
-        <a href="../index.html">
+        <a href="../../../index.html">
           <div class="logo">
-            <img src="../img/Logo2.svg" alt="logo" class="svg-logo" />
+            <img src="../../../img/Logo2.svg" alt="logo" class="svg-logo" />
           </div>
         </a>
 
@@ -30,10 +30,10 @@
 
       <div class="ulDiv" id="ulDiv">
         <ul class="ul-nav">
-          <li><a href="work.html">Work</a></li>
-          <li><a href="case_studies.html">Case Studies</a></li>
-          <li><a href="../index.html/#contact">Contact</a></li>
-          <li><a href="../private/resume-Web.pdf" download>Resume</a></li>
+          <li><a href="../work.html">Work</a></li>
+          <li><a href="../case_studies.html">Case Studies</a></li>
+          <li><a href="../../../index.html/#contact">Contact</a></li>
+          <li><a href="../../../private/resume-Web.pdf" download>Resume</a></li>
         </ul>
         <div class="links" id="nav-social-links">
           <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
@@ -54,9 +54,7 @@
         <button id="podcastListen">Listen</button>
       </div>
       <div id="article">
-
         <h2>The Games & Lore Podcast</h2>
-
         <section class="a1">
           <h3 id="podcastH3"><i class="fas fa-play"></i> Introduction</h3>
           <div>
@@ -87,7 +85,7 @@
                 talking about something I love.
               </p>
             </div>
-            <img id="podcastImg" src="../img/articles/Podcast/drawings/GnL.jpg" alt="Games & Lore Podcast"
+            <img id="podcastImg" src="../../../img/articles/Podcast/drawings/GnL.jpg" alt="Games & Lore Podcast"
               loading="lazy" width="1600" height="500" />
           </div>
         </section>
@@ -120,19 +118,19 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide a1">
                     <div id="swiperImgWrapper">
-                      <img id="podcastImg" src="../img/articles/Podcast/drawings/drawing2.PNG"
+                      <img id="podcastImg" src="../../../img/articles/Podcast/drawings/drawing2.PNG"
                         alt="Games & Lore Podcast" width="1600" height="500" class="swiper-lazy" />
                     </div>
                   </div>
                   <div class="swiper-slide a2">
                     <div id="swiperImgWrapper">
-                      <img id="podcastImg" src="../img/articles/Podcast/drawings/drawing1.PNG"
+                      <img id="podcastImg" src="../../../img/articles/Podcast/drawings/drawing1.PNG"
                         alt="Games & Lore Podcast" width="1600" height="500" class="swiper-lazy" />
                     </div>
                   </div>
                   <div class="swiper-slide a3">
                     <div id="swiperImgWrapper">
-                      <img id="podcastImg" src="../img/articles/Podcast/drawings/drawing3.PNG"
+                      <img id="podcastImg" src="../../../img/articles/Podcast/drawings/drawing3.PNG"
                         alt="Games & Lore Podcast" width="1600" height="500" class="swiper-lazy" />
                     </div>
                   </div>
@@ -177,7 +175,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide x1">
                   <div id="swiperImgWrapper">
-                    <img id="podcastImg" src="../img/articles/Podcast/garageband-SC/gbScreenshot.PNG"
+                    <img id="podcastImg" src="../../../img/articles/Podcast/garageband-SC/gbScreenshot.PNG"
                       alt="Games & Lore Podcast" width="1600" height="500" class="swiper-lazy" />
                   </div>
                   <p>
@@ -187,7 +185,7 @@
                 </div>
                 <div class="swiper-slide x2">
                   <div id="swiperImgWrapper">
-                    <img id="podcastImg" src="../img/articles/Podcast/garageband-SC/gbScreenshot2.PNG"
+                    <img id="podcastImg" src="../../../img/articles/Podcast/garageband-SC/gbScreenshot2.PNG"
                       alt="Games & Lore Podcast" width="1600" height="500" class="swiper-lazy" />
                   </div>
                   <p>
@@ -207,18 +205,20 @@
           </h3>
           <div>
             <div>
-              <p>My testing process was as follows:</p>
-              <ul>
-                <li>Record Audio</li>
-                <li>Play audio back and fix if need be</li>
-                <li>Test audio levels on multiple listening devices</li>
-                <li>Test FX on intro/outro music and adjust audio levels</li>
-                <li>Playback the entire Podcast on my iPad</li>
-                <li>
-                  Upload podcast to Anchor.fm and listened to the audio via
-                  their website
-                </li>
-              </ul>
+              <div id="iterationsDiv">
+                <p>My testing process was as follows:</p>
+                <ul id="iterationUL">
+                  <li>Record Audio</li>
+                  <li>Play audio back and fix if need be</li>
+                  <li>Test audio levels on multiple listening devices</li>
+                  <li>Test FX on intro/outro music and adjust audio levels</li>
+                  <li>Playback the entire Podcast on my iPad</li>
+                  <li>
+                    Upload podcast to Anchor.fm and listened to the audio via
+                    their website
+                  </li>
+                </ul>
+              </div>
               <p>
                 I did testing this way to ensure that my audio wasn't a mess
                 and to make sure I was speaking too. Then I had to
@@ -268,7 +268,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide s1">
                   <div id="swiperImgWrapper">
-                    <img src="../img/articles/Podcast/anchorFM/podcastMetaData.png" id="sliderImg"
+                    <img src="../../../img/articles/Podcast/anchorFM/podcastMetaData.png" id="sliderImg"
                       alt="podcast metadata" class="swiper-lazy">
                   </div>
                   <p>
@@ -280,8 +280,8 @@
                 </div>
                 <div class="swiper-slide s2">
                   <div id="swiperImgWrapper">
-                    <img src="../img/articles/Podcast/anchorFM/coverArt2.png" id="sliderImg" alt="adding cover art"
-                      class="swiper-lazy">
+                    <img src="../../../img/articles/Podcast/anchorFM/coverArt2.png" id="sliderImg"
+                      alt="adding cover art" class="swiper-lazy">
                   </div>
                   <p>
                     This screen capture is the modal that pops up when you want to add any cover art to your episodes.
@@ -299,7 +299,36 @@
         <section class="a5">
           <h3 id="podcastH3"><i class="fas fa-play"></i> Conclusion</h3>
           <div>
-            <p></p>
+            <p>
+              To sum up, what I learned during this podcast project, I learned that immersive authoring is not an easy
+              thing. It takes thought, time, and practice to make a quality experience for a consumer. Even though my
+              podcast isn't the best and won't be hitting any top charts any time soon, it still helped me understand
+              the podcast production process at a fundamental level. There are many other skills I think that are
+              required
+              too. For example, the ability to speak into the microphone for an extended period is a primary
+              skill and was for sure my primary obstacle to overcome.
+            </p>
+            <p>
+              Is there anything I could've or would do differently as I look back on this project? Yes there is a few
+              things: better recording environment, used a desktop application for recording, and worked harder to
+              obtain
+              music that relates to the video game I was talking about.
+            </p>
+            <p>
+              For my environment, it lacked in sound dampening
+              and because of this, I had to mess with my noise suppression settings in Garage Band and it was
+              troublesome
+              to get it exactly right. For the desktop application, I feel I would've got my podcasts done a lot quicker
+              if I just used my desktop instead of my iPad and that's just because I'm more efficient with my work on a
+              desktop in general. Finally, the music issue, which was more of me having the conflict with figuring out
+              how to obtain music from a video game legally and I opted not to do that because I didn't want to have
+              copyright issues--also the Garage Band app wouldn't let me use the game music as a loop for recording,
+              since it wasn't legally mine.
+            </p>
+          </div>
+          <div>
+            <h2>Listen to my podcasts on <a href="https://open.spotify.com/show/1rkRNsgdQx83Zjd2e3jcma"
+                class="podcastLink"><i class="fab fa-spotify"></i> Spotify</a></h2>
           </div>
         </section>
 
@@ -329,10 +358,10 @@
     </footer>
   </div>
 
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../js/test.js" type="module"></script>
-  <script src="../js/index.js"></script>
+  <script src="../../../js/mySwiper.js" type="module"></script>
+  <script src="../../../js/index.js"></script>
 </body>
 
 </html>
