@@ -444,7 +444,7 @@ template {
 }
 
 .articleMain div#articleHeader {
-  background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg);
+  background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg) no-repeat center/100%;
   height: 9.25rem;
   color: white;
   padding: 0.5rem;
@@ -454,26 +454,6 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.articleMain div#articleNav {
-  padding: 0.5rem;
-  background-color: #696e79;
-}
-
-.articleMain div#articleNav :nth-child(1) {
-  margin-right: 1rem;
-}
-
-.articleMain div#articleNav button {
-  background: none;
-  border: none;
-  color: white;
-  height: 44px;
-  width: 4rem;
-  padding: 0;
-  font-size: 1.5rem;
-  text-align: left;
 }
 
 .articleMain div#article {
@@ -1283,6 +1263,269 @@ div#footerWrapper footer p a {
   clear: both;
 }
 
+.articleMain {
+  margin-top: 4rem;
+  height: auto;
+}
+
+.articleMain div#articleHeader {
+  background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash_small414px.jpg) no-repeat center/100%;
+  height: 9.25rem;
+  color: white;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.articleMain div#article {
+  padding: 0 0.5rem;
+}
+
+.articleMain div#article section h3 {
+  color: #8a98b7;
+}
+
+.articleMain div#article .a1 div p span {
+  color: #07aa7f;
+}
+
+.articleMain div#article img#podcastImg {
+  width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+div.swiperCoverArt {
+  height: auto;
+  background-color: #183a5a;
+}
+
+div.swiperCoverArt div.a1 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperCoverArt div.a2 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperCoverArt div.a3 {
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+div.swiperCoverArt div.a3 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne {
+  height: auto;
+}
+
+div.swiperOne div.x1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperOne div.x2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperOne div.x2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperOne div.x2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo {
+  height: 40rem;
+}
+
+div.swiperTwo div.s1 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s1 div#swiperImgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.swiperTwo div.s1 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s1 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div.swiperTwo div.s2 {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  background-color: #183a5a;
+  color: white;
+}
+
+div.swiperTwo div.s2 div#swiperImgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.swiperTwo div.s2 div#swiperImgWrapper #sliderImg {
+  width: 100%;
+  height: auto;
+}
+
+div.swiperTwo div.s2 p {
+  margin: 0;
+  background-color: #122a42;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+a.podcastLink {
+  color: green;
+  margin-left: 0.5rem;
+}
+
+div#iterationsDiv {
+  background-color: #183a5a;
+  padding: 0.5rem;
+  color: white;
+}
+
+div#iterationsDiv ul#iterationUL {
+  padding: 0;
+}
+
+div#iterationsDiv ul#iterationUL li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+div#iterationsDiv ul#iterationUL li:before {
+  content: "🎙️";
+  margin: 0 1rem;
+}
+
+#anchor {
+  color: #07aa7f;
+}
+
+.articleMain {
+  margin-top: 4rem;
+  height: auto;
+}
+
+.articleMain div#articleHeader-IG {
+  background: url(../../../img/articles/ig/hero-small.jpg) no-repeat center/100%;
+  height: 9.25rem;
+  color: white;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 @media only screen and (min-width: 560px) {
   div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
     -ms-grid-columns: (1fr)[3];
@@ -1308,7 +1551,7 @@ div#footerWrapper footer p a {
             align-items: center;
   }
   .articleMain div#articleHeader {
-    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-medium.jpg);
+    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-medium.jpg) no-repeat center/100%;
   }
   .articleMain div#article {
     padding: 0 0.5rem;
@@ -1499,6 +1742,10 @@ div#footerWrapper footer p a {
   div#iterationsDiv ul#iterationUL li:before {
     content: "🎙️";
     margin: 0 1rem;
+  }
+  .articleMain div#articleHeader-IG {
+    background: url(../../../img/articles/ig/hero-medium.jpg) no-repeat center/100%;
+    height: 15rem;
   }
 }
 
@@ -1720,7 +1967,7 @@ div#footerWrapper footer p a {
     cursor: grab;
   }
   .articleMain div#articleHeader {
-    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-large.jpg);
+    background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-large.jpg) no-repeat center/100%;
     height: 400px;
   }
   div.swiperTwo {
@@ -1764,6 +2011,15 @@ div#footerWrapper footer p a {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     margin-right: 1rem;
+  }
+  .swiper {
+    width: 50%;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .articleMain div#articleHeader-IG {
+    background: url("../../../img/articles/ig/hero-large.jpg") no-repeat center/100%;
+    height: 250px;
   }
 }
 
