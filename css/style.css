@@ -1526,6 +1526,10 @@ div#iterationsDiv ul#iterationUL li:before {
           align-items: flex-end;
 }
 
+.articleMain div#IG-article {
+  padding: 0 0.5rem;
+}
+
 @media only screen and (min-width: 560px) {
   div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
     -ms-grid-columns: (1fr)[3];
