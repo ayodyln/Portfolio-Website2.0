@@ -1,10 +1,62 @@
-//! Article Styling: Podcast Creation
 .articleMain {
   div#articleHeader-IG {
-    background: url(../../../img/articles/ig/hero-medium.jpg)
-      no-repeat center/100%;
-      height: 15rem;
+    background: url(../../../img/articles/ig/hero-medium.jpg) no-repeat
+      center/100%;
+    height: 15rem;
   }
-  
 }
 
+div.IG-a2 {
+  div {
+    section.IG-s1 {
+      div.IG-d1 {
+        display: grid;
+        grid-template-areas: "text image";
+        gap: 1rem;
+        p {
+          grid-area: text;
+        }
+        img {
+          grid-area: image;
+        }
+      }
+    }
+    section.IG-s2 {
+      div.IG-d2 {
+        display: grid;
+        grid-template-areas: "text image";
+        gap: 1rem;
+        p {
+          grid-area: text;
+        }
+        img {
+          grid-area: image;
+        }
+      }
+    }
+    section.IG-s3 {
+      div.IG_section-Div {
+        div.swiper {
+          div.swiper-wrapper {
+            div.x1 {
+              div.swiperImgWrapper {
+                img#igImg {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+            div.x2 {
+              div.swiperImgWrapper {
+                img#igImg {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

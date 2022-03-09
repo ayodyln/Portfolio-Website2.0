@@ -1538,11 +1538,15 @@ div#iterationsDiv ul#iterationUL li:before {
 .articleMain div#IG-article div.IG-a2 div section.IG-s1 div.IG_section-Div img {
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .articleMain div#IG-article div.IG-a2 div section.IG-s2 div.IG_section-Div img {
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x1 {
@@ -1807,6 +1811,46 @@ div#iterationsDiv ul#iterationUL li:before {
   .articleMain div#articleHeader-IG {
     background: url(../../../img/articles/ig/hero-medium.jpg) no-repeat center/100%;
     height: 15rem;
+  }
+  div.IG-a2 div section.IG-s1 div.IG-d1 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "text image";
+    gap: 1rem;
+  }
+  div.IG-a2 div section.IG-s1 div.IG-d1 p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+  }
+  div.IG-a2 div section.IG-s1 div.IG-d1 img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+  }
+  div.IG-a2 div section.IG-s2 div.IG-d2 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "text image";
+    gap: 1rem;
+  }
+  div.IG-a2 div section.IG-s2 div.IG-d2 p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+  }
+  div.IG-a2 div section.IG-s2 div.IG-d2 img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+  }
+  div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x1 div.swiperImgWrapper img#igImg {
+    width: 100%;
+    height: auto;
+  }
+  div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x2 div.swiperImgWrapper img#igImg {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -2081,6 +2125,31 @@ div#iterationsDiv ul#iterationUL li:before {
   .articleMain div#articleHeader-IG {
     background: url("../../../img/articles/ig/hero-large.jpg") no-repeat center/100%;
     height: 250px;
+  }
+  div.IG-a2 div section.IG-s3 div.IG-d3 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "text image";
+    gap: 1rem;
+  }
+  div.IG-a2 div section.IG-s3 div.IG-d3 div.swiper {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+    width: 100%;
+  }
+  div.IG-a2 div section.IG-s3 div.IG-d3 div.swiper div.swiper-wrapper div.x1 div.swiperImgWrapper img#igImg {
+    width: 100%;
+    height: auto;
+  }
+  div.IG-a2 div section.IG-s3 div.IG-d3 div.swiper div.swiper-wrapper div.x2 div.swiperImgWrapper img#igImg {
+    width: 100%;
+    height: auto;
+  }
+  div.IG-a2 div section.IG-s3 div.IG-d3 p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
   }
 }
 

@@ -27,6 +27,8 @@
             img {
               width: 100%;
               height: auto;
+              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(0, 0, 0, 0.23);
             }
           }
         }
@@ -35,6 +37,8 @@
             img {
               width: 100%;
               height: auto;
+              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(0, 0, 0, 0.23);
             }
           }
         }
@@ -46,6 +50,7 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+
                   div.swiperImgWrapper {
                     width: 100%;
 
