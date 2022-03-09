@@ -14,5 +14,65 @@
 
   div#IG-article {
     padding: 0 0.5rem;
+
+    a.IG-LINK {
+      text-decoration: none;
+      color: $primaryDark;
+    }
+
+    div.IG-a2 {
+      div {
+        section.IG-s1 {
+          div.IG_section-Div {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        section.IG-s2 {
+          div.IG_section-Div {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        section.IG-s3 {
+          div.IG_section-Div {
+            div.swiper {
+              div.swiper-wrapper {
+                div.x1 {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  div.swiperImgWrapper {
+                    width: 100%;
+
+                    img#igImg {
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+                div.x2 {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  div.swiperImgWrapper {
+                    width: 100%;
+
+                    img#igImg {
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

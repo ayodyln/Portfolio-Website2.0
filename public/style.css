@@ -1530,6 +1530,63 @@ div#iterationsDiv ul#iterationUL li:before {
   padding: 0 0.5rem;
 }
 
+.articleMain div#IG-article a.IG-LINK {
+  text-decoration: none;
+  color: #191e29;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s1 div.IG_section-Div img {
+  width: 100%;
+  height: auto;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s2 div.IG_section-Div img {
+  width: 100%;
+  height: auto;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x1 div.swiperImgWrapper {
+  width: 100%;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x1 div.swiperImgWrapper img#igImg {
+  width: 100%;
+  height: auto;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x2 div.swiperImgWrapper {
+  width: 100%;
+}
+
+.articleMain div#IG-article div.IG-a2 div section.IG-s3 div.IG_section-Div div.swiper div.swiper-wrapper div.x2 div.swiperImgWrapper img#igImg {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 560px) {
   div#mainWrapper main div#aboutSectionWrapper div.skills-card div.card div.wrapper div.card-footer ul {
     -ms-grid-columns: (1fr)[3];

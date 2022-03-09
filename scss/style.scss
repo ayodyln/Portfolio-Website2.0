@@ -2,18 +2,18 @@
 @import "variables";
 @import "small";
 @import "../pages/documentation/podcastCreation-Documentation/smallPodcastStyle";
-@import "../pages//documentation/instagramCreation-Documentation/small-IG-Style";
+@import "../pages/documentation/instagramCreation-Documentation/small-IG-Style";
 
 @media only screen and (min-width: 560px) {
   @import "medium";
   @import "../pages/documentation/podcastCreation-Documentation/mediumPodcastStyle";
-  @import "../pages//documentation/instagramCreation-Documentation/medium-IG-Style";
+  @import "../pages/documentation/instagramCreation-Documentation/medium-IG-Style";
 }
 
 @media only screen and (min-width: 1028px) {
   @import "large";
   @import "../pages/documentation/podcastCreation-Documentation/largePodcastStyle";
-  @import "../pages//documentation/instagramCreation-Documentation/large-IG-Style";
+  @import "../pages/documentation/instagramCreation-Documentation/large-IG-Style";
 }
 
 @media only screen and (min-width: 1536px) {
