@@ -1,0 +1,56 @@
+//! Ghostlab Article Styling
+#gl_MainWrapper {
+  #ghostlab-Main {
+    margin-top: 4rem;
+    div#gl_ArticleHeader {
+      background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png)
+        no-repeat right bottom $primaryDark;
+      height: 300px;
+      display: flex;
+      justify-content: flex-end;
+      div#gl-h1__Wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: flex-end;
+        h1 {
+          font-size: 2rem;
+          margin: 0;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#gl_ArticleInfo {
+  display: grid;
+  grid-template-columns: 3fr 4px 3fr;
+  background-color: $primaryDark;
+  color: $primaryColor;
+
+  section#dateWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    p {
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .gl-line {
+    background-color: $primaryColor;
+  }
+}
+
+#gl_Article {
+  padding: 0 1rem;
+  section {
+    p {
+      line-height: 1.5rem;
+    }
+  }
+}
