@@ -175,12 +175,14 @@ div#mainWrapper {
     div#aboutSectionWrapper {
       // about-section
       background-color: lighten($primaryDark, 10%);
-      padding: 5% 2%;
-
+      padding: 1rem 1rem;
       div#about-section {
         display: flex;
         flex-direction: column;
         color: white;
+        h2 {
+          margin: 0;
+        }
         p {
           letter-spacing: 1px;
         }
@@ -278,49 +280,13 @@ div#mainWrapper {
       }
     }
 
-    div#recent-work {
-      max-width: 70rem;
-      margin: auto;
-      h2 {
-        padding: 0 2%;
-        color: $primaryDark;
-      }
-      div.cards {
-        padding: 0 2%;
-
-        div.card {
-          margin: 0 1px;
-          background-color: $primaryDark;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-          h1 {
-            text-align: center;
-            color: white;
-          }
-          .green {
-            background-color: green;
-            width: 100%;
-            height: 100px;
-          }
-          button.cardBtn {
-            width: 75%;
-            border-radius: 5px;
-            border-style: none;
-            margin: 3%;
-          }
-        }
-      }
+    div#contactWrapper {
+      width: 100%;
+      background-color: lighten($primaryDark, 25%);
     }
 
     div#contact {
-      background-color: lighten($primaryDark, 10%);
-      width: 100%;
-      margin-top: 5%;
-      padding: 5% 0;
+      padding: 1rem 0;
       h2 {
         color: white;
         text-align: center;
@@ -411,50 +377,37 @@ div#mainWrapper {
 
 //Footer
 div#footerWrapper {
+  width: 100%;
+  background-color: $primaryDark;
   footer {
-    background-color: $primaryDark;
-    padding: 2% 0;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
     div.links {
-      margin: 1%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      text-align: center;
-
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
       a {
         color: white;
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-
-        i {
-          margin: 3%;
-          font-size: 2rem;
-        }
+        font-size: 44px;
       }
     }
-
     div.footerNav {
       width: 100%;
-
-      ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
+      ul.footerNav__UL {
+        width: 100%;
         padding: 0;
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
         li {
-          list-style-type: none;
-          padding: 0.5rem 0;
+          list-style: none;
           a {
-            text-decoration: none;
             color: white;
-            font-size: 1.25rem;
+            text-decoration: none;
+            height: 44px;
+            font-size: 1.5rem;
           }
         }
       }
@@ -462,6 +415,7 @@ div#footerWrapper {
 
     p {
       text-align: center;
+      color: white;
       a {
         color: white;
       }

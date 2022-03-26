@@ -11,63 +11,46 @@ div.skills-card,
 
 //Nav/Header
 div#navWrapper {
-  width: 100%;
   nav {
     position: relative;
-    background-color: white;
     box-shadow: none;
-
+    z-index: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
     div.header-nav {
-      div.logo {
-        img {
+      display: unset;
+      width: unset;
+      a {
+        div.logo {
         }
       }
 
-      button {
-        font-size: 0;
-        i#menuIcon {
-          font-size: 24px;
-        }
+      button#hamburgerBtn {
+        display: none;
       }
     }
 
-    div.visible-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1% 2%;
-
-      div.logo {
-        width: 44px;
-      }
-      button {
-        display: none;
-      }
-      div.largeNav-list {
-        display: initial;
-
-        ul {
-          list-style-type: none;
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 0 1vw;
-          text-align: center;
-          width: 100%;
-
-          li {
-            margin: 0 2%;
-            width: 5.5rem;
-            a {
-              width: 100%;
-              color: $primaryDark;
-              text-decoration: none;
-            }
+    div.ulDiv {
+      height: auto;
+      width: unset;
+      padding: 0;
+      z-index: unset;
+      width: 100%;
+      ul.ul-nav {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          border: none;
+          margin-left: 2rem;
+          a {
           }
         }
       }
-    }
-    div.nav-list {
-      display: none;
+      div.links {
+        display: none;
+      }
     }
   }
 }
@@ -148,7 +131,8 @@ div#mainWrapper {
 
     div#contactWrapper {
       width: 100%;
-      background-color: lighten($primaryDark, 10%);
+      background-color: lighten($primaryDark, 25%);
+
       div#contact {
         width: 100%;
         padding: 2% 0;
@@ -189,36 +173,3 @@ div#mainWrapper {
 }
 
 //Footer
-div#footerWrapper {
-  width: 100%;
-  background-color: $primaryDark;
-  footer {
-    max-width: 70%;
-
-    div.links {
-      width: 50%;
-    }
-
-    div.footerNav {
-      max-width: 60%;
-      margin: 1% 0;
-      ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
-        margin: 0;
-        li {
-          padding: 0;
-          margin: 0;
-          text-align: center;
-          a {
-          }
-        }
-      }
-    }
-
-    p {
-      a {
-      }
-    }
-  }
-}
