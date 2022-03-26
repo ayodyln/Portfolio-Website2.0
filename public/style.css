@@ -1051,6 +1051,10 @@ div#mainWrapper main div#contact form#myForm {
   margin: 0;
 }
 
+div#mainWrapper main div#contact form#myForm div.netCaptcha {
+  height: 44px;
+}
+
 div#mainWrapper main div#contact form#myForm p {
   display: -webkit-box;
   display: -ms-flexbox;

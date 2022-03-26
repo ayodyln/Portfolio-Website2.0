@@ -296,6 +296,9 @@ div#mainWrapper {
       form#myForm {
         padding: 0 1rem;
         margin: 0;
+        div.netCaptcha {
+          height: 44px;
+        }
         p {
           display: flex;
           flex-direction: column;
