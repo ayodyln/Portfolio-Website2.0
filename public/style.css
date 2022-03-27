@@ -729,7 +729,7 @@ div#navWrapper nav div.header-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2%;
+  padding: 1rem 0;
 }
 
 div#navWrapper nav div.header-nav div.logo {
@@ -1215,6 +1215,11 @@ div#footerWrapper footer p a {
   content: "";
   display: table;
   clear: both;
+}
+
+#articleMAIN {
+  max-width: 70rem;
+  margin: auto;
 }
 
 .articleMain {
@@ -1902,7 +1907,7 @@ ul.gl-CoolTools__UL li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0rem;
   }
   div#navWrapper nav div.header-nav {
     display: unset;
@@ -2021,7 +2026,7 @@ ul.gl-CoolTools__UL li {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
         grid-template-areas: "yourName email" "msg msg" "submit .";
-    gap: 1%;
+    gap: 1rem;
   }
   div#mainWrapper main div#contactWrapper div#contact form#myForm p.nameArea {
     margin: 0;

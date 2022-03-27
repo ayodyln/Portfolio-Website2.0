@@ -18,14 +18,10 @@ div#navWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0rem;
     div.header-nav {
       display: unset;
       width: unset;
-      a {
-        div.logo {
-        }
-      }
 
       button#hamburgerBtn {
         display: none;
@@ -123,8 +119,6 @@ div#mainWrapper {
       div.cards {
         div.card {
           margin: 0 5px;
-          div.green {
-          }
         }
       }
     }
@@ -147,7 +141,7 @@ div#mainWrapper {
             "yourName email"
             "msg msg"
             "submit .";
-          gap: 1%;
+          gap: 1rem;
           p.nameArea {
             margin: 0;
             grid-area: yourName;
