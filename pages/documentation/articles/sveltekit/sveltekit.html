@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/42a4a84ffd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="icon" type="image/svg" href="../../../../img/Logo2.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Dylan Smith Portfolio - SvelteKit Article</title>
+</head>
+
+<body>
+    <div id="navWrapper">
+        <nav class="clearFix">
+            <div class="header-nav">
+                <a href="../../../../index.html">
+                    <div class="logo">
+                        <img src="../../../../img/Logo2.svg" alt="logo" class="svg-logo" />
+                    </div>
+                </a>
+
+                <button id="hamburgerBtn">
+                    <i id="menuIcon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="ulDiv" id="ulDiv">
+                <ul class="ul-nav">
+                    <li><a href="../../../work.html">Work</a></li>
+                    <li><a href="../../../../index.html/#contact">Contact</a></li>
+                    <li><a href="../../../../private/resume-Web.pdf" download>Resume</a></li>
+                </ul>
+                <div class="links" id="nav-social-links">
+                    <a href="https://github.com/ayodyln"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="SvelteKit_MainWrapper">
+        <main id="SvelteKit-Main">
+            <div id="SvelteKit_ArticleHeader">
+                <div id="SvelteKit-h1__Wrapper">
+                    <div id="SvelteKit__Title">
+                        <h1>Sveltekit: The Best Framework for Beginners</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ArticleInfo">
+                <section id="dateWrapper">
+                    <i class="fa-solid fa-calendar"></i>
+                    <p id="Date__lastUpdated"></p>
+                </section>
+                <span class="line"></span>
+                <section id="dateWrapper">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="readTime">5 minute read</p>
+                </section>
+            </div>
+
+            <div id="SvelteKit_Article">
+
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <div class="links">
+                <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul class="footerNav__UL">
+                    <li><a href="../../../work.html">Work</a></li>
+                    <li><a href="../../../../index.html/#contact">Contact</a></li>
+                    <li><a href="../../../../private/resume-Web.pdf">Resume</a></li>
+                </ul>
+            </div>
+            <p>&copy Dylan Smith 2021 &bull; <a href="https://www.dylnsworks.com/">Old Portfolio</a></p>
+        </footer>
+    </div>
+
+    <script>
+        let date = new Date(document.lastModified);
+        let day = date.getDay();
+        let month = date.getMonth();
+        let year = date.getFullYear()
+        const monthArr = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+
+        let newMonthName;
+
+        monthArr.forEach((el, i, arr) => {
+            if (month === i) {
+                newMonthName = el
+            }
+        })
+        let dateModifed = `Updated: ${newMonthName} ${day}, ${year}`;
+        document.querySelector('#Date__lastUpdated').textContent = dateModifed;
+        console.log(dateModifed)
+    </script>
+
+    <script src="../../../../js/index.js"></script>
+</body>
+
+</html>

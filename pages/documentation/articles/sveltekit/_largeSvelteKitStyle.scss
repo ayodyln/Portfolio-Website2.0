@@ -1,0 +1,27 @@
+//! Ghostlab Article Styling
+#gl_MainWrapper {
+  #ghostlab-Main {
+    margin-top: 0;
+    div#gl_ArticleHeader {
+      background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png)
+        no-repeat bottom right $primaryDark;
+    }
+  }
+}
+
+#gl_Article {
+  max-width: 40rem;
+  margin: auto;
+}
+
+div#gl-h1__Wrapper {
+  div#gl__Title {
+    max-width: 70rem;
+    margin: auto;
+  }
+}
+
+iframe.tutorialVideo {
+  height: 300px;
+}
+

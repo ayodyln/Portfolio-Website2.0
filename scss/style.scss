@@ -4,12 +4,14 @@
 @import "../pages/documentation/class-work/podcastCreation-Documentation/smallPodcastStyle";
 @import "../pages/documentation/class-work/instagramCreation-Documentation/small-IG-Style";
 @import "../pages/documentation/articles/ghostlab/smallGhostlabStyle";
+@import "../pages/documentation/articles/sveltekit/smallSvelteKitStyle";
 
 @media only screen and (min-width: 560px) {
   @import "medium";
   @import "../pages/documentation/class-work/podcastCreation-Documentation/mediumPodcastStyle";
   @import "../pages/documentation/class-work/instagramCreation-Documentation/medium-IG-Style";
   @import "../pages/documentation/articles/ghostlab/mediumGhostlabStyle";
+  @import "../pages/documentation/articles/sveltekit/mediumSvelteKitStyle";
 }
 
 @media only screen and (min-width: 1024px) {
@@ -17,6 +19,7 @@
   @import "../pages/documentation/class-work/podcastCreation-Documentation/largePodcastStyle";
   @import "../pages/documentation/class-work/instagramCreation-Documentation/large-IG-Style";
   @import "../pages/documentation/articles/ghostlab/largeGhostlabStyle";
+  @import "../pages/documentation/articles/sveltekit/largeSvelteKitStyle";
 }
 
 @media only screen and (min-width: 1536px) {
