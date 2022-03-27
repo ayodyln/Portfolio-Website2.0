@@ -55,7 +55,7 @@
             <div id="ArticleInfo">
                 <section id="dateWrapper">
                     <i class="fa-solid fa-calendar"></i>
-                    <p id="SvelteKitDate__lastUpdated"></p>
+                    <p id="SvelteKitDate__lastUpdated">March 27, 2022</p>
                 </section>
                 <span class="line"></span>
                 <section id="dateWrapper">
@@ -86,40 +86,6 @@
             <p>&copy Dylan Smith 2021 &bull; <a href="https://www.dylnsworks.com/">Old Portfolio</a></p>
         </footer>
     </div>
-
-    <script>
-        let date = new Date(document.lastModified);
-      
-        let day = date.getDay();
-       
-        let month = date.getMonth();
-        let year = date.getFullYear()
-        const monthArr = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ]
-
-        let newMonthName;
-
-        monthArr.forEach((el, i, arr) => {
-            if (month === i) {
-                newMonthName = el
-            }
-        })
-        let dateModifed = `Updated: ${newMonthName} ${day}, ${year}`;
-        document.querySelector('#SvelteKitDate__lastUpdated').textContent = dateModifed;
-    </script>
-
     <script src="../../../../js/index.js"></script>
 </body>
 
