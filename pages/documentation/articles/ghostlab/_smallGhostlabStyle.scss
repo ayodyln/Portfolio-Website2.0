@@ -10,12 +10,14 @@
       justify-content: flex-end;
       div#gl-h1__Wrapper {
         background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
         width: 100%;
         height: 100%;
-        padding: 1rem;
-        display: flex;
-        align-items: flex-end;
         div#gl__Title {
+          display: flex;
+          align-items: flex-end;
+          width: 100%;
+          height: 100%;
           h1 {
             font-size: 2rem;
             margin: 0;
