@@ -55,7 +55,7 @@
             <div id="ArticleInfo">
                 <section id="dateWrapper">
                     <i class="fa-solid fa-calendar"></i>
-                    <p id="Date__lastUpdated"></p>
+                    <p id="SvelteKitDate__lastUpdated"></p>
                 </section>
                 <span class="line"></span>
                 <section id="dateWrapper">
@@ -89,7 +89,9 @@
 
     <script>
         let date = new Date(document.lastModified);
+      
         let day = date.getDay();
+       
         let month = date.getMonth();
         let year = date.getFullYear()
         const monthArr = [
@@ -115,8 +117,7 @@
             }
         })
         let dateModifed = `Updated: ${newMonthName} ${day}, ${year}`;
-        document.querySelector('#Date__lastUpdated').textContent = dateModifed;
-        console.log(dateModifed)
+        document.querySelector('#SvelteKitDate__lastUpdated').textContent = dateModifed;
     </script>
 
     <script src="../../../../js/index.js"></script>
