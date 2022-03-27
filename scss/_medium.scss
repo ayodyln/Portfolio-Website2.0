@@ -1,3 +1,11 @@
 footer {
   width: 40rem;
 }
+div#ArticlemainWrapper {
+  margin-top: 0;
+  div#articleCards {
+    display: flex;
+    a.card {
+    }
+  }
+}
