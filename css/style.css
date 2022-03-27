@@ -996,6 +996,10 @@ div#ArticlemainWrapper #articleMAIN section#articles h2 {
 div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
   width: 100%;
   margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card {
@@ -1003,8 +1007,8 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card {
   text-decoration: none;
   color: white;
   display: block;
-  background: url(../pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat right;
   height: 15rem;
+  width: 100%;
 }
 
 div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card div.inner__card {
@@ -1015,6 +1019,8 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card div
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1034,6 +1040,18 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card:hov
 
 div#ArticlemainWrapper #articleMAIN section#work h2 {
   margin: 0;
+}
+
+.GL__card {
+  background: url(../pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat right;
+}
+
+.IG__card {
+  background: url(../img/articles/ig/hero-small.jpg) no-repeat center;
+}
+
+.Podcast__card {
+  background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-medium.jpg) no-repeat;
 }
 
 .articleMain {
