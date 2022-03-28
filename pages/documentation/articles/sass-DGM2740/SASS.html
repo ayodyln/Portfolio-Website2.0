@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/42a4a84ffd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../css/style.css" />
+    <link rel="stylesheet" href="../../../../css/prism.css" />
+    <link rel="icon" type="image/svg" href="../../../../img/Logo2.svg" />
+    <title>Dylan Smith Portfolio - SASS Article</title>
+</head>
+
+<body>
+    <div id="navWrapper">
+        <nav class="clearFix">
+            <div class="header-nav">
+                <a href="../../../../index.html">
+                    <div class="logo">
+                        <img src="../../../../img/Logo2.svg" alt="logo" class="svg-logo" />
+                    </div>
+                </a>
+
+                <button id="hamburgerBtn">
+                    <i id="menuIcon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="ulDiv" id="ulDiv">
+                <ul class="ul-nav">
+                    <li><a href="../../../work.html">Work</a></li>
+                    <li><a href="../../../../index.html/#contact">Contact</a></li>
+                    <li><a href="../../../../private/resume-Web.pdf" download>Resume</a></li>
+                </ul>
+                <div class="links" id="nav-social-links">
+                    <a href="https://github.com/ayodyln"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="SASS_MainWrapper">
+        <main id="SASS-Main">
+            <div id="SASS_ArticleHeader">
+                <div id="SASS-h1__Wrapper">
+                    <div id="SASS__Title">
+                        <h1>The Perfect Amount of SASS in Your Life</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ArticleInfo">
+                <section id="dateWrapper">
+                    <i class="fa-solid fa-calendar"></i>
+                    <p id="SASS__lastUpdated">March 28, 2022</p>
+                </section>
+                <span class="line"></span>
+                <section id="dateWrapper">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="readTime">5 minute read</p>
+                </section>
+            </div>
+
+            <div id="SASS_Article">
+                <section class="intro">
+                    <p>
+                        Growing up you take things for granted. For example, I’ve never really given thought to how much
+                        effort it takes to design and develop any web project or application. Part of that is because I
+                        just haven’t studied anything to do with web and app development and I was the one using the
+                        product not creating it. Now the lesson of how important it is to ensure your web project is
+                        high-quality, if not perfect, across a multitude of devices is starting to set into my web
+                        developer mind. But that goal of having a perfect website in terms of design, functionality, and
+                        is compatible on any device is something anyone in the industry should shoot for, that drive
+                        leads to pushing yourself always and finding a way to improve your skills.
+                    </p>
+                </section>
+                <section class="story">
+                    <h2><i class="fas fa-play"></i> Quality Responisve Web Design</h2>
+                    <p>
+                        Quality websites only come about from hard work and skills learned from other projects and
+                        studying. So as a student of web development I’m on a constant lookout for tools and resources
+                        to develop quality web projects. For example, CSS is a key tool to style a website, but I’ve
+                        learned about SASS/SCSS which has just helped increase my abilities to translate a design from
+                        paper to a website, efficiently and effectively. There are other tools such as GhostLab, which
+                        is software that spools up a local server to display your project (e.g., a static website)
+                        across multiple devices at once—I’ll be working on an in-depth article about this software soon.
+                        But I want to make SASS the main topic here because of how effective it is and how it sent me
+                        down a path of pushing myself to learn more skills and to reach that goal of a fully responsive
+                        website.
+                    </p>
+                    <h2><i class="fas fa-play"></i> SASS/SCSS</h2>
+                    <p>
+                        When I was introduced to SASS/SCSS, it flipped my world upside down! Not because it was another
+                        obstacle in my path, but rather I saw the potential it had to help me as a developer. This was
+                        another development tool that was going to help increase my overall effectiveness and efficiency
+                        in developing/styling projects. Adding this tool to my arsenal has helped me feel like
+                        delivering quality web projects is more attainable. So, what is SASS?
+                    </p>
+                    <p>
+                        Sass is a preprocessor—or a style sheet language—that compiles your styling code into CSS.
+                        Albeit you’re still essentially following the same syntax as you would with CSS. It’s also fair
+                        to mention that if you’re using SASS, the syntax is a bit simpler. But I’d argue that using SCSS
+                        is easier to understand since the syntax is the same as CSS—see fig below for an examples. When you
+                        use Sass, it enables you to use partials, variables, nesting, functions, and much more. All of
+                        which helps you have more organized code and arguably much more efficient as well.
+                    </p>
+                    <p>
+                        One of the main things that I love about Sass is how well you can organize your code, unlike one
+                        big CSS file. For example, you can look at a file of CSS that has as much as you want on it. But
+                        the more you add to it, the more you gotta scroll and work out a two-dimensional organizing
+                        structure. However, with Sass, you can split your files apart as partials and import them into
+                        one master Sass file. You can have files just for small, medium, and large devices or you can
+                        have a file that is specifically for your variables (e.g., hex codes stored into variables) and
+                        those variables can be called onto any of your files. See below, for an example of how this
+                        master SASS file should look to accomplish this.
+                    </p>
+
+                    <!-- ! INSERT PRISM SASS SNIPPET -->
+                    <pre>
+                       <code class="language-sass"></code>
+                   </pre>
+
+                    <p>
+                        I’ll have more examples of SCSS code below—which is what I prefer over using SASS—that is for
+                        small, medium, and large devices. After starting to learn about Sass, I was sent down a rabbit
+                        hole of testing my websites across a multitude of devices. Because of that exploration of how to
+                        build a responsive website and the drive to improve my skills, I was able to evolve as a web/app
+                        developer. I should admit that there were some growing pains and testing I had to do, such as
+                        how to properly work with functions in Sass or little bugs like the preprocessor crashing in VS
+                        Code. But I’m now confident in saying I can build a responsive website of high quality because
+                        of how I utilize Sass.
+                    </p>
+
+                    <!-- ! INSERT PRISM SCSS SNIPPET -->
+                    <pre>
+                        <code class="language-scss"></code>
+                    </pre>
+
+                    <p>
+                        Another tool I was introduced to at the time and fueled my urge to properly test and make
+                        responsive web designs is GhostLab. I want to make a full case study about this, and I will. But
+                        for the sake of this article, it should be mentioned because Sass and Ghostlab worked together
+                        to help me increase the overall quality of my projects. Earlier I mentioned that GhostLab is
+                        software that helps display your code on a local server—which is just your computer. What is key
+                        to understanding is that it is serving up your code as it would if you had it uploaded to your
+                        live website. Which makes it an ideal solution for anyone wanting to have a perfect responsive
+                        website. Yes, you can use your developer tools from your web browser of choice. But the downside
+                        is that this method isn’t always accurate when you’re trying to make anything accurate and
+                        responsive. That’s why using GhostLab, which takes your code and runs it on a local server that
+                        any device on the same network can access, is so important. It helps you ensure you have a
+                        completely responsive website that any user can use from whatever device they’re using.
+                    </p>
+                </section>
+                <section class="conslusion">
+                    <h2><i class="fas fa-play"></i> Conclusion</h2>
+                    <p>
+                        Remember that goal I mentioned earlier about how any designer or developer should have this
+                        mission to create high-quality, if not perfect, websites and apps? Well, I have that goal and I
+                        know to reach that goal I need the tools and skills to do so. Sass is one of those tools that
+                        has enabled me to flex my CSS skills and build a high-quality responsive website. Of course,
+                        this still requires constant testing and checking for how your website works for any device. It
+                        is a styling language that any developer should look into and see how it could positively affect
+                        their projects. I also recommend reading my article for GhostLab to understand how to take make
+                        perfect responsive websites—it will be much more in-depth and a guide to how to make your device
+                        testing workflow.
+                    </p>
+                    <i>
+                        <p class="classCite">
+                            Dylan Smith is a student in the Digital Media program at Utah Valley University, Orem Utah,
+                            studying Web & App Development. The following article relates to <i>Capstone Project</i> in
+                            the DGM 2740
+                            Course and representative of the skills learned.
+                        </p>
+                    </i>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <div class="links">
+                <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul class="footerNav__UL">
+                    <li><a href="../../../work.html">Work</a></li>
+                    <li><a href="../../../../index.html/#contact">Contact</a></li>
+                    <li><a href="../../../../private/resume-Web.pdf">Resume</a></li>
+                </ul>
+            </div>
+            <p>&copy Dylan Smith 2021 &bull; <a href="https://www.dylnsworks.com/">Old Portfolio</a></p>
+        </footer>
+    </div>
+    <script src="../../../../js/index.js"></script>
+    <script src="../../../../js/prism.js"></script>
+</body>
+
+</html>

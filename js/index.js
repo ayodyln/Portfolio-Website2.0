@@ -8,3 +8,30 @@ hamburgerBtn.addEventListener("click", (e) => {
 });
 
 // poplulatingDOM
+
+//! SCSS article code snippets
+const sassCode = document.querySelector(".language-sass");
+sassCode.textContent = `
+@import "variables;
+@import "small"
+
+@media only screen and (min-width: 560px) 
+  @import "medium"
+
+@media only screen and (min-width: 1024px)
+  @import "large"
+`;
+
+const scssCode = document.querySelector(".language-scss");
+scssCode.textContent = `
+@import "variables";
+@import "small";
+
+@media only screen and (min-width: 560px) {
+  @import "medium";
+};
+
+@media only screen and (min-width: 1024px) {
+  @import "large";
+};
+`;

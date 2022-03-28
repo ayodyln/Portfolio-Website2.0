@@ -974,7 +974,7 @@ div#footerWrapper footer p a {
 
 div#ArticlemainWrapper {
   background-color: #191e29;
-  height: 70vh;
+  min-height: 70vh;
   margin-top: 4rem;
 }
 
@@ -994,11 +994,12 @@ div#ArticlemainWrapper #articleMAIN section#articles h2 {
 }
 
 div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
-  width: 100%;
   margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -1006,7 +1007,6 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card {
   border-radius: 15px;
   text-decoration: none;
   color: white;
-  display: block;
   height: 15rem;
   width: 100%;
 }
@@ -1056,6 +1056,14 @@ div#ArticlemainWrapper #articleMAIN section#work h2 {
 
 .SvelteKit__card {
   background: url("https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png") no-repeat center;
+}
+
+.SASS__card {
+  background: url(../pages/documentation/articles/sass-DGM2740/img/white-e44bed0d.png) no-repeat center #cd669a;
+}
+
+p.classCite {
+  color: #404c68;
 }
 
 .articleMain {
@@ -1570,6 +1578,103 @@ a.svelteKit-Anchor:hover {
   text-decoration: underline;
 }
 
+#SASS_MainWrapper #SASS-Main {
+  margin-top: 4rem;
+}
+
+#SASS_MainWrapper #SASS-Main div#SASS_ArticleHeader {
+  background: url(../pages/documentation/articles/sass-DGM2740/img/white-e44bed0d.png) no-repeat center #cd669a;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#SASS_MainWrapper #SASS-Main div#SASS_ArticleHeader div#SASS-h1__Wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#SASS_MainWrapper #SASS-Main div#SASS_ArticleHeader div#SASS-h1__Wrapper div#SASS__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#SASS_MainWrapper #SASS-Main div#SASS_ArticleHeader div#SASS-h1__Wrapper div#SASS__Title h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+#ArticleInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4px 3fr;
+      grid-template-columns: 3fr 4px 3fr;
+  background-color: #191e29;
+  color: #01c38d;
+}
+
+#ArticleInfo section#dateWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+#ArticleInfo section#dateWrapper p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+#ArticleInfo .line {
+  background-color: #01c38d;
+}
+
+#SASS_Article {
+  padding: 0 1rem;
+}
+
+#SASS_Article section p {
+  line-height: 1.5rem;
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL li {
+  margin: 1rem 0;
+}
+
+a.SASS-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+a.SASS-Anchor:hover {
+  color: #191e29;
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 560px) {
   footer {
     width: 40rem;
@@ -1577,10 +1682,11 @@ a.svelteKit-Anchor:hover {
   div#ArticlemainWrapper {
     margin-top: 0;
   }
-  div#ArticlemainWrapper div#articleCards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .articleMain div#articleHeader {
     background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-medium.jpg) no-repeat center/100%;
@@ -1830,6 +1936,13 @@ a.svelteKit-Anchor:hover {
     margin-top: 0;
   }
   #SvelteKit_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  #SASS-Main {
+    margin-top: 0;
+  }
+  #SASS_Article {
     max-width: 40rem;
     margin: auto;
   }
@@ -2118,6 +2231,17 @@ a.svelteKit-Anchor:hover {
     margin: auto;
   }
   div#SvelteKit-h1__Wrapper div#SvelteKit__Title {
+    max-width: 70rem;
+    margin: auto;
+  }
+  #SASS_MainWrapper #SASS-Main {
+    margin-top: 0;
+  }
+  #SASS_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#SASS-h1__Wrapper div#SASS__Title {
     max-width: 70rem;
     margin: auto;
   }

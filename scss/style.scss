@@ -5,6 +5,7 @@
 @import "../pages/documentation/class-work/instagramCreation-Documentation/small-IG-Style";
 @import "../pages/documentation/articles/ghostlab/smallGhostlabStyle";
 @import "../pages/documentation/articles/sveltekit/smallSvelteKitStyle";
+@import "../pages/documentation/articles/sass-DGM2740/smallSASSStyle";
 
 @media only screen and (min-width: 560px) {
   @import "medium";
@@ -12,6 +13,7 @@
   @import "../pages/documentation/class-work/instagramCreation-Documentation/medium-IG-Style";
   @import "../pages/documentation/articles/ghostlab/mediumGhostlabStyle";
   @import "../pages/documentation/articles/sveltekit/mediumSvelteKitStyle";
+  @import "../pages/documentation/articles/sass-DGM2740/mediumSASSStyle";
 }
 
 @media only screen and (min-width: 1024px) {
@@ -20,6 +22,7 @@
   @import "../pages/documentation/class-work/instagramCreation-Documentation/large-IG-Style";
   @import "../pages/documentation/articles/ghostlab/largeGhostlabStyle";
   @import "../pages/documentation/articles/sveltekit/largeSvelteKitStyle";
+  @import "../pages/documentation/articles/sass-DGM2740/largeSASSStyle";
 }
 
 @media only screen and (min-width: 1536px) {

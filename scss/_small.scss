@@ -434,7 +434,7 @@ div#footerWrapper {
 
 div#ArticlemainWrapper {
   background-color: $primaryDark;
-  height: 70vh;
+  min-height: 70vh;
   margin-top: 4rem;
   #articleMAIN {
     max-width: 70rem;
@@ -449,15 +449,14 @@ div#ArticlemainWrapper {
         margin: 0;
       }
       div#articleCards {
-        width: 100%;
         margin: 1rem 0;
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         a.card {
           border-radius: 15px;
           text-decoration: none;
           color: white;
-          display: block;
           height: 15rem;
           width: 100%;
           div.inner__card {
@@ -503,4 +502,12 @@ div#ArticlemainWrapper {
 .SvelteKit__card {
   background: url("https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png")
     no-repeat center;
+}
+.SASS__card {
+  background: url(../pages/documentation/articles/sass-DGM2740/img/white-e44bed0d.png)
+    no-repeat center #cd669a;
+}
+
+p.classCite {
+  color: lighten($primaryDark, 20);
 }

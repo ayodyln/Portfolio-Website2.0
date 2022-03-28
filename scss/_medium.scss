@@ -3,9 +3,25 @@ footer {
 }
 div#ArticlemainWrapper {
   margin-top: 0;
-  div#articleCards {
-    display: flex;
-    a.card {
+}
+
+div#ArticlemainWrapper {
+  #articleMAIN {
+    section {
+    }
+    section#articles {
+      h2 {
+      }
+      div#articleCards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        a.card {
+          div.inner__card {
+            div.cardText {
+            }
+          }
+        }
+      }
     }
   }
 }
