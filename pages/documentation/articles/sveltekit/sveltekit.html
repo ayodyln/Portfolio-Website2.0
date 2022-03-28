@@ -55,7 +55,7 @@
             <div id="ArticleInfo">
                 <section id="dateWrapper">
                     <i class="fa-solid fa-calendar"></i>
-                    <p id="SvelteKitDate__lastUpdated">March 27, 2022</p>
+                    <p id="SvelteKitDate__lastUpdated">March 26, 2022</p>
                 </section>
                 <span class="line"></span>
                 <section id="dateWrapper">
@@ -65,12 +65,149 @@
             </div>
 
             <div id="SvelteKit_Article">
+                <section class="intro">
+                    <h2><i class="fas fa-play"></i> Introduction</h2>
+                    <p>
+                        Svelte has become the JavaScript’s community most favored framework, according to the <a class="svelteKit-Anchor"
+                            href="https://2020.stateofjs.com/en-US/technologies/front-end-frameworks/">State of
+                            Javascript survey on Front-end Frameworks</a>. I want to be fully
+                        transparent and say I’m new to frameworks but have an unwavering curiosity on how to utilize
+                        these amazing tools. So, I conducted some personal research on frameworks and asked my peers
+                        what they think about what I should use for web and app development. I found myself starting
+                        with Svelte, specifically Sveltekit and my goal was to learn this framework by myself as much as
+                        possible to eventually make API calls to the MarvelAPI.
+                    </p>
+                    <p>
+                        To provide context, I discovered the MarvelAPI in 2020 and it took me a full year to finally
+                        figure out how to connect to this API without running into any issues. Because this API requires
+                        the use of an API key that needs to be private and hidden client-side and I kept running into
+                        CORS issues each time I did an API call with vanilla Javascript. I eventually learned that I had
+                        to use Environment Variables and endpoints that I coded in JS and this code was only available
+                        on the server! Essentially, these are the two key things I needed to finally achieve a
+                        successful MarvelAPI call.
+                    </p>
+                </section>
+                <section class="SvelteKit-story">
+                    <h2><i class="fas fa-play"></i> What is Sveltekit?</h2>
+                    <p>
+                        One of the main factor as to why this framework is loved by the Javascript community is because
+                        it enables a developer to build high-performance web apps. Sveltekit carries a lot of the
+                        workload you would normally have to do with other frameworks. While Svelte itself is a
+                        user-interface framework that is for vanilla Javascript (Svelte). But with Sveltekit, you get
+                        the front-end and back-end capabilities that help you build a speedy web app.
+                    </p>
 
+                    <p>
+                        As a developer myself, I highly recommend studying and reading the documentation yourself <a class="svelteKit-Anchor"
+                            href="https://kit.svelte.dev/docs/introduction">here</a>. It is a skill that I have been
+                        working on myself to
+                        properly read the documentation. But for this article, I’ll highlight the two key things that
+                        contributed to the success of my year-long endeavor: Environment Variables and Endpoints.
+                    </p>
+                </section>
+                <section class="SvelteKit-tools">
+                    <div class="envs">
+                        <a class="svelteKit-Anchor" href="https://kit.svelte.dev/faq#env-vars">
+                            <h3>Enviorment Variables</h3>
+                        </a>
+
+                        <p>
+                            Environment Variables are named values that impact how a script or a program will run. It is
+                            essentially an assigned variable that is created and can be held on the back-end, via a
+                            <i>.env</i>
+                            file, or by inputting these values to where website-hosting services require them to run a
+                            deployed web app. What is important about these is that you can store a variable—such as a
+                            private API key—and it will be completely hidden client-side. In Sveltekit, it is running
+                            <a class="svelteKit-Anchor" href="https://vitejs.dev/">Vite</a> under the hood and this helps with running dev
+                            servers and is
+                            incredibly optimized for bundling Javascript code. I mention Vite because it also uses
+                            <i>dotenv</i>, which is similar to <i>.env</i>. But, it helps how Sveltekit makes
+                            environment
+                            variables
+                            available at runtime. To effectively use these, you must name your environmental variables
+                            prefixed with <i>VITE_</i> and will look like:
+                        </p>
+                        <i>
+                            <p>VITE_MY_KEY: 123456780</p>
+                        </i>
+                    </div>
+                    <div class="endpoints">
+                        <a class="svelteKit-Anchor" href="https://kit.svelte.dev/docs/routing#endpoints">
+                            <h3>Endpoints</h3>
+                        </a>
+                        <p>
+                            Sveltekit is could be defined as a speedy filesystem-based router, resulting in an
+                            application that is defined by the structure of applications code (Svelte). All the routing
+                            takes place in the directory called <i>src/routes</i> and this should be present when you
+                            create a
+                            new Sveltekit app. You can route two different things: pages that contain all the generated
+                            HTML and endpoints that are created by the developer. You can create endpoints by adding a
+                            new folder to the <i>routes</i> directory—named whatever you want—but this new folder will
+                            contain
+                            any Javascript or Typescript modules that export request handler functions (Svelte). All of
+                            this is on the back-end and is hidden from the client and can be done with HTTP methods such
+                            as <b>GET</b>, <b>POST</b>, <b>PUT</b>, <b>PATCH</b>, and <b>DELETE</b> (Svelte).
+                        </p>
+                    </div>
+                </section>
+                <section class="SvelteKit-currentStateProject">
+                    <h2><i class="fas fa-play"></i> My Sveltekit Project Currently</h2>
+                    <p>
+                        Sveltekit has enabled me as a web developer to build super-fast websites and has introduced me
+                        to back-end processes. But, specifically, I needed the two key things that Sveltekit offered:
+                        Environmental Variables and Endpoints. After just taking the time to read the documentation on
+                        the framework, I learned how to make a secure API call that is happening completely on the
+                        back-end. Allowing me to finally achive my goal to make a successful call from the MarvelAPI.
+                    </p>
+                    <p>
+                        So far, my project with the MarvelAPI and Sveltekit is still ongoing. This is due to the
+                        requirement of me learning my first javascript framework. However, I have noticed that it is
+                        pretty easy to learn as a novice and I think this is a great introduction to frameworks because
+                        of that. It helped me to learn how Svelte HTML files work, routing, JSX, installing/using
+                        dependencies, environmental variables, and components.
+                    </p>
+                    <p>
+                        I plan on making a website that will enable a Marvel fan to search for anything Marvel-related,
+                        but mainly I want to make something that can help someone get into Comic Book reading. This is
+                        all educational though and is meant to help me progress as a web developer. As I learn, I want
+                        to help other developers who may be having the same trouble I had with making a successful API
+                        call to the MarvelAPI, that is the purpose of this article. The two key things that helped me
+                        achieve my goal are gaining the knowledge and ability to effectively use Environmental Variables
+                        and custom Endpoints—this helped me get past the unwanted CORS errors and to hide variables that
+                        need to be hidden client-side.
+                    </p>
+                    <a class="svelteKit-Anchor" href="https://www.marvelapp.dylnsworks.com/">
+                        My Sveltekit MarvelAPI Project
+                    </a>
+                </section>
+                <section class="conclusion">
+                    <h2><i class="fas fa-play"></i> Conclusion</h2>
+                    <p>
+                        To sum up, I’ve started to learn my first Javascript framework with the primary goals to finally
+                        get past those annoying CORS errors and to hide variables from the user's web browser. To be
+                        frank, I thought it was going to be difficult to achieve those goals. But with Sveltekit, it was
+                        pretty easy to understand as a developer in learning, which is why I think that this framework
+                        is the most loved in the community according to the State of Javascript Survey previously
+                        mentioned in this article. People love it because the framework is fast, has front-end and
+                        back-end capabilities, and is fairly simple to develop in as compared to other frameworks. I’ll
+                        continue to update this article with my progress and my code will be available on my Github
+                        repository for anyone to see and hopefully to help other developers like me that have that one
+                        API they can’t make a successful API call to. As a final note, learning this framework “svelte”
+                        was great.
+                    </p>
+                </section>
+                <section class="cite">
+                    <h3>Citation(s)</h3>
+                    <p>
+                        Svelte. "SvelteKit Docs." <i>SvelteKit</i>, <a class="svelteKit-Anchor"
+                            href="https://kit.svelte.dev/docs/introduction">https://kit.svelte.dev/docs/introduction</a>.
+                    </p>
+                </section>
             </div>
         </main>
     </div>
 
-    <div id="footerWrapper">
+    <div id="footerWrapper"> 
         <footer>
             <div class="links">
                 <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>

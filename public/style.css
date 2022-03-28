@@ -1478,7 +1478,7 @@ ul.gl-CoolTools__UL li {
 }
 
 #SvelteKit_MainWrapper #SvelteKit-Main div#SvelteKit_ArticleHeader {
-  background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat right bottom #191e29;
+  background: url("https://miro.medium.com/max/1000/1*joB4ddC9_-3okvy0r8_CPQ.png") no-repeat right #ff3c00;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,7 +1489,7 @@ ul.gl-CoolTools__UL li {
 }
 
 #SvelteKit_MainWrapper #SvelteKit-Main div#SvelteKit_ArticleHeader div#SvelteKit-h1__Wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -1558,6 +1558,16 @@ iframe.tutorialVideo {
 
 ul.gl-CoolTools__UL li {
   margin: 1rem 0;
+}
+
+a.svelteKit-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+a.svelteKit-Anchor:hover {
+  color: #191e29;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 560px) {
@@ -1816,10 +1826,10 @@ ul.gl-CoolTools__UL li {
     max-width: 40rem;
     margin: auto;
   }
-  #ghostlab-Main {
+  #SvelteKit-Main {
     margin-top: 0;
   }
-  #gl_Article {
+  #SvelteKit_Article {
     max-width: 40rem;
     margin: auto;
   }
@@ -2100,17 +2110,14 @@ ul.gl-CoolTools__UL li {
   iframe.tutorialVideo {
     height: 300px;
   }
-  #gl_MainWrapper #ghostlab-Main {
+  #SvelteKit_MainWrapper #SvelteKit-Main {
     margin-top: 0;
   }
-  #gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader {
-    background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat bottom right #191e29;
-  }
-  #gl_Article {
+  #SvelteKit_Article {
     max-width: 40rem;
     margin: auto;
   }
-  div#gl-h1__Wrapper div#gl__Title {
+  div#SvelteKit-h1__Wrapper div#SvelteKit__Title {
     max-width: 70rem;
     margin: auto;
   }

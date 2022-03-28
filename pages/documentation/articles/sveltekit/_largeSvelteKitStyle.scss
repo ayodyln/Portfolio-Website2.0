@@ -1,21 +1,19 @@
 //! Ghostlab Article Styling
-#gl_MainWrapper {
-  #ghostlab-Main {
+#SvelteKit_MainWrapper {
+  #SvelteKit-Main {
     margin-top: 0;
-    div#gl_ArticleHeader {
-      background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png)
-        no-repeat bottom right $primaryDark;
+    div#SvelteKit_ArticleHeader {
     }
   }
 }
 
-#gl_Article {
+#SvelteKit_Article {
   max-width: 40rem;
   margin: auto;
 }
 
-div#gl-h1__Wrapper {
-  div#gl__Title {
+div#SvelteKit-h1__Wrapper {
+  div#SvelteKit__Title {
     max-width: 70rem;
     margin: auto;
   }
@@ -24,4 +22,3 @@ div#gl-h1__Wrapper {
 iframe.tutorialVideo {
   height: 300px;
 }
-
