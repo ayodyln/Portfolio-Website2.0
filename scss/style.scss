@@ -7,6 +7,7 @@
 @import "../pages/documentation/articles/sveltekit/smallSvelteKitStyle";
 @import "../pages/documentation/articles/sass-DGM2740/smallSASSStyle";
 @import "../pages/documentation/articles/documenting-DGM2341/smallDocumentStyle";
+@import "../pages/documentation/articles/groupWork-DGM2240/smallGroupWorkStyle";
 @import "small";
 
 @media only screen and (min-width: 560px) {
@@ -18,6 +19,7 @@
   @import "../pages/documentation/articles/sass-DGM2740/mediumSASSStyle";
   @import "../pages/documentation/articles/code-vs-cms-DGM221R/mediumCODEStyle";
   @import "../pages/documentation/articles/documenting-DGM2341/mediumDocumentStyle";
+  @import "../pages/documentation/articles/groupWork-DGM2240/mediumGroupWorkStyle";
 }
 
 @media only screen and (min-width: 1024px) {
@@ -29,6 +31,7 @@
   @import "../pages/documentation/articles/sass-DGM2740/largeSASSStyle";
   @import "../pages/documentation/articles/code-vs-cms-DGM221R/largeCODEStyle";
   @import "../pages/documentation/articles/documenting-DGM2341/largeDocumentStyle";
+  @import "../pages/documentation/articles/groupWork-DGM2240/largeGroupWorkStyle";
 }
 
 @media only screen and (min-width: 1536px) {

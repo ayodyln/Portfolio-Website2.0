@@ -508,10 +508,16 @@ div#ArticlemainWrapper {
     no-repeat center #cd669a;
 }
 .CODE__card {
-  background: url(../pages/documentation/articles/code-vs-cms-DGM221R/img/small.jpg) no-repeat center;
+  background: url(../pages/documentation/articles/code-vs-cms-DGM221R/img/small.jpg)
+    no-repeat center;
 }
 .DOC__card {
-  background: url(../pages/documentation/articles/documenting-DGM2341/img/small.jpg) no-repeat center;
+  background: url(../pages/documentation/articles/documenting-DGM2341/img/small.jpg)
+    no-repeat center;
+}
+.Group__card {
+  background: url(../pages/documentation/articles/groupWork-DGM2240/img/small.jpg)
+    no-repeat right;
 }
 
 p.classCite {

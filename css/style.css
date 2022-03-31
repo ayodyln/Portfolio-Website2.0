@@ -1241,6 +1241,103 @@ a.DOC-Anchor:hover {
   text-decoration: underline;
 }
 
+#GroupWork_MainWrapper #GroupWork-Main {
+  margin-top: 4rem;
+}
+
+#GroupWork_MainWrapper #GroupWork-Main div#GroupWork__ArticleHeader {
+  background: url(/pages/documentation/articles/groupWork-DGM2240/img/small.jpg) no-repeat center;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#GroupWork_MainWrapper #GroupWork-Main div#GroupWork__ArticleHeader div#GroupWork-h1__Wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#GroupWork_MainWrapper #GroupWork-Main div#GroupWork__ArticleHeader div#GroupWork-h1__Wrapper div#GroupWork__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#GroupWork_MainWrapper #GroupWork-Main div#GroupWork__ArticleHeader div#GroupWork-h1__Wrapper div#GroupWork__Title h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+#ArticleInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4px 3fr;
+      grid-template-columns: 3fr 4px 3fr;
+  background-color: #191e29;
+  color: #01c38d;
+}
+
+#ArticleInfo section#dateWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+#ArticleInfo section#dateWrapper p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+#ArticleInfo .line {
+  background-color: #01c38d;
+}
+
+#GroupWork_Article {
+  padding: 0 1rem;
+}
+
+#GroupWork_Article section p {
+  line-height: 1.5rem;
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL li {
+  margin: 1rem 0;
+}
+
+a.GroupWork-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+a.GroupWork-Anchor:hover {
+  color: #191e29;
+  text-decoration: underline;
+}
+
 /* rules here will be applied to all sizes, medium and large will modify from that */
 /* Prevent adjustments of font size when orientation chagnes, iphones. */
 html {
@@ -1873,6 +1970,10 @@ div#ArticlemainWrapper #articleMAIN section#work h2 {
   background: url(../pages/documentation/articles/documenting-DGM2341/img/small.jpg) no-repeat center;
 }
 
+.Group__card {
+  background: url(../pages/documentation/articles/groupWork-DGM2240/img/small.jpg) no-repeat right;
+}
+
 p.classCite {
   color: #404c68;
 }
@@ -2167,6 +2268,16 @@ p.classCite {
   }
   div#DOC_MainWrapper main#DOC-Main div#DOC__ArticleHeader {
     background: url(/pages/documentation/articles/documenting-DGM2341/img/medium.jpg) bottom;
+  }
+  #GroupWork-Main {
+    margin-top: 0;
+  }
+  #GroupWork_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#GroupWork_MainWrapper main#GroupWork-Main div#GroupWork__ArticleHeader {
+    background: url(/pages/documentation/articles/groupWork-DGM2240/img/large.jpg) no-repeat center;
   }
 }
 
@@ -2486,6 +2597,17 @@ p.classCite {
     margin: auto;
   }
   div#DOC-h1__Wrapper div#DOC__Title {
+    max-width: 70rem;
+    margin: auto;
+  }
+  #GroupWork_MainWrapper #GroupWork-Main {
+    margin-top: 0;
+  }
+  #GroupWork_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#GroupWork-h1__Wrapper div#GroupWork__Title {
     max-width: 70rem;
     margin: auto;
   }
