@@ -1,0 +1,171 @@
+//? nav
+div#header-nav-Wrapper {
+  nav {
+    position: relative;
+  }
+}
+
+//? Main
+div#mainWrapper {
+  //! Fix for the space below nav
+  margin: 0;
+
+  main {
+    //? Hero Image Styling
+
+    //? Intro Div Styling
+
+    //? Service Card Styling
+    div.serviceCards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+
+    //? newsletter section styling
+    div.newLetterContainer {
+      form.formSection {
+        flex-direction: row;
+
+        :nth-child(1) {
+          margin: 0;
+        }
+        :nth-child(2) {
+          width: 50%;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+//? Footer styling
+div#footerWrapper {
+  footer {
+    padding: 0.25rem;
+  }
+}
+
+//! PAGES STYLING: Blog, Stores, Thank You page, and more.
+
+//? THIS IS FOR THE BLOG PAGE
+div#mainWrapper {
+  main {
+    div.newBlogPost-Container {
+      grid-template-areas: "info img";
+
+      div.blogInfo {
+        grid-area: info;
+      }
+      div.Blog-Img {
+        grid-area: img;
+      }
+    }
+
+    div.laterBlogPost-Container {
+      grid-template-columns: 1fr 1fr;
+
+      div.card {
+        div.cardInfo {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 13.5rem;
+          div {
+            p {
+              margin: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//? END OF BLOG PAGE STYLING
+
+//? THIS IS FOR CONTACT US PAGE
+
+div.formWrapper {
+  margin-top: 1rem;
+  form.form {
+    fieldset {
+      @for $x from 1 through 4 {
+        label.label#{$x} {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 75%;
+          }
+          input {
+            height: 44px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//? END OF CONTACT US PAGE
+
+//! START OF SF PAGE
+div.storeWrapper {
+  margin: 1rem 0;
+
+  div.storeInfo {
+    padding: 0 0.5rem;
+    display: grid;
+    grid-template-areas:
+      "img contact"
+      "text text"
+      "map map";
+
+    img {
+      width: 100%;
+      height: auto;
+      grid-area: img;
+      border-radius: 5px;
+    }
+
+    div.text {
+      grid-area: text;
+      margin: 1rem 0;
+      h2 {
+        margin: 0.5rem 0;
+      }
+      P {
+        margin: 0.5rem 0;
+      }
+    }
+
+    div.divContact {
+      background-color: $light-grey;
+      border-radius: 5px;
+      padding: 1rem;
+      grid-area: contact;
+      margin: 1rem;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+          i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: $red;
+          }
+        }
+      }
+    }
+
+    iframe {
+      grid-area: map;
+      width: 100%;
+    }
+  }
+}
+//! END OF SF PAGE

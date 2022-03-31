@@ -1,0 +1,474 @@
+//* rules here will be applied to all sizes, medium and large will modify from that *//
+
+//* Apply a natural box layout model to all elements *//
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+//TODO: Page Styling Below.
+
+//? Header/Nav Styling
+div#header-nav-Wrapper {
+  nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: $light-grey;
+    width: 100%;
+    //? Logomark div styling
+    div.logoMark {
+      display: flex;
+      align-items: flex-end;
+      border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+      padding: 0.5rem;
+      a.homeAnchor {
+        width: 7rem;
+        margin: 0;
+        figure {
+          padding: 0;
+          margin: 0;
+          margin-right: 12px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      div.text {
+        width: 100%;
+        h1 {
+          margin: 0;
+          padding: 0;
+          font-size: 28px;
+        }
+      }
+    }
+
+    //? Nav button styling
+    div.navBtnDiv {
+      display: flex;
+      justify-content: flex-end;
+      background-color: $red;
+      border-bottom: solid 1px darken($red, 10%);
+      button {
+        position: relative;
+        background: none;
+        border: none;
+        padding: 0;
+        color: white;
+        font-size: 32px;
+        padding: 0.5rem;
+      }
+    }
+
+    //? Nav mobile styling
+    div.ul-nav {
+      background-color: $red;
+      margin: 0;
+
+      ul.mainUL {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        // padding: 0.5rem 0.5rem;
+        width: 100%;
+        li {
+          height: 44px;
+          border-bottom: solid 1px darken($red, 5%);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0 0.5rem;
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+          }
+        }
+
+        li.subNavLi {
+          height: auto;
+          padding: 10px 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          a {
+            width: 100%;
+            text-align: right;
+          }
+
+          ul.subNav {
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            margin-top: 0.5rem;
+            li {
+              width: 100%;
+              border: none;
+              a {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+span.downArrow {
+  font-size: 16px;
+}
+
+//? Main
+div#mainWrapper {
+  //! Fix for the space below nav
+  margin-top: 123.33px;
+
+  main {
+    //? Hero Image Styling
+    div.HeroContainer {
+      picture.my-picture {
+        img.heroImg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    //? Intro Div Styling
+    div.introContainer {
+      background-color: #eaeaea;
+      padding: 0.5rem;
+      h1 {
+        margin: 0;
+      }
+    }
+
+    h2.we-Offer-Header {
+      padding: 0 0.5rem;
+    }
+
+    //? Service Card Styling
+    div.serviceCards {
+      padding: 0 0.5rem;
+      margin: 0.5rem 0;
+      @for $i from 0 through 5 {
+        .card#{$i} {
+          border-bottom: solid 1px $red;
+          margin-bottom: 1rem;
+        }
+        .card5 {
+          border-bottom: none;
+        }
+      }
+
+      div.card {
+        div.figure {
+          position: relative;
+          margin: 0;
+
+          picture {
+            padding: 0;
+            margin: 0;
+            img.cardImg {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          div {
+            position: absolute;
+            bottom: 0.25rem;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+            width: 100%;
+            h3 {
+              margin: 0;
+              padding: 0;
+              color: white;
+            }
+          }
+        }
+
+        p {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    //? newsletter section styling
+    div.newLetterContainer {
+      background-color: $light-grey;
+      padding: 1rem 0.5rem;
+
+      div.formText {
+        text-align: center;
+        h2 {
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      form.formSection {
+        margin: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        :nth-child(1) {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: solid 1px rgba(0, 0, 0, 0.3);
+        }
+
+        :nth-child(2) {
+          width: 75%;
+          padding: 0.5rem;
+          background-color: $red;
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          border-style: none;
+          cursor: pointer;
+        }
+        :nth-child(2):hover {
+          background-color: darken($red, 5%);
+        }
+      }
+    }
+  }
+}
+
+//? Footer styling
+div#footerWrapper {
+  footer {
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    background-color: $red;
+  }
+}
+
+//* clear fix
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+
+//! PAGES STYLING: Blog, Stores, Thank You page, and more.
+
+//? THIS IS FOR THE BLOG PAGE
+div#mainWrapper {
+  main {
+    div.newBlogPost-Container {
+      display: grid;
+      grid-template-areas: "img" "info";
+      background-color: $light-grey;
+
+      div.blogInfo {
+        grid-area: info;
+        padding: 0.5rem;
+
+        h2 {
+          margin: 0.5rem 0;
+        }
+        p {
+          margin: 1rem 0;
+        }
+        button {
+          background-color: $red;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+        }
+      }
+      div.Blog-Img {
+        grid-area: img;
+        padding: 0.5rem;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    div.laterBlogPost-Container {
+      border-top: solid 1px $red;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 0.5rem;
+      gap: 0.5rem;
+      margin: 0.5rem;
+      div.card {
+        background-color: whitesmoke;
+        div.cardImg {
+          position: relative;
+          div {
+            position: absolute;
+            bottom: 0.25rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            padding: 0.5rem;
+            h2 {
+              margin: 0;
+              color: white;
+              font-size: 110%;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        div.cardInfo {
+          button {
+            background-color: $red;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+//? END OF BLOG PAGE STYLING
+
+//? THIS IS FOR CONTACT US PAGE
+div.formWrapper {
+  background-color: $light-grey;
+  padding-top: 0.5rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
+  h1 {
+    margin: 0 0.5rem;
+    color: $red;
+  }
+
+  form.form {
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+    padding-top: 0;
+    color: black;
+    display: grid;
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      @for $x from 1 through 4 {
+        label.label#{$x} {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 75%;
+          }
+          input {
+            margin: 0.5rem 0;
+            height: 44px;
+          }
+          input:required {
+            border: none;
+            border-left: rgb(218, 42, 42) solid 6px;
+          }
+          input:required:valid {
+            border-left: rgb(42, 68, 218) solid 6px;
+          }
+        }
+
+        label.label4 {
+          margin-bottom: 1rem;
+          span {
+            margin-bottom: 0.5rem;
+          }
+          textarea:required {
+            border: none;
+            border-left: rgb(218, 42, 42) solid 6px;
+          }
+          textarea:required:valid {
+            border-left: rgb(42, 68, 218) solid 6px;
+          }
+        }
+      }
+    }
+
+    input.submitBtn {
+      width: 50%;
+      height: 44px;
+      background-color: $red;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    input.submitBtn:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+}
+
+//? END OF CONTACT US PAGE
+
+//! START OF SF PAGE
+div.storeWrapper {
+  margin: 1rem 0;
+  div.storeInfo {
+    padding: 0 0.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.divContact {
+      background-color: $light-grey;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 1.5rem;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+          i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+//! END OF SF PAGE
