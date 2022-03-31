@@ -1889,11 +1889,11 @@ div#ArticlemainWrapper #articleMAIN section {
   margin: 1rem 0;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles h2 {
+div#ArticlemainWrapper #articleMAIN section.cardSection h2 {
   margin: 0;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
+div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards {
   margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1903,7 +1903,7 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
   gap: 1rem;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card {
+div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards a.card {
   border-radius: 15px;
   text-decoration: none;
   color: white;
@@ -1911,11 +1911,11 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card {
   width: 100%;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card div.inner__card {
+div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards a.card div.inner__card {
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  background-color: #01c38c2c;
+  background-color: #01c38c10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1926,16 +1926,16 @@ div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card div
           align-items: flex-end;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card div.inner__card div.cardText {
+div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards a.card div.inner__card div.cardText {
   width: 100%;
   border-radius: 0 0 15px 15px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 1rem;
 }
 
-div#ArticlemainWrapper #articleMAIN section#articles div#articleCards a.card:hover {
-  -webkit-box-shadow: 0 10px 20px #01c38c2c, 0 6px 6px #01c38c2c;
-          box-shadow: 0 10px 20px #01c38c2c, 0 6px 6px #01c38c2c;
+div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards a.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.16);
 }
 
 div#ArticlemainWrapper #articleMAIN section#work h2 {
@@ -1968,10 +1968,28 @@ div#ArticlemainWrapper #articleMAIN section#work h2 {
 
 .DOC__card {
   background: url(../pages/documentation/articles/documenting-DGM2341/img/small.jpg) no-repeat center;
+  background-size: 100%;
 }
 
 .Group__card {
   background: url(../pages/documentation/articles/groupWork-DGM2240/img/small.jpg) no-repeat right;
+}
+
+.Poke__card {
+  background: url(../img/articles/work/fixed-newpokeball.png) no-repeat center;
+}
+
+.StarWars__card {
+  background: url(../img/articles/work/bb8.png) no-repeat center;
+}
+
+.Congress__card {
+  background: url(../img/articles/work/capitol.png) no-repeat center;
+  background-size: 50%;
+}
+
+.SpaceAPI__card {
+  background: url(../pages/projects/apod/aldebaran-s-qtRF_RxCAo0-unsplash.jpg) no-repeat center;
 }
 
 p.classCite {
@@ -1985,7 +2003,7 @@ p.classCite {
   div#ArticlemainWrapper {
     margin-top: 0;
   }
-  div#ArticlemainWrapper #articleMAIN section#articles div#articleCards {
+  div#ArticlemainWrapper #articleMAIN section.cardSection div#articleCards {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];

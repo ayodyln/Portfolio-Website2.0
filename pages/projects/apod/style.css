@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    width: 80vw;
+}
+
+.apod-img {
+    width: 50%;
+}
+
+p {
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-indent: 32px;
+    text-rendering: optimizeSpeed;
+    word-spacing: 2px;
+    
+}
+
+.buttons {
+    margin: 10px;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
