@@ -459,6 +459,7 @@ div#ArticlemainWrapper {
           color: white;
           height: 15rem;
           width: 100%;
+
           div.inner__card {
             border-radius: 15px;
             width: 100%;
@@ -544,7 +545,40 @@ div#ArticlemainWrapper {
     no-repeat center;
   background-size: 120%;
 }
+.ResearchDocument__card {
+  background: url(../img/articles/work/reserachDoc-TitlePage.png) no-repeat
+    center;
+  background-size: 100%;
+}
+.SveltekitMarvel__card {
+  background: url(../img/articles/work/mulyadi-kL4coQHVj_A-unsplash.jpg)
+    no-repeat center;
+  background-size: 100%;
+}
 
 p.classCite {
   color: lighten($primaryDark, 20);
+}
+
+div.imageWrapper {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img.articleTitleImage {
+    width: 80%;
+    border: solid 1px $primaryDark;
+  }
+  img.GLarticleImage {
+    width: 100%;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    img.articleTitleImage {
+      width: 80%;
+      border: solid 1px $primaryDark;
+    }
+  }
 }

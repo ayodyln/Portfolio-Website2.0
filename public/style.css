@@ -2001,8 +2001,58 @@ div#ArticlemainWrapper #articleMAIN section#work h2 {
   background-size: 120%;
 }
 
+.ResearchDocument__card {
+  background: url(../img/articles/work/reserachDoc-TitlePage.png) no-repeat center;
+  background-size: 100%;
+}
+
+.SveltekitMarvel__card {
+  background: url(../img/articles/work/mulyadi-kL4coQHVj_A-unsplash.jpg) no-repeat center;
+  background-size: 100%;
+}
+
 p.classCite {
   color: #404c68;
+}
+
+div.imageWrapper {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.imageWrapper img.articleTitleImage {
+  width: 80%;
+  border: solid 1px #191e29;
+}
+
+div.imageWrapper img.GLarticleImage {
+  width: 100%;
+}
+
+div.imageWrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.imageWrapper a img.articleTitleImage {
+  width: 80%;
+  border: solid 1px #191e29;
 }
 
 @media only screen and (min-width: 560px) {
