@@ -1338,6 +1338,104 @@ a.GroupWork-Anchor:hover {
   text-decoration: underline;
 }
 
+#JavaScript_MainWrapper #JavaScript-Main {
+  margin-top: 4rem;
+}
+
+#JavaScript_MainWrapper #JavaScript-Main div#JavaScript__ArticleHeader {
+  background: url(../../../../img/articles/work/Unofficial_JavaScript_logo_2.svg.png) no-repeat top right;
+  background-color: #f7e018;
+  background-size: 25%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#JavaScript_MainWrapper #JavaScript-Main div#JavaScript__ArticleHeader div#JavaScript-h1__Wrapper {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#JavaScript_MainWrapper #JavaScript-Main div#JavaScript__ArticleHeader div#JavaScript-h1__Wrapper div#JavaScript__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#JavaScript_MainWrapper #JavaScript-Main div#JavaScript__ArticleHeader div#JavaScript-h1__Wrapper div#JavaScript__Title h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: black;
+}
+
+#ArticleInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4px 3fr;
+      grid-template-columns: 3fr 4px 3fr;
+  background-color: #191e29;
+  color: #01c38d;
+}
+
+#ArticleInfo section#dateWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+#ArticleInfo section#dateWrapper p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+#ArticleInfo .line {
+  background-color: #01c38d;
+}
+
+#JavaScript_Article {
+  padding: 0 1rem;
+}
+
+#JavaScript_Article section p {
+  line-height: 1.5rem;
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL li {
+  margin: 1rem 0;
+}
+
+a.JavaScript-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+a.JavaScript-Anchor:hover {
+  color: #191e29;
+  text-decoration: underline;
+}
+
 /* rules here will be applied to all sizes, medium and large will modify from that */
 /* Prevent adjustments of font size when orientation chagnes, iphones. */
 html {
@@ -2011,6 +2109,12 @@ div#ArticlemainWrapper #articleMAIN section#work h2 {
   background-size: 100%;
 }
 
+.JS__card {
+  background: url(../img/articles/work/Unofficial_JavaScript_logo_2.svg.png) no-repeat right;
+  background-size: 80%;
+  background-color: #f7e018;
+}
+
 p.classCite {
   color: #404c68;
 }
@@ -2356,6 +2460,16 @@ div.imageWrapper a img.articleTitleImage {
   div#GroupWork_MainWrapper main#GroupWork-Main div#GroupWork__ArticleHeader {
     background: url(/pages/documentation/articles/groupWork-DGM2240/img/large.jpg) no-repeat center;
   }
+  #JavaScript-Main {
+    margin-top: 0;
+  }
+  #JavaScript_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#JavaScript_MainWrapper main#JavaScript-Main div#JavaScript__ArticleHeader {
+    background-position: bottom right;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2685,6 +2799,17 @@ div.imageWrapper a img.articleTitleImage {
     margin: auto;
   }
   div#GroupWork-h1__Wrapper div#GroupWork__Title {
+    max-width: 70rem;
+    margin: auto;
+  }
+  #JavaScript_MainWrapper #JavaScript-Main {
+    margin-top: 0;
+  }
+  #JavaScript_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#JavaScript-h1__Wrapper div#JavaScript__Title {
     max-width: 70rem;
     margin: auto;
   }

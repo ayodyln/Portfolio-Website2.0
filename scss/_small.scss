@@ -555,6 +555,12 @@ div#ArticlemainWrapper {
     no-repeat center;
   background-size: 100%;
 }
+.JS__card {
+  background: url(../img/articles/work/Unofficial_JavaScript_logo_2.svg.png)
+    no-repeat right;
+  background-size: 80%;
+  background-color: #f7e018;
+}
 
 p.classCite {
   color: lighten($primaryDark, 20);

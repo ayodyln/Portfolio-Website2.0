@@ -1,0 +1,81 @@
+//! JavaScript Article Styling
+#JavaScript_MainWrapper {
+  #JavaScript-Main {
+    margin-top: 4rem;
+    div#JavaScript__ArticleHeader {
+      background: url(../../../../img/articles/work/Unofficial_JavaScript_logo_2.svg.png)
+        no-repeat top right;
+      background-color: #f7e018;
+      background-size: 25%;
+      height: 300px;
+      display: flex;
+      justify-content: flex-end;
+      div#JavaScript-h1__Wrapper {
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        div#JavaScript__Title {
+          display: flex;
+          align-items: flex-end;
+          width: 100%;
+          height: 100%;
+          h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ArticleInfo {
+  display: grid;
+  grid-template-columns: 3fr 4px 3fr;
+  background-color: $primaryDark;
+  color: $primaryColor;
+
+  section#dateWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    p {
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .line {
+    background-color: $primaryColor;
+  }
+}
+
+#JavaScript_Article {
+  padding: 0 1rem;
+  section {
+    p {
+      line-height: 1.5rem;
+    }
+  }
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL {
+  li {
+    margin: 1rem 0;
+  }
+}
+
+a.JavaScript-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+a.JavaScript-Anchor:hover {
+  color: $primaryDark;
+  text-decoration: underline;
+}
