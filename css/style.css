@@ -1559,6 +1559,10 @@ div#navWrapper nav div.ulDiv ul li a {
   text-decoration: none;
 }
 
+div#navWrapper nav div.ulDiv ul li a:hover {
+  color: #01c38d;
+}
+
 div#navWrapper nav div.ulDiv div.links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2168,7 +2172,42 @@ div.imageWrapper a img.articleTitleImage {
   border: solid 1px #191e29;
 }
 
+main#thanks {
+  background-color: #191e29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  color: white;
+}
+
+main#thanks .lottie {
+  width: 50%;
+  height: auto;
+}
+
 @media only screen and (min-width: 560px) {
+  div#footerWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   footer {
     width: 40rem;
   }
@@ -2180,6 +2219,10 @@ div.imageWrapper a img.articleTitleImage {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  main#thanks .lottie {
+    width: 20%;
+    height: auto;
   }
   .articleMain div#articleHeader {
     background: url(../img/articles/Podcast/content/jukka-aalho-_t9c-kmMjl8-unsplash-medium.jpg) no-repeat center/100%;

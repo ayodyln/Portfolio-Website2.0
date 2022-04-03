@@ -1,3 +1,8 @@
+div#footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   width: 40rem;
 }
@@ -23,5 +28,12 @@ div#ArticlemainWrapper {
         }
       }
     }
+  }
+}
+
+main#thanks {
+  .lottie {
+    width: 20%;
+    height: auto;
   }
 }

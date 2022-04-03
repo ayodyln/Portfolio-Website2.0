@@ -94,6 +94,9 @@ div#navWrapper {
           justify-content: flex-end;
           text-decoration: none;
         }
+        li a:hover {
+          color: $primaryColor;
+        }
       }
 
       div.links {
@@ -586,5 +589,19 @@ div.imageWrapper {
       width: 80%;
       border: solid 1px $primaryDark;
     }
+  }
+}
+
+main#thanks {
+  background-color: $primaryDark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  color: white;
+  .lottie {
+    width: 50%;
+    height: auto;
   }
 }
