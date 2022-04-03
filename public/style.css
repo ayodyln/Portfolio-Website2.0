@@ -1974,7 +1974,12 @@ div#footerWrapper footer p {
 }
 
 div#footerWrapper footer p a {
-  color: white;
+  color: #01c38d;
+  text-decoration: none;
+}
+
+div#footerWrapper footer p a:hover {
+  text-decoration: underline;
 }
 
 .clearFix:after {

@@ -420,7 +420,11 @@ div#footerWrapper {
       text-align: center;
       color: white;
       a {
-        color: white;
+        color: $primaryColor;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -605,3 +609,4 @@ main#thanks {
     height: auto;
   }
 }
+
