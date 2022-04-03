@@ -1436,6 +1436,15 @@ a.JavaScript-Anchor:hover {
   text-decoration: underline;
 }
 
+.aJS {
+  text-decoration: none;
+  color: #01c38d;
+}
+
+.aJS:hover {
+  color: #191e29;
+}
+
 /* rules here will be applied to all sizes, medium and large will modify from that */
 /* Prevent adjustments of font size when orientation chagnes, iphones. */
 html {

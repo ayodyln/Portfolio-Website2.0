@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/42a4a84ffd.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../../../../css/style.css" />
+        <link rel="stylesheet" href="../../../../css/prism.css">
         <link rel="icon" type="image/svg" href="../../../../img/Logo2.svg" />
         <title>Dylan Smith Portfolio - Javascript Article</title>
     </head>
@@ -65,35 +66,210 @@
 
                 <div id="JavaScript_Article">
                     <section class="intro">
-
+                        <p>
+                            Javascript is the best introductory web language to learn for beginner developers. The
+                            reason being is that it's one of the three primary web languages and it gives you the
+                            ability to not only learn important coding fundamentals but also enables a developer to
+                            unleash their creativity via their fingertips running along with the keyboard. Albeit,
+                            utilizing javascript to its fullest potential is not the easiest thing to do. Because there
+                            is a lot to learn about javascript and in any javascript project you may not use everything
+                            the web language can do. What is important to know is the fundamentals and how to read
+                            documentation, then the rest is practice coding with javascript.
+                        </p>
                     </section>
                     <section class="story">
-
-
-                        <h2><i class="fas fa-play"></i> Receiving/Giving Critiques</h2>
-
-
-                        <h2><i class="fas fa-play"></i> Clear Communication</h2>
-
-
-                        <h2><i class="fas fa-play"></i> Sharing Ideas</h2>
-
-
-                        <!-- INSERT IMAGE -->
+                        <h2><i class="fas fa-play"></i> My #1 Tip for learning Javascript</h2>
+                        <p>
+                            First, I want to mention probably the number one most important tool for any developer is
+                            documentation and the best place for that is <a
+                                href="	First, I want to mention probably the number one most important tool for any developer is documentation and the best place for that is MDN Web Docs. The majority of the knowledge I have acquired about Javascript is mainly from MDN. This is my best tip to anyone who wants to learn javascript, is to read the documentation thoroughly. With that out of the way, this is what MDN has to say about javascript." class="aJS">MDN
+                                Web Docs</a>. The majority of the knowledge I
+                            have acquired about Javascript is mainly from MDN. This is my best tip to anyone who wants
+                            to learn javascript, is to read the documentation thoroughly. With that out of the way, this
+                            is what MDN has to say about javascript.
+                        </p>
+                        <h2><i class="fas fa-play"></i> What is Javascript?</h2>
+                        <p>
+                            Javascript can be described in three ways: <i>lightweight, interpreted, and just-in-time
+                                compiled programing language</i> (<a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="aJS">Javascript</a>). It is
+                            one of the most popular web languages
+                            learned and is used to build web applications or even native applications. It can be
+                            utilized on the front end and the back end, making it popular for any type of developer. The
+                            stuff you can do with javascript is a “the sky’s the limit” scenario because you can build
+                            an application that could do anything you want. Anywhere from static websites to complex
+                            video streaming services that can run on mobile smart devices, or you can build a website
+                            about something you find cool with Javascript.
+                        </p>
+                        <p>
+                            Some of the cool stuff I’ve created with javascript is web browser-based applications. One
+                            was a Pokemon Pokedex, which was built via doing <i>fetch</i> requests to the PokeAPI and
+                            manipulating the DOM to display the content from the API database. Another was the Starwars
+                            website, which was using local JSON data and array methods to display stuff like characters,
+                            films, or starships. The one I want to use as an example for javascript is a Rick and Morty
+                            website that helped me figure out how powerful javascript is. Below is a picture of the file
+                            directory for the Rick and Morty website. Note that at this point a framework should be
+                            utilized but this is a project I did purely to practice and learn javascript.
+                        </p>
+                        <div class="imageWrapper">
+                            <img src="./img/file-structure-DGM-2760.png" alt="Figma Screen Capture" loading="lazy"
+                                class="articleTitleImage">
+                            <p>
+                                <i>
+                                    This is my vanilla javascript file directory.
+                                </i>
+                            </p>
+                        </div>
+                        <h2><i class="fas fa-play"></i> JavaScript tools I used</h2>
+                        <p>
+                            The methods I utilized to build this project were notably splitting up my javascript into
+                            components that served specific purposes, then building the bridges between each by
+                            exporting/importing javascript functions. But the other cool stuff I used to help display
+                            and enable a user to manipulate the DOM, was with modern javascript methods/syntax too. Such
+                            as the <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="aJS">Fetch
+                                API</a>, <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" class="aJS">Array
+                                Methods</a>,
+                            and <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="aJS">Objects</a>.
+                            These tools I just mentioned are probably going to be some of the most commonly used among
+                            javascript developers, for myself I use these all the time.
+                        </p>
+                        <h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="aJS">Fetch
+                                API</a>
+                        </h2>
+                        <p>
+                            One of the best ways to request data from a database is via the Fetch API. When you use
+                            fetch, it enables Javascript to interface with parts HTTP methods and has a method that can
+                            be used in vanilla javascript <i>fetch()</i> (<a
+                                href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="aJS">Fetch
+                                API</a>). This method differs from the more dated
+                            model of <i>jQuery.ajax()</i> by how a <i>promise</i> will behave and it is native vanilla
+                            javascript, so
+                            no need to work with jQuery. For the Rick and Morty project, I used <i>fetch</i> to get all
+                            the
+                            databases for the API and I also paired it with asynchronous calls to help with the heavy
+                            <b>GET</b> request I was performing.
+                        </p>
+                        <div class="CodeWrapper">
+                            <pre><code class="language-javascript jsOne"></code></pre>
+                        </div>
+                        <p>
+                            In the code snippet above, the function I have written is utilizing fetch and some other
+                            things as well. Such as the <i>try…catch</i> block which helps execute code or immediately
+                            output
+                            an error if my fetch request doesn’t work right, I’m also converting the data into
+                            Javascript Object Notation (JSON) to interact with the objects. This enables me later to
+                            perform array methods and access object properties via <i>Dot Notation</i>. To me, this is
+                            where
+                            the cool stuff can happen because you have full access to data and get to create some cool
+                            things.
+                        </p>
+                        <h2><a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" class="aJS">Arrays</a>
+                            and <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="aJS">Objects</a>
+                        </h2>
+                        <p>
+                            Javascript has two data types: primitives and objects. Each is important to understand
+                            because you’ll be working with these data types 24/7 with javascript. However, I want to
+                            explain what objects and arrays are because they are key to how we interact with JSON data
+                            being requested from an API database
+                        </p>
+                        <h3>Objects:</h3>
+                        <p>
+                            JSON is built out of objects and can have nested objects or arrays in a JSON file. Objects
+                            allow for storing of strings, numbers, functions, and nested objects or arrays. This can be
+                            pretty powerful with how we communicate data across <i>fetch</i> requests because we can
+                            access any
+                            property in an object with <i>Dot Notation</i>. See below for an example.
+                        </p>
+                        <div class="CodeWrapper">
+                            <pre><code class="language-javascript jsTwo"></code></pre>
+                        </div>
+                        <h2>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="aJS">Arrays:</a>
+                        </h2>
+                        <p>
+                            These are essentially listed that store multiple items into one list and stored into a
+                            variable. How arrays relate to objects is that arrays aren’t a primitive data type, but are
+                            known as Array objects. Some key things to know about arrays can nest data types within
+                            themselves, elements are accessed by index values, and arrays are zero-indexed. Which is a
+                            stark contrast to how Objects are and function. However, at the end of the day, you’ll see
+                            arrays within an object or vice versa, it is important to know to work with both. But what
+                            is cool with arrays, is that you get array methods that are akin to object functions. These
+                            methods help developers access and manipulate data from arrays: <i>forEach(), map(),
+                                filter()</i>,
+                            and there is so much more <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_properties" class="aJS">here</a>.
+                        </p>
+                        <div class="CodeWrapper">
+                            <pre><code class="language-javascript jsThree"></code></pre>
+                        </div>
+                        <p>
+                            There is a lot more to Javascript of course and it’s pretty hard to know everything about
+                            the coding language. It is important to understand data types and how to work with them
+                            because these data types are involved in everything javascript. Especially when we are
+                            developing any web applications that need to grab data from outside sources like API
+                            databases. In the Rick and Morty project I did, I had to <i>fetch</i> resources from their
+                            database
+                            to build out the website. For example, the characters page on my Rick and Morty website is
+                            being displayed because I was able to <i>fetch</i> the characters from the API and convert
+                            it into
+                            JSON. The solution I came up with was to iterate through the arrays in the objects and use
+                            the dot notion to grab specific information I wanted that was related to the characters
+                            page. Click below to see this page in action.
+                        </p>
+                        <div class="imageWrapper">
+                            <a href="https://www.dgm2760.dylnsworks.com/capstone/index.html">
+                                <img src="./img/Screenshot 2022-04-02 at 20-15-02 Document.png"
+                                    alt="Figma Screen Capture" loading="lazy" class="articleTitleImage">
+                            </a>
+                            <p>
+                                <i>
+                                    Screenshot of the Rick and Morty characters page that was made possible by accessing
+                                    data from the JSON data and utilizing the array methods and dot notation.
+                                </i>
+                            </p>
+                        </div>
                     </section>
                     <section class="conslusion">
                         <h2><i class="fas fa-play"></i> Conclusion</h2>
-
-
+                        <p>
+                            This article could’ve been much longer than what it currently is, that’s because there is so
+                            much to javascript. Learning and using coding language is always a challenge because you
+                            have to constantly be willing to learn and research solutions to the coding problems you’ll
+                            run into. It isn’t about memorizing everything, that comes with practice and dedication.
+                            What javascript is about, or at least how it is to me, is a language that enables someone to
+                            create anything they want. You could create an application that helps track events for a
+                            user or you could take it to an application that tracks space events that have occurred via
+                            accessing the NASA API. It
+                            can be super simple or complex, but that feeling of
+                            creating something from scratch is an incredibly rewarding dopamine rush. This is why
+                            javascript is the best language to learn as a beginner developer.
+                        </p>
                         <i>
                             <p class="classCite">
                                 Dylan Smith is a student in the Digital Media program at Utah Valley University, Orem
                                 Utah,
-                                studying Web & App Development. The following article relates to <i>Capstone Project</i> in
+                                studying Web & App Development. The following article relates to <i>Capstone Project</i>
+                                in
                                 the DGM 2760
                                 Course and representative of the skills learned.
                             </p>
                         </i>
+                        <section class="cite">
+                            <h3>Citation(s)</h3>
+                            <p>
+                                "Fetch API." <i>MDN</i>, MDN Contributors, accessed March 28, 2022, <a
+                                    class="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="aJS">https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch</a>.
+                            </p>
+                            <p>
+                                "Javascript." <i>MDN</i>, MDN Contributors, accessed March 28, 2022, <a
+                                    class="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="aJS">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>.
+                            </p>
+                        </section>
                     </section>
                 </div>
             </main>
@@ -109,14 +285,16 @@
                     <ul class="footerNav__UL">
                         <li><a href="../../../work.html">Work</a></li>
                         <li><a href="../../../../index.html/#contact">Contact</a></li>
-                        <li><a href="../../../../private/resume-Web.pdf">Resume</a></li>
+                        <li><a href="../../../../private/resume-Web.pdf" target="_blank">Resume</a></li>
                     </ul>
                 </div>
-                <p>&copy Dylan Smith 2021 &bull; <a href="https://www.dylnsworks.com/">Old Portfolio</a></p>
+                <p>&copy Dylan Smith 2021 &bull; <a href="https://www.student-portfolio.dylnsworks.com/">Old
+                        Portfolio</a></p>
             </footer>
         </div>
-        <script src="../../../../js/index.js"></script>
         <script src="../../../../js/prism.js"></script>
+        <script src="../../../../js/index.js"></script>
+        <script src="./js/codesnippets.js"></script>
     </body>
 
     </html>

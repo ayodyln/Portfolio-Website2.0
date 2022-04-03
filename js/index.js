@@ -9,6 +9,7 @@ hamburgerBtn.addEventListener("click", (e) => {
 
 // poplulatingDOM
 
+
 //! SCSS article code snippets
 const sassCode = document.querySelector(".language-sass");
 sassCode.textContent = `
