@@ -1,0 +1,88 @@
+//! Zapworks Article Styling
+#Zapworks_MainWrapper {
+  #Zapworks-Main {
+    margin-top: 4rem;
+    div#Zapworks__ArticleHeader {
+      background: url(/pages/documentation/class-work/zapworks-pamphlet/img/landscape.jpg)
+        no-repeat;
+      background-size: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: flex-end;
+      div#Zapworks-h1__Wrapper {
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        div#Zapworks__Title {
+          display: flex;
+          align-items: flex-end;
+          width: 100%;
+          height: 100%;
+          h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ArticleInfo {
+  display: grid;
+  grid-template-columns: 3fr 4px 3fr;
+  background-color: $primaryDark;
+  color: $primaryColor;
+
+  section#dateWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    p {
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .line {
+    background-color: $primaryColor;
+  }
+}
+
+#Zapworks_Article {
+  padding: 0 1rem;
+  section {
+    p {
+      line-height: 1.5rem;
+    }
+  }
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL {
+  li {
+    margin: 1rem 0;
+  }
+}
+
+a.Zapworks-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+a.Zapworks-Anchor:hover {
+  color: $primaryDark;
+  text-decoration: underline;
+}
+
+.aJS {
+  text-decoration: none;
+  color: $primaryColor;
+}
+.aJS:hover {
+  color: $primaryDark;
+}

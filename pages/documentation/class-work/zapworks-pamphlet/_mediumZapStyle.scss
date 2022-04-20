@@ -1,0 +1,19 @@
+#Zapworks-Main {
+  margin-top: 0;
+}
+
+#Zapworks_Article {
+  max-width: 40rem;
+  margin: auto;
+}
+
+div#Zapworks_MainWrapper {
+  main#Zapworks-Main {
+    div#Zapworks__ArticleHeader {
+      background-color: $primaryDark;
+      background-position: 50% 50%;
+      height: 420px;
+      background-size: 1920px;
+    }
+  }
+}

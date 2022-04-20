@@ -1445,6 +1445,112 @@ a.JavaScript-Anchor:hover {
   color: #191e29;
 }
 
+#Zapworks_MainWrapper #Zapworks-Main {
+  margin-top: 4rem;
+}
+
+#Zapworks_MainWrapper #Zapworks-Main div#Zapworks__ArticleHeader {
+  background: url(/pages/documentation/class-work/zapworks-pamphlet/img/landscape.jpg) no-repeat;
+  background-size: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Zapworks_MainWrapper #Zapworks-Main div#Zapworks__ArticleHeader div#Zapworks-h1__Wrapper {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#Zapworks_MainWrapper #Zapworks-Main div#Zapworks__ArticleHeader div#Zapworks-h1__Wrapper div#Zapworks__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#Zapworks_MainWrapper #Zapworks-Main div#Zapworks__ArticleHeader div#Zapworks-h1__Wrapper div#Zapworks__Title h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+#ArticleInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4px 3fr;
+      grid-template-columns: 3fr 4px 3fr;
+  background-color: #191e29;
+  color: #01c38d;
+}
+
+#ArticleInfo section#dateWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+#ArticleInfo section#dateWrapper p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+#ArticleInfo .line {
+  background-color: #01c38d;
+}
+
+#Zapworks_Article {
+  padding: 0 1rem;
+}
+
+#Zapworks_Article section p {
+  line-height: 1.5rem;
+}
+
+iframe.tutorialVideo {
+  width: 100%;
+  height: 250px;
+}
+
+ul.gl-CoolTools__UL li {
+  margin: 1rem 0;
+}
+
+a.Zapworks-Anchor {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+a.Zapworks-Anchor:hover {
+  color: #191e29;
+  text-decoration: underline;
+}
+
+.aJS {
+  text-decoration: none;
+  color: #01c38d;
+}
+
+.aJS:hover {
+  color: #191e29;
+}
+
 /* rules here will be applied to all sizes, medium and large will modify from that */
 /* Prevent adjustments of font size when orientation chagnes, iphones. */
 html {
@@ -2527,6 +2633,19 @@ main#thanks .lottie {
   div#JavaScript_MainWrapper main#JavaScript-Main div#JavaScript__ArticleHeader {
     background-position: bottom right;
   }
+  #Zapworks-Main {
+    margin-top: 0;
+  }
+  #Zapworks_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#Zapworks_MainWrapper main#Zapworks-Main div#Zapworks__ArticleHeader {
+    background-color: #191e29;
+    background-position: 50% 50%;
+    height: 420px;
+    background-size: 1920px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2867,6 +2986,17 @@ main#thanks .lottie {
     margin: auto;
   }
   div#JavaScript-h1__Wrapper div#JavaScript__Title {
+    max-width: 70rem;
+    margin: auto;
+  }
+  #Zapworks_MainWrapper #Zapworks-Main {
+    margin-top: 0;
+  }
+  #Zapworks_Article {
+    max-width: 40rem;
+    margin: auto;
+  }
+  div#Zapworks-h1__Wrapper div#Zapworks__Title {
     max-width: 70rem;
     margin: auto;
   }
