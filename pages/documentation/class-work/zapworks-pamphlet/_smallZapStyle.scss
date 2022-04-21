@@ -10,6 +10,7 @@
       display: flex;
       justify-content: flex-end;
       div#Zapworks-h1__Wrapper {
+        background-color: rgba(0, 0, 0, 0.4);
         padding: 1rem;
         width: 100%;
         height: 100%;
@@ -84,5 +85,41 @@ a.Zapworks-Anchor:hover {
   color: $primaryColor;
 }
 .aJS:hover {
+  color: $primaryDark;
+}
+
+.pGoal {
+  background-color: $primaryDark;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  li {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  li:before {
+    content: "⚡";
+    margin-right: 1rem;
+  }
+}
+
+div.zapSlide {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+div.swiper-pagination {
+  margin-top: 1rem;
+}
+
+.zapAnchor {
+  color: $primaryColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+.zapAnchor:hover {
+  text-decoration: underline;
   color: $primaryDark;
 }

@@ -1462,6 +1462,7 @@ a.JavaScript-Anchor:hover {
 }
 
 #Zapworks_MainWrapper #Zapworks-Main div#Zapworks__ArticleHeader div#Zapworks-h1__Wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -1548,6 +1549,43 @@ a.Zapworks-Anchor:hover {
 }
 
 .aJS:hover {
+  color: #191e29;
+}
+
+.pGoal {
+  background-color: #191e29;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+
+.pGoal li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.pGoal li:before {
+  content: "⚡";
+  margin-right: 1rem;
+}
+
+div.zapSlide img {
+  width: 100%;
+  height: auto;
+}
+
+div.swiper-pagination {
+  margin-top: 1rem;
+}
+
+.zapAnchor {
+  color: #01c38d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.zapAnchor:hover {
+  text-decoration: underline;
   color: #191e29;
 }
 
