@@ -569,6 +569,11 @@ div#ArticlemainWrapper {
   background-color: #f7e018;
 }
 
+.dgm1110__card {
+  background: url(../img/articles/adobe.jpg) no-repeat center;
+  background-size: 99%;
+}
+
 p.classCite {
   color: lighten($primaryDark, 20);
 }
@@ -609,4 +614,3 @@ main#thanks {
     height: auto;
   }
 }
-
