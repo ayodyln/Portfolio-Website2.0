@@ -1,21 +1,20 @@
 //! Ghostlab Article Styling
-#gl_MainWrapper {
-  #ghostlab-Main {
+#dgm1110_MainWrapper {
+  #dgm1110-Main {
     margin-top: 0;
-    div#gl_ArticleHeader {
-      background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png)
-        no-repeat bottom right $primaryDark;
+    div#dgm1110_ArticleHeader {
+  
     }
   }
 }
 
-#gl_Article {
+#dgm1110_Article {
   max-width: 40rem;
   margin: auto;
 }
 
-div#gl-h1__Wrapper {
-  div#gl__Title {
+div#dgm1110-h1__Wrapper {
+  div#dgm1110__Title {
     max-width: 70rem;
     margin: auto;
   }

@@ -1265,57 +1265,58 @@ div.swiper-pagination {
   color: #191e29;
 }
 
-#gl_MainWrapper #ghostlab-Main {
+#dgm1110_MainWrapper #dgm1110-Main {
   margin-top: 4rem;
 }
-#gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader {
-  background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat right bottom #191e29;
+#dgm1110_MainWrapper #dgm1110-Main div#dgm1110_ArticleHeader {
+  background: url("https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80") no-repeat center #191e29;
+  background-size: 100%;
   height: 300px;
   display: flex;
   justify-content: flex-end;
 }
-#gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader div#gl-h1__Wrapper {
+#dgm1110_MainWrapper #dgm1110-Main div#dgm1110_ArticleHeader div#dgm1110-h1__Wrapper {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   width: 100%;
   height: 100%;
 }
-#gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader div#gl-h1__Wrapper div#gl__Title {
+#dgm1110_MainWrapper #dgm1110-Main div#dgm1110_ArticleHeader div#dgm1110-h1__Wrapper div#dgm1110__Title {
   display: flex;
   align-items: flex-end;
   width: 100%;
   height: 100%;
 }
-#gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader div#gl-h1__Wrapper div#gl__Title h1 {
+#dgm1110_MainWrapper #dgm1110-Main div#dgm1110_ArticleHeader div#dgm1110-h1__Wrapper div#dgm1110__Title h1 {
   font-size: 2rem;
   margin: 0;
   color: white;
 }
 
-#gl_ArticleInfo {
+#dgm1110_ArticleInfo {
   display: grid;
   grid-template-columns: 3fr 4px 3fr;
   background-color: #191e29;
   color: #01c38d;
 }
-#gl_ArticleInfo section#dateWrapper {
+#dgm1110_ArticleInfo section#dateWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 0;
 }
-#gl_ArticleInfo section#dateWrapper p {
+#dgm1110_ArticleInfo section#dateWrapper p {
   margin: 0;
   margin-left: 0.5rem;
 }
-#gl_ArticleInfo .gl-line {
+#dgm1110_ArticleInfo .dgm1110-line {
   background-color: #01c38d;
 }
 
-#gl_Article {
+#dgm1110_Article {
   padding: 0 1rem;
 }
-#gl_Article section p {
+#dgm1110_Article section p {
   line-height: 1.5rem;
 }
 
@@ -1324,7 +1325,7 @@ iframe.tutorialVideo {
   height: 250px;
 }
 
-ul.gl-CoolTools__UL li {
+ul.dgm1110-CoolTools__UL li {
   margin: 1rem 0;
 }
 
@@ -2179,10 +2180,10 @@ main#thanks .lottie {
     height: 420px;
     background-size: 1920px;
   }
-  #ghostlab-Main {
+  #dgm1110-Main {
     margin-top: 0;
   }
-  #gl_Article {
+  #dgm1110_Article {
     max-width: 40rem;
     margin: auto;
   }
@@ -2484,17 +2485,14 @@ main#thanks .lottie {
     max-width: 70rem;
     margin: auto;
   }
-  #gl_MainWrapper #ghostlab-Main {
+  #dgm1110_MainWrapper #dgm1110-Main {
     margin-top: 0;
   }
-  #gl_MainWrapper #ghostlab-Main div#gl_ArticleHeader {
-    background: url(/pages/documentation/articles/ghostlab/img/GL-outline.png) no-repeat bottom right #191e29;
-  }
-  #gl_Article {
+  #dgm1110_Article {
     max-width: 40rem;
     margin: auto;
   }
-  div#gl-h1__Wrapper div#gl__Title {
+  div#dgm1110-h1__Wrapper div#dgm1110__Title {
     max-width: 70rem;
     margin: auto;
   }

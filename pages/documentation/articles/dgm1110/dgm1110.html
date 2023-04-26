@@ -1,315 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/42a4a84ffd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/42a4a84ffd.js"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../../../css/style.css" />
     <link rel="icon" type="image/svg" href="../../../../img/Logo2.svg" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <title>Dylan Smith Portfolio - Ghostlab Article</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Dylan Smith Portfolio - DGM1110 Article</title>
+  </head>
 
-<body>
+  <body>
     <div id="navWrapper">
-        <nav class="clearFix">
-            <div class="header-nav">
-                <a href="../../../../index.html">
-                    <div class="logo">
-                        <img src="../../../../img/Logo2.svg" alt="logo" class="svg-logo" />
-                    </div>
-                </a>
-
-                <button id="hamburgerBtn">
-                    <i id="menuIcon" class="fa-solid fa-bars"></i>
-                </button>
+      <nav class="clearFix">
+        <div class="header-nav">
+          <a href="../../../../index.html">
+            <div class="logo">
+              <img
+                src="../../../../img/Logo2.svg"
+                alt="logo"
+                class="svg-logo" />
             </div>
+          </a>
 
-            <div class="ulDiv" id="ulDiv">
-                <ul class="ul-nav">
-                    <li><a href="../../../work.html">Work</a></li>
-                    <li><a href="../../../../index.html#contact">Contact</a></li>
-                    <li><a href="../../../../private/resume-Web.pdf" target="_blank">Resume</a></li>
-                </ul>
-                <div class="links" id="nav-social-links">
-                    <a href="https://github.com/ayodyln" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/dylan-smith-358515196/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </nav> target="_blank"
+          <button id="hamburgerBtn">
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="ulDiv" id="ulDiv">
+          <ul class="ul-nav">
+            <li><a href="../../../work.html">Work</a></li>
+            <li><a href="../../../../index.html#contact">Contact</a></li>
+            <li>
+              <a href="../../../../private/resume-Web.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+          <div class="links" id="nav-social-links">
+            <a href="https://github.com/ayodyln" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dylan-smith-358515196/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
     </div>
 
-    <div id="gl_MainWrapper">
-        <main id="ghostlab-Main">
-            <div id="gl_ArticleHeader">
-                <div id="gl-h1__Wrapper">
-                    <div id="gl__Title">
-                        <h1>Responsive Web Development with Ghostlab</h1>
-                    </div>
-                </div>
+    <div id="dgm1110_MainWrapper">
+      <main id="dgm1110-Main">
+        <div id="dgm1110_ArticleHeader">
+          <div id="dgm1110-h1__Wrapper">
+            <div id="dgm1110__Title">
+              <h1>DGM 1110 // Adobe Apps</h1>
             </div>
+          </div>
+        </div>
 
-            <div id="gl_ArticleInfo">
-                <section id="dateWrapper">
-                    <i class="fa-solid fa-calendar"></i>
-                    <p id="Date__lastUpdated"></p>
-                </section>
-                <span class="gl-line"></span>
-                <section id="dateWrapper">
-                    <i class="fa-solid fa-clock"></i>
-                    <p class="readTime">5 minute read</p>
-                </section>
+        <div id="dgm1110_ArticleInfo">
+          <section id="dateWrapper">
+            <i class="fa-solid fa-calendar"></i>
+            <p id="Date__lastUpdated"></p>
+          </section>
+          <span class="dgm1110-line"></span>
+          <section id="dateWrapper">
+            <i class="fa-solid fa-clock"></i>
+            <p class="readTime">2 minute read</p>
+          </section>
+        </div>
+
+        <div id="dgm1110_Article">
+          <!-- <section class="intro">
+            <p>
+              This is a showcase of my projects while taking a class that is all
+              about introducing myself to apps from Adobe (or other similar apps). 
+            </p>
+          </section> -->
+          <section class="Ghostlab">
+            <h2><i class="fas fa-play"></i> PhotoShop</h2>
+
+            <div class="imageWrapper">
+              <img
+                src="./img/photo_manipulation.jpg"
+                alt="Photoshop 1"
+                loading="lazy"
+                class="articleTitleImage dgm1110articleImage" />
+              <p>
+                <i> Image Manipulation </i>
+              </p>
             </div>
-
-            <div id="gl_Article">
-                <section class="intro">
-                    <p>
-                        This article is for developers who are interested in improving their responsive web designs and
-                        need to integrate quality assurance into their workflow via Ghostlab. Which was developed
-                        with
-                        the goal in mind to make a tool that provides tangible evidence of how one’s responsive web
-                        design functions across devices. The software enables someone to test on any device, as long as
-                        they have a computer, internet, and devices that they want to test with. So, I’ll be detailing
-                        how to quickly set up this amazing tool and kickstart your path down perfecting the practice of
-                        responsive web design.
-                    </p>
-                </section>
-                <section class="gl-Intro">
-                    <h2><i class="fas fa-play"></i> Development Workflow</h2>
-                    <p>
-                        Developers will know or have a sense of what I’m talking about here, but for those who don’t
-                        know about a typical development workflow, I’ll summarize this process for you. As a developer,
-                        you may start with creating a folder and opening that in a text editor of choice—typically
-                        Visual Studio
-                        Code is used, but there are plenty of other text editors out there. In VS Code, we can pretty
-                        much write code in any language you want. Also, there are tools that developers can utilize to
-                        run a live server, which is how we as developers can see how code looks in the browser and
-                        debug. This is done via visually looking at the design and using the inspect tool with browsers.
-                    </p>
-                    <p>
-                        What I just described is a common workflow among developers, especially web development
-                        students. It gets the job done and helps a developer code to make something from scratch. I
-                        admit, I even still follow this process and it works great! Until you start talking about
-                        building a responsive web design. Browsers can open the inspect tool which contains a set of
-                        tools that are important to a developer, the tool I’ll be highlighting here is a tool that
-                        simulates a device. The issue is that with this method, the browser doesn’t accurately represent
-                        how your design looks on screen since it is simulating that device. It is possible to see visual
-                        errors pop up or not have a true representation of how the overall design looks and functions on
-                        a smaller device.
-                    </p>
-                </section>
-                <section class="Ghostlab">
-                    <h2><i class="fas fa-play"></i> Ghostlab</h2>
-                    <p>
-                        To remedy this issue and have full assurance that your responsive web design is functioning
-                        perfectly across any device, you can use GhostLab&#8722;opensource software. This tool that I
-                        think
-                        any developer should
-                        be using is incredibly helpful when you are building for smaller than desktop screen sizes.
-                        Because Ghostlab enables a developer to run a local server on a computer that is exposed to any
-                        device on the same wifi network. While Ghostlab is doing this, it can also watch a URL or a
-                        local file directory that contains an index.html file and display that code to the browser on
-                        any device you want to test. Keep in mind that is a stark difference from simulating a device in
-                        a browser, because this actual testing happens on a real device.
-                    </p>
-                    <p>
-                        At this point, I hope you the reader are realizing how cool this tool is. But you may be
-                        thinking that this is an extra step in the development workflow. Which is true, but this extra
-                        step
-                        is worth it since it is a form of quality assurance and the product of adding this to your
-                        workflow is better—if not perfect—responsive web design.
-                    </p>
-                    <div class="imageWrapper">
-                        <img src="../../../../img/articles/work/ghostLabScreenshot.png"
-                            alt="Research Document Title Page Image" loading="lazy"
-                            class="articleTitleImage GLarticleImage">
-                        <p>
-                            <i>
-                                Ghostlab application screen capture
-                            </i>
-                        </p>
-                    </div>
-                </section>
-                <section class="gl-Setup">
-                    <h2><i class="fas fa-play"></i> Getting Started with Ghostlab:</h2>
-                    <div class="gl-stepOne">
-                        <h3>Step One: Download/Install Ghostlab</h3>
-                        <p>
-                            Ghostlab was produced by <a href="https://www.vanamco.com/" target="_blank">Vanamco</a> and
-                            has become open
-                            source.
-                            Meaning anyone can download this software and integrate it into their workflow. The link
-                            will be provided in this article to download this software, but I want to note that their
-                            current website is very bare-bones and may look suspicious. But it is not and it’s directly
-                            from the developers of the application. Something happened to their website, and it's been
-                            under construction ever since it seems.
-                        </p>
-                        <p>
-                            Download the correct version for your device and follow the installation instructions.
-                        </p>
-
-                        <!--! Insert image of the current site -->
-                    </div>
-                    <div class="gl-stepTwo">
-                        <h3>Step Two: Creating a Ghostlab Server</h3>
-                        <p>
-                            Ghostlab saves as many local server instances you want, but only one server can run at a
-                            time. Developers can input a URL or a local file directory and Ghostlab will run a
-                            server once you click the play icon, Ghostlab is now <i>watching</i> that URL/Directory.
-                            What is happening here is essentially a Node.js
-                            development server is being created and exposed to the local network. This is awesome
-                            because Ghostlab will respond to any changes and the browsers will be refreshed to display
-                            the most recent version of the code you’ve created.
-                        </p>
-                        <!--!image here -->
-                        <iframe class="tutorialVideo" src="https://www.youtube-nocookie.com/embed/G3ZkJ5iXZoE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="gl-stepThree">
-                        <h3>Step Three: Connecting to Ghostlab on a device</h3>
-                        <p>
-                            Once you have a Ghostlab server running, it’ll generate an IP address for you. It is
-                            important to note that the private IP address option is going to be the best IP address type
-                            to use. To ensure that you’re using this address type, go to Ghostlabs Preferences setting
-                            (CTRL + , or Command + ,) and scroll down the Networking section and select the Network IP
-                            type to the one like this: 10.0.0.XXX—the last three numbers will differ sometimes. Once the
-                            Ghostab’s server is running, any device can connect to that IP address as long as it's on
-                            the same network as the computer running Ghostlab. Simply, scan the QR code that can be
-                            generated to scan on a mobile device or input that IP address into a browser on the device.
-                        </p>
-                        <!--!image here -->
-                        <iframe class="tutorialVideo" src="https://www.youtube-nocookie.com/embed/G3ZkJ5iXZoE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="gl-CoolThings">
-                    <h2><i class="fas fa-play"></i> Ghostlab's Unique Tools:</h2>
-                    <p>
-                        Ghostlab can run on a server with multiple connections to its server. This is helpful because
-                        you can have the three primary device types (mobile, tablet, and desktop) displaying your
-                        website at
-                        once to test its responsiveness. Here are some more tools that Ghostlab has for development:
-                    </p>
-                    <ul class="gl-CoolTools__UL">
-                        <li>
-                            <b>Sync/Async Scrolling:</b> You can sync scrolling on every device, what this means is that
-                            if
-                            you scroll on one device, each other device will respond to that scroll—this behavior is
-                            also present upon refreshes or other interactions.
-                        </li>
-                        <li>
-                            <b>Screenshot:</b> It’s possible to screenshot on any device via the screenshot tool in
-                            GhostLab.
-                        </li>
-                        <li>
-                            <b>Inspect tool:</b> In Ghostlab you can open an inspect tool of any device that is
-                            connected to
-                            that IP address, this is incredibly helpful for mobile devices.
-                        </li>
-                    </ul>
-                    <i>
-                        <p>
-                            There is so much more and I encourage you to explore GhostLab just as I did but take note
-                            of how your default settings are. This is just in case you change a setting and completely
-                            break the Ghostlab application. That is probably the most important piece of advice I can
-                            offer. Since there aren’t many documentation or troubleshooting guides out there—I’ll work
-                            on developing one as I learn about Ghostlab myself.
-                        </p>
-                    </i>
-                </section>
-                <section class="gl-conslusion">
-                    <h2><i class="fas fa-play"></i> Conclusion</h2>
-                    <p>
-                        This was a very quick overview of Ghostlab and why you should be using this software. But to
-                        conclude this article, it is important to mention the importance of actually testing rather than
-                        simulating a responsive web design in a browser. When you test something, it is to discover any
-                        errors and to improve it until there are hopefully no errors left. This can be interpreted as
-                        Quality Assurance, which is the practice of finding mistakes in a product—or a website in the
-                        theme of this article—and preventing those mistakes from being released to the public version of
-                        the product.
-                    </p>
-                    <p>
-                        With Ghostlab you have the utmost assurance that your project is running
-                        effectively in terms of functionality and design across any browser on any device. With that
-                        said, give Ghostlab a shot and try building a responsive web design such as a navbar system
-                        across a mobile phone, tablet, and laptop. I believe a project like that can help you learn how
-                        to use Ghostlab and see the importance of it as well.
-                    </p>
-                </section>
-                <section class="gl-AuthorNote">
-                    <i>
-                        <p>
-                            I’ll be updating this article as I use GhostLab more and more. My goal is to make this
-                            destination of troubleshooting this software since there isn’t much documentation to be
-                            found on the internet.
-                        </p>
-                    </i>
-                    <p>
-                        If you are curious or have questions about how to get an at-home setup going, feel free to <a
-                            href="../../../../index.html#contact">Contact</a> me!
-                    </p>
-                </section>
+            <div class="imageWrapper">
+              <img
+                src="./img/art_piece.jpg"
+                alt="Photoshop 2"
+                loading="lazy"
+                class="articleTitleImage dgm1110articleImage" />
+              <p>
+                <i> Photoshop Painting </i>
+              </p>
             </div>
-        </main>
+          </section>
+          <section class="dgm1110-Setup">
+            <h2><i class="fas fa-play"></i> Illustrator</h2>
+
+            <div class="imageWrapper">
+              <img
+                src="./img/PersonalLogo.png"
+                alt="Logo Attempt"
+                loading="lazy"
+                class="articleTitleImage dgm1110articleImage" />
+              <p>
+                <i> Logo style guide made with Illustrator </i>
+              </p>
+            </div>
+          </section>
+          <section class="dgm1110-CoolThings">
+            <h2><i class="fas fa-play"></i> Audition (Audio)</h2>
+            <iframe
+              class="tutorialVideo"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Rk8WBbxWZUQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </section>
+          <section class="dgm1110-CoolThings">
+            <h2><i class="fas fa-play"></i> Premiere (Video)</h2>
+            <iframe
+              class="tutorialVideo"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/uiqtvJHk1NA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </section>
+          <section class="dgm1110-CoolThings">
+            <h2><i class="fas fa-play"></i> After Effects (Animation)</h2>
+            <iframe
+              class="tutorialVideo"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/efsDnVargGo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </section>
+
+          <section class="dgm1110-conslusion">
+            <h2><i class="fas fa-play"></i> Conclusion</h2>
+            <iframe
+              class="tutorialVideo"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/w8g_DtYJvRU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </section>
+        </div>
+      </main>
     </div>
 
     <div id="footerWrapper">
-        <footer>
-            <div class="links">
-                <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dylan-smith-358515196/"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="footerNav">
-                <ul class="footerNav__UL">
-                    <li><a href="../../../work.html">Work</a></li>
-                    <li><a href="../../../../index.html#contact">Contact</a></li>
-                    <li><a href="../../../../private/resume-Web.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-            <p>&copy Dylan Smith 2021 &bull; <a href="https://www.student-portfolio.dylnsworks.com/">Old Portfolio</a>
-            </p>
-        </footer>
+      <footer>
+        <div class="links">
+          <a href="https://github.com/ayodyln"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dylan-smith-358515196/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="footerNav">
+          <ul class="footerNav__UL">
+            <li><a href="../../../work.html">Work</a></li>
+            <li><a href="../../../../index.html#contact">Contact</a></li>
+            <li>
+              <a href="../../../../private/resume-Web.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p>
+          &copy Dylan Smith 2021 &bull;
+          <a href="https://www.student-portfolio.dylnsworks.com/"
+            >Old Portfolio</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script>
-        let date = new Date(document.lastModified);
-        let day = date.getDay();
-        let month = date.getMonth();
-        let year = date.getFullYear()
-        const monthArr = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ]
+      let date = new Date(document.lastModified)
+      let day = date.getDay()
+      let month = date.getMonth()
+      let year = date.getFullYear()
+      const monthArr = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ]
 
-        let newMonthName;
+      let newMonthName
 
-        monthArr.forEach((el, i, arr) => {
-            if (month === i) {
-                newMonthName = el
-            }
-        })
-        let dateModifed = `Updated: ${newMonthName} ${day}, ${year}`;
-        document.querySelector('#Date__lastUpdated').textContent = dateModifed;
+      monthArr.forEach((el, i, arr) => {
+        if (month === i) {
+          newMonthName = el
+        }
+      })
+      let dateModifed = `Updated: ${newMonthName} ${day}, ${year}`
+      document.querySelector("#Date__lastUpdated").textContent = dateModifed
     </script>
 
     <script src="../../../../js/index.js"></script>
-</body>
-
+  </body>
 </html>
